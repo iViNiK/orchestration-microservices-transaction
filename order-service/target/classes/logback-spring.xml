@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<!-- Get the property for app name from the properties file -->
+	<springProperty scope="context" name="appName" source="spring.application.name" />
+
+	<!-- Configuration when the profile is staging or production -->
+	<springProfile name="staging,production">
+		<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+			<encoder>
+				<pattern>%d %5p | %t | %-55logger{55} | %m %n</pattern>
+			</encoder>
+		</appender>
+
+		<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+			<file>logs/${appName}.log</file>
+			<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+				<!-- daily rollover -->
+				<fileNamePattern>logs/%d{yyyy-MM-dd,aux}/${appName}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+				<!-- keep 30 days of history -->
+				<maxHistory>30</maxHistory>
+				<!-- or whenever the file size reaches the MAX limit -->
+				<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+					<maxFileSize>10MB</maxFileSize>
+				</timeBasedFileNamingAndTriggeringPolicy>
+			</rollingPolicy>
+			<encoder>
+				<pattern>%d %5p | %t | %-54logger{55} | %m %n</pattern>
+			</encoder>
+		</appender>
+
+		<logger name="${appName}-logger" additivity="false">
+			<appender-ref ref="FILE" />
+		</logger>
+		
+		<root>
+			<appender-ref ref="CONSOLE" />
+		</root>
+		
+	</springProfile>
+
+	<!-- Configuration when the profile is development -->
+	<springProfile name="dev">
+		<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+			<encoder>
+				<pattern>%d %5p | %t | %-55logger{55} | %m %n</pattern>
+			</encoder>
+		</appender>
+
+		<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+			<file>logs/${appName}.log</file>
+			<encoder>
+				<pattern>%d %5p | %t | %-54logger{55} | %m %n</pattern>
+			</encoder>
+		</appender>
+
+		<logger name="it.vinicioflamini.omt.order" additivity="false">
+			<appender-ref ref="FILE" />
+		</logger>
+		
+		<root>
+			<appender-ref ref="CONSOLE" />
+		</root>
+	</springProfile>
+</configuration>

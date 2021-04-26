@@ -1,0 +1,6 @@
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\src\main\java\it\vinicioflamini\omt\shipping\kafka\channel\StreamsConfig.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\src\main\java\it\vinicioflamini\omt\shipping\controller\ShippingController.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\src\main\java\it\vinicioflamini\omt\shipping\ShippingServiceApplication.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\src\main\java\it\vinicioflamini\omt\shipping\service\ShippingService.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\src\main\java\it\vinicioflamini\omt\shipping\kafka\channel\ShippingChannel.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\src\main\java\it\vinicioflamini\omt\shipping\kafka\source\GoodsShippedEventSource.java

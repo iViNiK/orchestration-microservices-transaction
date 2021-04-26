@@ -1,0 +1,6 @@
+it\vinicioflamini\omt\order\service\OrderService.class
+it\vinicioflamini\omt\order\kafka\channel\StreamsConfig.class
+it\vinicioflamini\omt\order\controller\OrderController.class
+it\vinicioflamini\omt\order\kafka\channel\OrderChannel.class
+it\vinicioflamini\omt\order\kafka\source\OrderEventSource.class
+it\vinicioflamini\omt\order\OrderServiceApplication.class

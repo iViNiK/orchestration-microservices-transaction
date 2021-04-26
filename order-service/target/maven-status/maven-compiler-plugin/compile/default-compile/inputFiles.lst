@@ -1,0 +1,6 @@
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service\src\main\java\it\vinicioflamini\omt\order\service\OrderService.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service\src\main\java\it\vinicioflamini\omt\order\kafka\source\OrderEventSource.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service\src\main\java\it\vinicioflamini\omt\order\controller\OrderController.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service\src\main\java\it\vinicioflamini\omt\order\kafka\channel\StreamsConfig.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service\src\main\java\it\vinicioflamini\omt\order\kafka\channel\OrderChannel.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service\src\main\java\it\vinicioflamini\omt\order\OrderServiceApplication.java

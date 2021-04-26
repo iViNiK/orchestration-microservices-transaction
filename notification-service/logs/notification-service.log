@@ -1,0 +1,428 @@
+2021-04-23 11:05:37,515  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Starting NotificationServiceApplication on DESKTOP-VOMVIUL with PID 12044 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-04-23 11:05:37,515 DEBUG | main | i.v.omt.notification.NotificationServiceApplication    | Running with Spring Boot v2.1.10.RELEASE, Spring v5.1.11.RELEASE 
+2021-04-23 11:05:37,515  INFO | main | i.v.omt.notification.NotificationServiceApplication    | The following profiles are active: dev 
+2021-04-23 11:05:42,150  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Started NotificationServiceApplication in 5.236 seconds (JVM running for 6.21) 
+2021-04-23 11:12:14,810  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Starting NotificationServiceApplication on DESKTOP-VOMVIUL with PID 12120 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-04-23 11:12:14,811 DEBUG | main | i.v.omt.notification.NotificationServiceApplication    | Running with Spring Boot v2.1.10.RELEASE, Spring v5.1.11.RELEASE 
+2021-04-23 11:12:14,811  INFO | main | i.v.omt.notification.NotificationServiceApplication    | The following profiles are active: dev 
+2021-04-23 11:12:19,025  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Started NotificationServiceApplication in 4.828 seconds (JVM running for 5.803) 
+2021-04-23 11:37:38,775  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:37:38,775  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:37:52,633  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:37:52,633  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:37:54,081  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:37:54,081  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:37:55,052  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:37:55,052  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:00,479  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:00,479  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:01,807  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:01,807  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:02,641  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:02,641  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:04,192  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:04,192  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:05,002  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:05,002  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:06,653  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:06,653  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:07,323  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:07,323  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:08,008  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:08,008  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:08,966  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:08,966  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:09,616  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:09,616  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:10,722  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:10,722  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:11,631  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:11,631  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:12,360  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:12,361  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:13,111  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:13,111  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:14,934  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:14,934  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:15,671  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:15,671  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:17,189  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:17,189  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:17,812  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:17,812  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:21,745  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:21,745  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:22,374  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:22,374  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:23,564  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:23,564  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:24,188  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:24,188  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:39,714  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:39,714  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:41,027  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:41,027  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:41,735  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:41,735  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:43,395  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:43,395  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:44,969  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:44,969  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:50,368  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:50,368  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:38:51,104  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:38:51,104  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:39:41,674  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:39:41,674  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:39:44,853  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:39:44,853  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:39:46,307  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:39:46,307  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:39:59,909  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:39:59,909  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:40:01,517  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:40:01,517  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:40:11,575  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:40:11,575  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:40:19,148  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:40:19,148  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:40:22,094  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:40:22,094  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:40:39,968  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:40:39,968  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:40:41,392  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:40:41,392  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:40:42,306  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:40:42,306  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:40:43,003  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:40:43,003  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:42:52,527  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:42:52,527  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:45:59,823  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 11:46:02,508  INFO | [Ljava.lang.String;@1820cfe.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 11:53:22,257  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Starting NotificationServiceApplication on DESKTOP-VOMVIUL with PID 5380 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-04-23 11:53:22,257 DEBUG | main | i.v.omt.notification.NotificationServiceApplication    | Running with Spring Boot v2.1.10.RELEASE, Spring v5.1.11.RELEASE 
+2021-04-23 11:53:22,258  INFO | main | i.v.omt.notification.NotificationServiceApplication    | The following profiles are active: dev 
+2021-04-23 11:53:26,281  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Started NotificationServiceApplication in 4.602 seconds (JVM running for 5.52) 
+2021-04-23 13:45:37,561  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Starting NotificationServiceApplication on DESKTOP-VOMVIUL with PID 8000 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-04-23 13:45:37,561 DEBUG | main | i.v.omt.notification.NotificationServiceApplication    | Running with Spring Boot v2.1.10.RELEASE, Spring v5.1.11.RELEASE 
+2021-04-23 13:45:37,561  INFO | main | i.v.omt.notification.NotificationServiceApplication    | The following profiles are active: dev 
+2021-04-23 13:45:42,276  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Started NotificationServiceApplication in 5.309 seconds (JVM running for 6.396) 
+2021-04-23 13:46:30,556  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 13:46:30,556  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 13:46:30,570  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 13:46:30,570  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 13:46:30,571  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 13:46:30,571  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 13:46:30,571  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 13:46:30,571  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 13:46:30,573  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 13:46:30,573  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 13:46:30,574  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 13:46:30,574  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 13:46:30,588  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 13:46:30,588  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 13:46:30,610  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 13:46:30,610  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 13:46:30,631  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 13:46:30,631  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 13:46:30,711  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 13:46:30,711  INFO | [Ljava.lang.String;@9c4d1c.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 13:46:53,565  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 13:46:53,565  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 13:47:15,760  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 13:47:15,760  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 13:47:25,448  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 13:47:25,448  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 13:47:40,128  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 13:47:40,128  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 13:47:46,915  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 13:47:46,916  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 13:47:56,356  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 13:47:56,356  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 13:48:00,711  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 13:48:00,711  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 13:48:16,888  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 13:48:19,268  INFO | [Ljava.lang.String;@12e4bde.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:15:35,147  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Starting NotificationServiceApplication on DESKTOP-VOMVIUL with PID 5588 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-04-23 14:15:35,148 DEBUG | main | i.v.omt.notification.NotificationServiceApplication    | Running with Spring Boot v2.1.10.RELEASE, Spring v5.1.11.RELEASE 
+2021-04-23 14:15:35,148  INFO | main | i.v.omt.notification.NotificationServiceApplication    | The following profiles are active: dev 
+2021-04-23 14:15:39,229  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Started NotificationServiceApplication in 4.669 seconds (JVM running for 5.587) 
+2021-04-23 14:16:16,825  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:16:16,825  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:16:17,508  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:16:17,509  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:16:26,317  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:16:26,317  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:16:40,173  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:16:40,173  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:21:15,369  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:21:15,369  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:21:30,277  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:21:30,277  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:22:15,457  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:22:15,457  INFO | [Ljava.lang.String;@113db84.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:23:13,209  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Starting NotificationServiceApplication on DESKTOP-VOMVIUL with PID 2608 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-04-23 14:23:13,209  INFO | main | i.v.omt.notification.NotificationServiceApplication    | The following profiles are active: dev 
+2021-04-23 14:23:17,233  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Started NotificationServiceApplication in 4.607 seconds (JVM running for 5.535) 
+2021-04-23 14:23:28,438  INFO | [Ljava.lang.String;@1b61834.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:23:34,467  INFO | [Ljava.lang.String;@1b61834.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:25:06,879  INFO | [Ljava.lang.String;@1b61834.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:25:06,879  INFO | [Ljava.lang.String;@1b61834.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:28:28,657  INFO | [Ljava.lang.String;@1b61834.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:28:28,657  INFO | [Ljava.lang.String;@1b61834.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:28:36,904  INFO | [Ljava.lang.String;@1b61834.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:28:36,904  INFO | [Ljava.lang.String;@1b61834.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:29:02,813  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Starting NotificationServiceApplication on DESKTOP-VOMVIUL with PID 12584 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-04-23 14:29:02,813  INFO | main | i.v.omt.notification.NotificationServiceApplication    | The following profiles are active: dev 
+2021-04-23 14:29:06,903  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Started NotificationServiceApplication in 4.723 seconds (JVM running for 5.709) 
+2021-04-23 14:29:12,428  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:29:12,428  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:29:21,365  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:29:21,365  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:29:27,128  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:29:27,128  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:29:37,179  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:29:37,180  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:29:41,632  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:29:41,632  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:29:45,400  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:29:45,400  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:29:55,927  INFO | [Ljava.lang.String;@1796bd0.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 14:29:55,927  INFO | [Ljava.lang.String;@1796bd0.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 14:30:03,304  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:03,304  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:15,751  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:15,751  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:19,688  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:19,688  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:23,226  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:23,227  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:26,773  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:26,773  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:30,216  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:30,216  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:33,527  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:33,527  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:36,839  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:36,840  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:39,943  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:39,944  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:43,033  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:43,033  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:46,463  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:46,463  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:50,023  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:50,023  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:53,063  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:53,063  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:56,374  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:56,375  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:30:59,014  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:30:59,015  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:02,080  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:02,080  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:05,655  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:05,655  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:08,679  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:08,679  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:12,551  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:12,551  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:15,183  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:15,183  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:17,927  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:17,928  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:20,823  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:20,823  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:24,215  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:24,216  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:27,830  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:27,831  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:30,518  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:30,519  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:33,327  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:33,327  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:36,422  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:36,422  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:42,403  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:42,403  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:43,468  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:43,468  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:44,515  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:44,515  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:45,282  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:45,282  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:46,428  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:46,428  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:47,046  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:47,046  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:47,714  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:47,714  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:48,322  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:48,322  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:48,950  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:48,950  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:49,551  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:49,551  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:50,145  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:50,145  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:50,651  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:50,651  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:51,341  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:51,342  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:51,839  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:51,839  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:52,400  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:52,400  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:52,972  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:52,972  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:53,648  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:53,648  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:54,177  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:54,177  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:54,716  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:54,716  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:55,341  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:55,341  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:55,892  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:55,892  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:56,477  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:56,477  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:56,965  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:56,965  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:57,283  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:57,283  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:31:57,618  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:31:57,618  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:05,882  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:05,882  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:06,969  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:06,970  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:07,613  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:07,613  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:08,804  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:08,804  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:09,189  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:09,189  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:11,201  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:11,201  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:11,892  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:11,892  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:12,494  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:12,494  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:13,075  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:13,075  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:13,705  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:13,705  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:14,261  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:14,261  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:14,876  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:14,876  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:32:15,430  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:32:15,430  INFO | [Ljava.lang.String;@be7fec.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:43:16,668  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Starting NotificationServiceApplication on DESKTOP-VOMVIUL with PID 11136 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-04-23 14:43:16,668  INFO | main | i.v.omt.notification.NotificationServiceApplication    | The following profiles are active: dev 
+2021-04-23 14:43:21,765  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Started NotificationServiceApplication in 5.808 seconds (JVM running for 6.92) 
+2021-04-23 14:46:56,828  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Starting NotificationServiceApplication on DESKTOP-VOMVIUL with PID 1432 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-04-23 14:46:56,828  INFO | main | i.v.omt.notification.NotificationServiceApplication    | The following profiles are active: dev 
+2021-04-23 14:47:01,986  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Started NotificationServiceApplication in 5.903 seconds (JVM running for 7.176) 
+2021-04-23 14:47:04,604  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:47:04,604  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:47:08,900  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:47:08,900  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:47:11,042  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:47:11,042  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:47:25,546  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:47:25,546  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:47:26,895  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:47:26,895  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:47:39,112  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:47:39,112  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:47:41,413  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:47:41,413  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:47:43,169  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:47:43,169  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:47:50,799  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:47:50,799  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:47:53,540  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:47:53,541  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:48:00,251  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:48:00,251  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:02,563  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:02,564  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:06,763  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 14:49:06,763  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 14:49:08,490  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 14:49:08,490  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 14:49:14,890  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:14,890  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:20,138  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:20,139  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:24,802  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:24,802  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:28,475  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:28,475  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:30,376  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:30,376  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:31,863  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:31,863  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:32,759  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:32,759  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:33,590  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:33,590  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:34,856  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:34,856  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:35,966  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:35,966  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:37,586  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:37,587  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:38,343  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:38,343  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:39,216  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:39,216  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:40,023  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:40,023  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:41,090  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:41,090  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:42,556  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:42,556  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:44,344  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:44,345  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:45,352  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:45,352  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:46,240  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:46,240  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:49:47,656  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:49:47,656  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:50:29,797  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 14:50:29,797  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 14:50:30,437  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 14:50:30,438  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 14:50:32,254  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 14:50:32,254  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 14:50:34,037  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 14:50:34,037  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 14:51:00,333  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:51:00,334  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:51:08,188  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:51:08,188  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:51:18,800  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:51:18,800  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:51:22,974  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:51:22,974  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:51:38,070  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 14:51:38,070  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 14:51:40,697  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:51:40,697  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:51:47,317  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Received a" GoodsShippedEvent" for order id: 234 
+2021-04-23 14:51:47,318  INFO | [Ljava.lang.String;@11c32e4.container-0-C-1 | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify user for shippment id 1234 reached 
+2021-04-23 14:52:24,716  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:52:24,717  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:52:53,992  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:52:53,992  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:53:59,823  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:53:59,823  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:54:01,371  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:54:01,371  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 
+2021-04-23 14:54:20,048  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Received an "OrderPlacedEvent" for order id: 234 
+2021-04-23 14:54:20,048  INFO | [Ljava.lang.String;@ab480.container-0-C-1 | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id 234 was processed 

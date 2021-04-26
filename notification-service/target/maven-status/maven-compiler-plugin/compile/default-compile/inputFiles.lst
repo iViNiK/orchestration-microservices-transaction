@@ -1,0 +1,5 @@
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\src\main\java\it\vinicioflamini\omt\notification\listener\GoodsShippedEventListener.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\src\main\java\it\vinicioflamini\omt\notification\NotificationServiceApplication.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\src\main\java\it\vinicioflamini\omt\notification\listener\OrderEventListener.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\src\main\java\it\vinicioflamini\omt\notification\kafka\channel\StreamsConfig.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\src\main\java\it\vinicioflamini\omt\notification\kafka\channel\NotificationChannel.java

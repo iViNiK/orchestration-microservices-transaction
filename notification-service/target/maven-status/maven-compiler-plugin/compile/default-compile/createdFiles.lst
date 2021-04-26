@@ -1,0 +1,5 @@
+it\vinicioflamini\omt\notification\kafka\channel\StreamsConfig.class
+it\vinicioflamini\omt\notification\listener\GoodsShippedEventListener.class
+it\vinicioflamini\omt\notification\listener\OrderEventListener.class
+it\vinicioflamini\omt\notification\NotificationServiceApplication.class
+it\vinicioflamini\omt\notification\kafka\channel\NotificationChannel.class

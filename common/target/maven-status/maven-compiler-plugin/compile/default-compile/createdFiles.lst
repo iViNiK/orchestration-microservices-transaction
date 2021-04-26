@@ -1,0 +1,11 @@
+it\vinicioflamini\omt\common\message\ShippingEvent.class
+it\vinicioflamini\omt\common\message\ShippingEvent$Action.class
+it\vinicioflamini\omt\common\message\PaymentEvent$Action.class
+it\vinicioflamini\omt\common\entity\Order.class
+it\vinicioflamini\omt\common\message\ItemEvent$Action.class
+it\vinicioflamini\omt\common\message\OrderEvent$Action.class
+it\vinicioflamini\omt\common\message\PaymentEvent.class
+it\vinicioflamini\omt\common\rest\payload\OrderResponse.class
+it\vinicioflamini\omt\common\message\ItemEvent.class
+it\vinicioflamini\omt\common\message\OrderEvent.class
+it\vinicioflamini\omt\common\rest\payload\OrderRequest.class
