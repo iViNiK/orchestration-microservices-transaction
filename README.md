@@ -86,7 +86,7 @@ Depending on the application, this could be an information/data duplication prob
 Since we want to create a scenario in which a set of **Consumers** only receive a certain **Message** only once, we need to use the **Consumer Groups**.
 If the **Consumers** are part of a **Consumer Group**, the partitions of the **Topic** (and therefore also the **Messages (Event / Record)**) will be distributed among the members of the group.
 
-![Kafka Producer and Consumer Groups](file:///kafka1.png "Kafka Producer and Consumer Groups")
+![Kafka Producer and Consumer Groups](kafka1.png "Kafka Producer and Consumer Groups")
 
 In particular, given:
 - C = number of **Consumers** of the same **Consumer Group**
@@ -140,7 +140,7 @@ In this project the scenario assumed is the following:
 	- the customer must be notified.
 5. The system issues the shipment of the item to the customer. Also, notifies the customer that order was processed.
 
-![Saga Workflow](file:///saga.png "Saga Workflow")
+![Saga Workflow](saga.png "Saga Workflow")
 
 ## Services participating in Saga
 Therefore, in a microservices architecture, the participants in the Saga are:
@@ -184,7 +184,7 @@ As you can see, there are two **Consumer Groups**: the first for the Orchestrato
 In a minimal configuration, in which we can have one single **Partition** for each **Topic**, a single instance of those services in the proper **Consumer Group** is enough.
 Should we scale the system for better performance, we could - for example - split the **Topics** in two **Partitions** and run a new instance of the orchestrator service.
 
-![Flow](file:///orchestratorpattern.png "Flow")
+![Flow](orchestratorpattern.png "Flow")
 
 # Rest Clients and Resilience
 The orchestrator service must interact with microservices involved in each step of the Saga.
