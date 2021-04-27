@@ -5,9 +5,14 @@
 */
 package it.vinicioflamini.omt.common.entity;
 
-/*this is db entity and should be mapped to db table*/
-public class Order {
+import java.io.Serializable;
 
+import javax.persistence.Entity;
+
+@Entity
+public class Order implements Serializable {
+	private static final long serialVersionUID = 2865564420716791390L;
+	
 	private Long id;
 	private Long itemId;
 	private String itemName;
