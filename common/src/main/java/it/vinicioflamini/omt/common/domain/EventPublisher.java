@@ -12,14 +12,15 @@ import it.vinicioflamini.omt.common.entity.Outbox;
 import it.vinicioflamini.omt.common.repository.OutboxRepository;
 
 public class EventPublisher<T> {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(EventPublisher.class);
-	
+
 	private EventSource<T> eventSource;
 	private OutboxRepository outboxRepository;
 	private JpaRepository<T, Long> domainObjectRepository;
 
-	public EventPublisher(EventSource<T> eventSource, OutboxRepository outboxRepository, JpaRepository<T, Long> domainObjectRepository) {
+	public EventPublisher(EventSource<T> eventSource, OutboxRepository outboxRepository,
+			JpaRepository<T, Long> domainObjectRepository) {
 		super();
 		Assert.notNull(eventSource, "EventSource must not be NULL");
 		Assert.notNull(outboxRepository, "OutboxRepository must not be NULL");
@@ -28,31 +29,36 @@ public class EventPublisher<T> {
 		this.outboxRepository = outboxRepository;
 		this.domainObjectRepository = domainObjectRepository;
 	}
-	
+
 	@Scheduled(fixedDelay = 1000)
 	@Transactional
 	public void publish() {
 		Outbox o = outboxRepository.pop();
-		o.setProcessing(true);
-		outboxRepository.save(o);
-		
-		T domainObject = domainObjectRepository.getOne(o.getId());
-		
-		if (eventSource.publishEvent(domainObject)) {
-			if (logger.isInfoEnabled()) {
-				logger.info(String.format("Event for object %s with id %d was published successfully", o.getDomainObjectCode(), o.getDomainObjectId()));
-			}
 
-			outboxRepository.delete(o);
-		} else {
-			if (logger.isInfoEnabled()) {
-				logger.info(String.format("Event for object %s with id %d was NOT published. Going to reset outbox transaction.", o.getDomainObjectCode(), o.getDomainObjectId()));
-			}
+		if (o != null) {
+			o.setProcessing(true);
+			outboxRepository.save(o);
 
-			o.setProcessing(false);
-			outboxRepository.save(o);	
+			T domainObject = domainObjectRepository.getOne(o.getId());
+
+			if (eventSource.publishEvent(domainObject)) {
+				if (logger.isInfoEnabled()) {
+					logger.info(String.format("Event for object %s with id %d was published successfully",
+							o.getDomainObjectCode(), o.getDomainObjectId()));
+				}
+
+				outboxRepository.delete(o);
+			} else {
+				if (logger.isInfoEnabled()) {
+					logger.info(String.format(
+							"Event for object %s with id %d was NOT published. Going to reset outbox transaction.",
+							o.getDomainObjectCode(), o.getDomainObjectId()));
+				}
+
+				o.setProcessing(false);
+				outboxRepository.save(o);
+			}
 		}
 	}
-	
 
 }

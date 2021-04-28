@@ -2,15 +2,30 @@ package it.vinicioflamini.omt.common.entity;
 
 import java.sql.Timestamp;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "outbox")
 public class Outbox {
 
+	@Id
+	@GeneratedValue
 	private Long id;
+	
+	@Column(name = "domain_object_id", nullable = false)
 	private Long domainObjectId;
+	
+	@Column(name = "domain_object_code", nullable = false, length = 10)
 	private String domainObjectCode;
+	
+	@Column(name = "date_time", nullable = false)
 	private Timestamp dateTime;
+	
+	@Column(name = "processing", nullable = false)
 	private boolean processing;
 
 	public Long getId() {
