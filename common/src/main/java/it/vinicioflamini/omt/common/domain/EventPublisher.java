@@ -1,5 +1,6 @@
 package it.vinicioflamini.omt.common.domain;
 
+import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 
 import org.slf4j.Logger;
@@ -30,7 +31,7 @@ public class EventPublisher<T> {
 		this.domainObjectRepository = domainObjectRepository;
 	}
 
-	@Scheduled(fixedDelay = 1000)
+	@Scheduled(cron = "${application.outbox.polling.cron}")
 	@Transactional
 	public void publish() {
 		Outbox o = outboxRepository.pop();
@@ -39,25 +40,35 @@ public class EventPublisher<T> {
 			o.setProcessing(true);
 			outboxRepository.save(o);
 
-			T domainObject = domainObjectRepository.getOne(o.getId());
+			try {
+				T domainObject = domainObjectRepository.getOne(o.getDomainObjectId());
+				if (eventSource.publishEvent(domainObject)) {
+					if (logger.isInfoEnabled()) {
+						logger.info(String.format("Event for object %s with id %d was published successfully",
+								o.getDomainObjectCode(), o.getDomainObjectId()));
+					}
 
-			if (eventSource.publishEvent(domainObject)) {
+					outboxRepository.delete(o);
+				} else {
+					if (logger.isInfoEnabled()) {
+						logger.info(String.format(
+								"Event for object %s with id %d was NOT published. Going to reset outbox transaction.",
+								o.getDomainObjectCode(), o.getDomainObjectId()));
+					}
+
+					o.setProcessing(false);
+					outboxRepository.save(o);
+				}
+			} catch (EntityNotFoundException e) {
 				if (logger.isInfoEnabled()) {
-					logger.info(String.format("Event for object %s with id %d was published successfully",
+					logger.info(String.format(
+							"Domain object %s with id %d was NOT FOUND. Going to delete outbox transaction.",
 							o.getDomainObjectCode(), o.getDomainObjectId()));
 				}
 
 				outboxRepository.delete(o);
-			} else {
-				if (logger.isInfoEnabled()) {
-					logger.info(String.format(
-							"Event for object %s with id %d was NOT published. Going to reset outbox transaction.",
-							o.getDomainObjectCode(), o.getDomainObjectId()));
-				}
-
-				o.setProcessing(false);
-				outboxRepository.save(o);
 			}
+
 		}
 	}
 

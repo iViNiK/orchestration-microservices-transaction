@@ -979,3 +979,5 @@
 2021-04-23 14:54:20,078  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Going to send an "ItemFetchedEvent" for order 234 
 2021-04-23 14:54:24,591  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 234 was not processed 
 2021-04-23 14:54:24,591  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Going to send an "ItemOutOfStockEvent" for order 234 
+2021-04-28 11:42:21,578  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 8560 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-04-28 11:42:21,592  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 

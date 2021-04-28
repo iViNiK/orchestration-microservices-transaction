@@ -8,6 +8,7 @@ Technologies used:
 * Spring Boot 2.4.4
 * Spring Web + Cloud
 * Apache Kafka 2.12
+* H2 database
 
 # A brief introduction to Apache Kafka
 Apache Kafka is an Event-Streaming Processing platform, designed to process large amounts of data in real time, enabling the creation of scalable systems with high throughput and low latency. 
@@ -185,6 +186,20 @@ In a minimal configuration, in which we can have one single **Partition** for ea
 Should we scale the system for better performance, we could - for example - split the **Topics** in two **Partitions** and run a new instance of the orchestrator service.
 
 ![Flow](file:///orchestratorpattern.png "Flow")
+
+# The _Transactional outbox_ pattern
+All the _Producers_ in the mentioned Saga participant services are invoked applying the _Transactional outbox_ pattern (for further information, please refer to https://microservices.io/patterns/data/transactional-outbox.html).
+<br><br>
+The tipical action in a _Service_ class is composed of the following two operations:
+
+1. Persist something on the DB
+2. Publish the message on the specific topic
+
+So, there is a concrete possibility that one of the two operations will fail, preventing the system from functioning correctly. This makes the system highly unreliable. One solution could be to use a distributed transaction, however this would have drawbacks and would introduce significant overhead. 
+<br><br>
+Adopting the _Transactional outbox_ pattern, in this project it was achieved the result of increasing the system reliability, while maintaining processing efficiency. The implementation is highly scalable, which allows its introduction into various microservices simply by the creation of a **Bean** of type **EventPublisher**, that will be built using the Microservice's local _DomainObjectRepository_ (to access the persistence layer) and a custom **EventSource** implementation (to access the message broker) instances. Besides, the **OutboxProxy** class provides the method to start the _Outbox Transaction_, by putting a record in the _Outbox_ table, in the current transaction (i.e. like in the previous list item 1). The following Class Diagram explains the design of this solution:
+
+![Flow](file:///transactional-outbox.jpg "Flow")
 
 # Rest Clients and Resilience
 The orchestrator service must interact with microservices involved in each step of the Saga.

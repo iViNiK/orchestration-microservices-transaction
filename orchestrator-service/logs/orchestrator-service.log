@@ -20368,3 +20368,57 @@
 2021-04-23 14:54:24,579  INFO | [Ljava.lang.String;@1d1f065.container-0-C-1 | i.v.o.orchestrator.listener.PaymentFailedEventListener | Going to call item service to compensate item for order id: 234 
 2021-04-23 14:54:24,599  INFO | [Ljava.lang.String;@137880f.container-0-C-1 | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Received an "ItemOutOfStock" for item null 
 2021-04-23 14:54:24,599  INFO | [Ljava.lang.String;@137880f.container-0-C-1 | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Going to call order service to compensate order 234 
+2021-04-28 11:28:16,523  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | The following profiles are active: dev 
+2021-04-28 11:29:26,839  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | The following profiles are active: dev 
+2021-04-28 11:39:31,662  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | The following profiles are active: dev 
+2021-04-28 11:39:38,313  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | Started OrchestrationServiceApplication in 8.202 seconds (JVM running for 9.303) 
+2021-04-28 11:39:41,395  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order id: 3 
+2021-04-28 11:39:41,395  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order id: 3 
+2021-04-28 11:39:42,660  INFO | HystrixTimer-1 | i.v.omt.orchestrator.rest.InventoryRestClientFallback  | Executing Fallback during inventory update for order 3 
+2021-04-28 11:39:43,737  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order id: 3 
+2021-04-28 11:39:43,737  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order id: 3 
+2021-04-28 11:39:44,753  INFO | HystrixTimer-1 | i.v.omt.orchestrator.rest.InventoryRestClientFallback  | Executing Fallback during inventory update for order 3 
+2021-04-28 11:39:45,770  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order id: 7 
+2021-04-28 11:39:45,770  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order id: 7 
+2021-04-28 11:39:46,784  INFO | HystrixTimer-2 | i.v.omt.orchestrator.rest.InventoryRestClientFallback  | Executing Fallback during inventory update for order 7 
+2021-04-28 11:39:47,801  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order id: 1 
+2021-04-28 11:39:47,801  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order id: 1 
+2021-04-28 11:39:47,801  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.rest.InventoryRestClientFallback  | Executing Fallback during inventory update for order 1 
+2021-04-28 11:39:47,803  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order id: 5 
+2021-04-28 11:39:47,803  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order id: 5 
+2021-04-28 11:39:47,803  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.rest.InventoryRestClientFallback  | Executing Fallback during inventory update for order 5 
+2021-04-28 11:39:47,814  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 3 
+2021-04-28 11:39:47,814  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 3 
+2021-04-28 11:39:49,172  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 3 
+2021-04-28 11:39:49,172  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 3 
+2021-04-28 11:39:51,218  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 3 
+2021-04-28 11:39:51,218  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 3 
+2021-04-28 11:39:51,255  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 7 
+2021-04-28 11:39:51,255  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 7 
+2021-04-28 11:39:52,282  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 7 
+2021-04-28 11:39:52,282  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 7 
+2021-04-28 11:39:54,301  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 7 
+2021-04-28 11:39:54,301  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 7 
+2021-04-28 11:39:54,306  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 5 
+2021-04-28 11:39:54,306  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 5 
+2021-04-28 11:39:55,315  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 5 
+2021-04-28 11:39:55,315  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 5 
+2021-04-28 11:39:57,329  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 5 
+2021-04-28 11:39:57,329  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 5 
+2021-04-28 11:39:57,342  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 3 
+2021-04-28 11:39:57,342  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 3 
+2021-04-28 11:39:58,348  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 3 
+2021-04-28 11:39:58,348  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 3 
+2021-04-28 11:40:00,359  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 3 
+2021-04-28 11:40:00,359  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 3 
+2021-04-28 11:40:00,366  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 1 
+2021-04-28 11:40:00,366  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 1 
+2021-04-28 11:40:01,375  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 1 
+2021-04-28 11:40:01,376  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 1 
+2021-04-28 11:40:03,389  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 1 
+2021-04-28 11:40:03,389  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 1 
+2021-04-28 11:43:50,113  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order id: 1 
+2021-04-28 11:43:50,113  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order id: 1 
+2021-04-28 11:44:03,297  INFO | HystrixTimer-1 | i.v.omt.orchestrator.rest.InventoryRestClientFallback  | Executing Fallback during inventory update for order 1 
+2021-04-28 11:45:13,291  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order id: 1 
+2021-04-28 11:45:13,976  INFO | [Ljava.lang.String;@715e61.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order id: 1 
