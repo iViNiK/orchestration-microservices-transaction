@@ -40,7 +40,7 @@ public class InventoryServiceIntegrationTest {
 	private ItemOutOfStockEventSource itemOutOfStockEventSource;
 	
 	@MockBean
-	private  ItemProxy itemProxy;
+	private ItemProxy itemProxy;
 
 	@Before
 	public void setUp() {
