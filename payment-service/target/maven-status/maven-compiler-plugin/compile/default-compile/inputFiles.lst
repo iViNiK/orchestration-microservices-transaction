@@ -1,5 +1,7 @@
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\src\main\java\it\vinicioflamini\omt\payment\domain\PaymentFacade.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\src\main\java\it\vinicioflamini\omt\payment\kafka\channel\StreamsConfig.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\src\main\java\it\vinicioflamini\omt\payment\kafka\source\PaymentEventSource.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\src\main\java\it\vinicioflamini\omt\payment\repository\PaymentRepository.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\src\main\java\it\vinicioflamini\omt\payment\controller\PaymentController.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\src\main\java\it\vinicioflamini\omt\payment\kafka\channel\PaymentChannel.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\src\main\java\it\vinicioflamini\omt\payment\PaymentServiceApplication.java

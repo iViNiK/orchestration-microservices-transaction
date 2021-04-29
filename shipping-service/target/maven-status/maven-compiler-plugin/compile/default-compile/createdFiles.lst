@@ -1,6 +1,8 @@
-it\vinicioflamini\omt\shipping\kafka\source\GoodsShippedEventSource.class
 it\vinicioflamini\omt\shipping\kafka\channel\StreamsConfig.class
+it\vinicioflamini\omt\shipping\repository\ShipmentRepository.class
 it\vinicioflamini\omt\shipping\ShippingServiceApplication.class
+it\vinicioflamini\omt\shipping\domain\ShippingFacade.class
 it\vinicioflamini\omt\shipping\kafka\channel\ShippingChannel.class
 it\vinicioflamini\omt\shipping\service\ShippingService.class
+it\vinicioflamini\omt\shipping\kafka\source\ShipmentEventSource.class
 it\vinicioflamini\omt\shipping\controller\ShippingController.class

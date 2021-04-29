@@ -1,3 +1,2 @@
-E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\src\test\java\it\vinicioflamini\omt\inventory\test\ItemFetchedEventSourceIntegrationTest.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\src\test\java\it\vinicioflamini\omt\inventory\test\ItemEventSourceIntegrationTest.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\src\test\java\it\vinicioflamini\omt\inventory\test\InventoryServiceIntegrationTest.java
-E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\src\test\java\it\vinicioflamini\omt\inventory\test\ItemOutOfStockEventSourceIntegrationTest.java
