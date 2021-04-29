@@ -1,5 +1,7 @@
 package it.vinicioflamini.omt.common.domain;
 
+import java.io.IOException;
+
 import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 
@@ -9,7 +11,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.util.Assert;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import it.vinicioflamini.omt.common.entity.Outbox;
+import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.common.repository.OutboxRepository;
 
 public class EventPublisher<T> {
@@ -41,8 +46,15 @@ public class EventPublisher<T> {
 			outboxRepository.save(o);
 
 			try {
+				if (o.getOrderEvent() == null) {
+					throw new IOException("Order Event is NULL");
+				}
+
 				T domainObject = domainObjectRepository.getOne(o.getDomainObjectId());
-				if (eventSource.publishEvent(domainObject)) {
+				ObjectMapper objectMapper = new ObjectMapper();
+				OrderEvent orderEvent = objectMapper.readValue(o.getOrderEvent(), OrderEvent.class);
+
+				if (eventSource.publishEvent(domainObject, orderEvent)) {
 					if (logger.isInfoEnabled()) {
 						logger.info(String.format("Event for object %s with id %d was published successfully",
 								o.getDomainObjectCode(), o.getDomainObjectId()));
@@ -64,6 +76,13 @@ public class EventPublisher<T> {
 					logger.info(String.format(
 							"Domain object %s with id %d was NOT FOUND. Going to delete outbox transaction.",
 							o.getDomainObjectCode(), o.getDomainObjectId()));
+				}
+
+				outboxRepository.delete(o);
+			} catch (IOException e) {
+				if (logger.isInfoEnabled()) {
+					logger.info(String.format("Could not publish event %s. Going to delete outbox transaction.",
+							o.getOrderEvent()));
 				}
 
 				outboxRepository.delete(o);

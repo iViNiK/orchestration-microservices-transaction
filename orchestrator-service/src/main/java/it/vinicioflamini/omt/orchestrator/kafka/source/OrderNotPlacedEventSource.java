@@ -12,6 +12,7 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.MimeTypeUtils;
 
+import it.vinicioflamini.omt.common.domain.Action;
 import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.orchestrator.kafka.channel.OrchestratorChannel;
 
@@ -25,7 +26,7 @@ public class OrderNotPlacedEventSource {
 
 		OrderEvent message = new OrderEvent();
 		message.setOrderId(orderId);
-		message.setAction(OrderEvent.Action.ORDERNOTPLACED);
+		message.setAction(Action.ORDERNOTPLACED);
 		
 		MessageChannel messageChannel = orchestratorChannel.outboundOrder();
 		messageChannel.send(MessageBuilder.withPayload(message)

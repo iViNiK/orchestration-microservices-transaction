@@ -12,6 +12,7 @@ import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
+import org.springframework.util.Assert;
 import org.springframework.util.MimeTypeUtils;
 
 import it.vinicioflamini.omt.common.domain.EventSource;
@@ -27,19 +28,19 @@ public class OrderEventSource implements EventSource<Order> {
 
 	private static final Logger logger = LoggerFactory.getLogger(OrderEventSource.class);
 	
-	public boolean publishEvent(Order order) {
-		OrderEvent message = new OrderEvent();
-		message.setOrderId(order.getId());
-		message.setItemId(order.getItemId());
-		message.setCustomerId(order.getCustomerId());
-		message.setAction(OrderEvent.Action.ORDERPLACED);
+	public boolean publishEvent(Order order, OrderEvent orderEvent) {
+		Assert.notNull(order, "ORDER IS NULL");
+		Assert.notNull(orderEvent, "ORDER EVENT IS NULL");
+		Assert.notNull(orderEvent.getAction(), "ACTION IS NULL");
+		
+		orderEvent.setOrderId(order.getId());
 
 		if (logger.isInfoEnabled()) {
-			logger.info(String.format("Going to send an \"OrderPlacedEvent\" for order %d", order.getId()));
+			logger.info(String.format("Going to send an %s for order %d", orderEvent.getAction().getName(), order.getId()));
 		}
 
 		MessageChannel messageChannel = orderChannel.outboundOrder();
-		return messageChannel.send(MessageBuilder.withPayload(message)
+		return messageChannel.send(MessageBuilder.withPayload(orderEvent)
 				.setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON)
 				.build());
 	}

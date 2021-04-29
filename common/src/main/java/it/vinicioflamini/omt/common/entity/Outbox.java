@@ -22,6 +22,9 @@ public class Outbox {
 	@Column(name = "domain_object_code", nullable = false, length = 10)
 	private String domainObjectCode;
 	
+	@Column(name = "order_event", nullable = true, length = 1000)
+	private String orderEvent; 
+	
 	@Column(name = "date_time", nullable = false)
 	private Timestamp dateTime;
 	
@@ -50,6 +53,14 @@ public class Outbox {
 
 	public void setDomainObjectCode(String domainObjectCode) {
 		this.domainObjectCode = domainObjectCode;
+	}
+
+	public String getOrderEvent() {
+		return orderEvent;
+	}
+
+	public void setOrderEvent(String orderEvent) {
+		this.orderEvent = orderEvent;
 	}
 
 	public Timestamp getDateTime() {

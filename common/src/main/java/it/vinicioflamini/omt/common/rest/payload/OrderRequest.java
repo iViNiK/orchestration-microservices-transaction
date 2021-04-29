@@ -10,6 +10,8 @@ public class OrderRequest {
 	private Long orderId;
 	private Long itemId;
 	private Long customerId;
+	private Long paymentId;
+	private Long shipmentId;
 
 	public Long getOrderId() {
 		return orderId;
@@ -33,6 +35,22 @@ public class OrderRequest {
 
 	public void setCustomerId(Long customerId) {
 		this.customerId = customerId;
+	}
+
+	public Long getPaymentId() {
+		return paymentId;
+	}
+
+	public void setPaymentId(Long paymentId) {
+		this.paymentId = paymentId;
+	}
+
+	public Long getShipmentId() {
+		return shipmentId;
+	}
+
+	public void setShipmentId(Long shipmentId) {
+		this.shipmentId = shipmentId;
 	}
 
 }

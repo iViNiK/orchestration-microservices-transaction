@@ -269,3 +269,6 @@
 2021-04-23 14:51:28,346  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 234 
 2021-04-23 14:51:44,716  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 234 
 2021-04-23 14:51:44,716  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 234 
+2021-04-29 10:05:09,778  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 8592 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-04-29 10:05:09,787  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
+2021-04-29 10:05:17,289  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 8.173 seconds (JVM running for 9.184) 

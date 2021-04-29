@@ -11,6 +11,7 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
+import it.vinicioflamini.omt.common.domain.Action;
 import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.notification.kafka.channel.NotificationChannel;
 
@@ -20,19 +21,19 @@ public class OrderEventListener {
 	private static final Logger logger = LoggerFactory.getLogger(OrderEventListener.class);
 
 	@StreamListener(target = NotificationChannel.INPUT_ORDER)
-	public void listenOrderEvent(@Payload OrderEvent message) {
+	public void listenOrderEvent(@Payload OrderEvent event) {
 
-		if (OrderEvent.Action.ORDERPLACED.equals(message.getAction())) {
+		if (Action.ORDERPLACED.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
-				logger.info(String.format("Received an \"OrderPlacedEvent\" for order %d", message.getOrderId()));
+				logger.info(String.format("Received event %s for order %d", event.getAction().getName(), event.getOrderId()));
 				logger.info(String.format("Going to notify user that order place with id %d was processed",
-						message.getOrderId()));
+						event.getOrderId()));
 			}
-		} else if (OrderEvent.Action.ORDERNOTPLACED.equals(message.getAction())) {
+		} else if (Action.ORDERNOTPLACED.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
-				logger.info(String.format("Received an \"OrderNotPlacedEvent\" for order %d", message.getOrderId()));
+				logger.info(String.format("Received event %s for order %d", event.getAction().getName(), event.getOrderId()));
 				logger.info(String.format("Going to notify user that order place with id %d could not be processed",
-						message.getOrderId()));
+						event.getOrderId()));
 			}
 		}
 

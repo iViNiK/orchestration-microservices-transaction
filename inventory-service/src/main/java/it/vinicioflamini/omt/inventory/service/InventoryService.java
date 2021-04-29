@@ -10,9 +10,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import it.vinicioflamini.omt.inventory.domain.ItemProxy;
-import it.vinicioflamini.omt.inventory.kafka.source.ItemFetchedEventSource;
-import it.vinicioflamini.omt.inventory.kafka.source.ItemOutOfStockEventSource;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import it.vinicioflamini.omt.common.entity.Item;
+import it.vinicioflamini.omt.inventory.domain.ItemFacade;
 
 @Service
 public class InventoryService {
@@ -20,41 +21,28 @@ public class InventoryService {
 	private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
 
 	@Autowired
-	private ItemFetchedEventSource itemFetchedEventSource;
+	private ItemFacade itemFacade;
 
-	@Autowired
-	private ItemOutOfStockEventSource itemOutOfStockEventSource;
-	
-	@Autowired
-	private ItemProxy itemProxy;
-
-	public void fetchItem(Long orderId, Long itemId) {
-		if (itemProxy.isItemInStock(itemId)) {
+	public Item fetchItem(Long orderId, Long itemId) throws JsonProcessingException {
+		if (itemFacade.isItemInStock(itemId)) {
 			if (logger.isInfoEnabled()) {
-				logger.info(String.format("Item was fetched successfully for order %d", orderId));
-				logger.info(String.format("Going to send an \"ItemFetchedEvent\" for order %d", orderId));
+				logger.info(String.format("Item %d was fetched successfully for order %d", itemId, orderId));
 			}
-			
-			itemFetchedEventSource.publishItemFetchedEvent(orderId, itemId);
+			return itemFacade.reserveItem(itemId, orderId);
 		} else {
 			if (logger.isInfoEnabled()) {
-				logger.info(String.format("Item is out of stock for order %d", orderId));
-				logger.info(String.format("Going to send an \"ItemOutOfStockEvent\" for order %d", orderId));
+				logger.info(String.format("Item %d is out of stock for order %d", itemId, orderId));
 			}
-			
-			itemOutOfStockEventSource.publishItemOutOfStockEvent(orderId, itemId);
+			return null;
 		}
 	}
 
-	public void compensateItem(Long orderId, Long itemId) {
-		/* TODO: compensate the Inventory */
-
-		/* publish ItemOutOfStockEvent */
+	public Item compensateItem(Long orderId, Long itemId) throws JsonProcessingException {
 		if (logger.isInfoEnabled()) {
 			logger.info(String.format("Order %d was not processed", orderId));
-			logger.info(String.format("Going to send an \"ItemOutOfStockEvent\" for order %d", orderId));
 		}
-		itemOutOfStockEventSource.publishItemOutOfStockEvent(orderId, itemId);
+		
+		return itemFacade.releaseItem(itemId, orderId);
 	}
 
 }

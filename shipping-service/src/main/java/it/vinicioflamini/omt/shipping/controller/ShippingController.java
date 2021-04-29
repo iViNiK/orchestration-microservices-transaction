@@ -11,6 +11,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.HttpServerErrorException;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 import it.vinicioflamini.omt.shipping.service.ShippingService;
@@ -23,8 +26,13 @@ public class ShippingController {
 
 	@PostMapping()
 	public ResponseEntity<String> processShippment(@RequestBody OrderRequest req) {
-		shippingService.processShippment(req.getOrderId());
-		return new ResponseEntity<>("Request placed for shippment", HttpStatus.OK);
+		try {
+			Long shipmentId = shippingService.processShippment(req.getOrderId(), req.getItemId(), req.getPaymentId(),
+					req.getCustomerId());
+			return new ResponseEntity<>(String.format("Request placed for shippment %d", shipmentId), HttpStatus.OK);
+		} catch (JsonProcessingException e) {
+			throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR, e.getLocalizedMessage());
+		}
 	}
 
 }

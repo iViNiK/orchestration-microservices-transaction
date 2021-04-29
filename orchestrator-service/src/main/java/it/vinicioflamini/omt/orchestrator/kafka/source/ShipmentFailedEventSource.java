@@ -12,7 +12,8 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.MimeTypeUtils;
 
-import it.vinicioflamini.omt.common.message.ShippingEvent;
+import it.vinicioflamini.omt.common.domain.Action;
+import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.orchestrator.kafka.channel.OrchestratorChannel;
 
 @Component
@@ -23,9 +24,9 @@ public class ShipmentFailedEventSource {
 
 	public void publishShipmentFailedEvent(Long orderId) {
 
-		ShippingEvent message = new ShippingEvent();
+		OrderEvent message = new OrderEvent();
 		message.setOrderId(orderId);
-		message.setAction(ShippingEvent.Action.SHIPMENTFAILED);
+		message.setAction(Action.SHIPMENTFAILED);
 		
 		MessageChannel messageChannel = orchestratorChannel.outboundShipment();
 		messageChannel.send(MessageBuilder.withPayload(message)

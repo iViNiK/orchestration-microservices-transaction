@@ -11,6 +11,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.HttpServerErrorException;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 import it.vinicioflamini.omt.payment.service.PaymentService;
@@ -23,8 +26,14 @@ public class PaymentController {
 
 	@PostMapping()
 	public ResponseEntity<String> makePayment(@RequestBody OrderRequest req) {
-		paymentService.makePayment(req.getOrderId(), req.getItemId());
-		return new ResponseEntity<>("Request placed for payment", HttpStatus.OK);
+		try {
+			Long paymentId = paymentService.makePayment(req.getOrderId(), req.getItemId(), req.getCustomerId());
+			return new ResponseEntity<>(String.format("Request placed for payment %s", paymentId),
+					HttpStatus.OK);
+		} catch (JsonProcessingException e) {
+			throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR, e.getLocalizedMessage());
+		}
+
 	}
 
 }

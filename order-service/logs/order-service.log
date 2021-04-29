@@ -19101,3 +19101,6 @@
 2021-04-28 11:39:12,468  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | Started OrderServiceApplication in 8.685 seconds (JVM running for 9.85) 
 2021-04-28 11:43:50,036  INFO | scheduling-1 | i.v.omt.order.kafka.source.OrderEventSource            | Going to send an "OrderPlacedEvent" for order 1 
 2021-04-28 11:45:35,446  INFO | http-nio-8891-exec-6 | it.vinicioflamini.omt.order.service.OrderService       | Order 1 was DELETED 
+2021-04-29 09:25:26,428  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | Starting OrderServiceApplication on DESKTOP-VOMVIUL with PID 9492 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-04-29 09:25:26,430  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | The following profiles are active: dev 
+2021-04-29 09:25:33,588  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | Started OrderServiceApplication in 7.751 seconds (JVM running for 8.765) 

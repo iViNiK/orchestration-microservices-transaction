@@ -5,22 +5,11 @@
 */
 package it.vinicioflamini.omt.common.message;
 
+import it.vinicioflamini.omt.common.domain.Action;
+
 public class ItemEvent {
-	private Long orderId;
 	private Long itemId;
 	private Action action;
-
-	public enum Action {
-		ITEMFETCHED, ITEMOUTOFSTOCK, ITEMNOTCOMPENSATED
-	}
-
-	public Long getOrderId() {
-		return orderId;
-	}
-
-	public void setOrderId(Long orderId) {
-		this.orderId = orderId;
-	}
 
 	public Long getItemId() {
 		return itemId;

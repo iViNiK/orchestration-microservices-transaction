@@ -15,20 +15,25 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import it.vinicioflamini.omt.common.domain.Action;
 import it.vinicioflamini.omt.common.domain.EventPublisher;
 import it.vinicioflamini.omt.common.domain.EventSource;
 import it.vinicioflamini.omt.common.entity.Outbox;
+import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.common.repository.OutboxRepository;
 
 @RunWith(SpringRunner.class)
 public class EventPublisherTest {
-	private class TestEntity {
+	public class TestEntity {
 		private Long id;
 
 		public TestEntity(Long id) {
 			this.id = id;
 		}
-		
+
 		public Long getId() {
 			return id;
 		}
@@ -38,41 +43,68 @@ public class EventPublisherTest {
 		}
 	}
 
-	@MockBean
-	private EventSource<TestEntity> eventSource;
-	
+	public class TestEventSourceOk implements EventSource<TestEntity> {
+
+		@Override
+		public boolean publishEvent(TestEntity sourceObject, OrderEvent orderEvent) {
+			return true;
+		}
+	}
+
+	public class TestEventSourceKo implements EventSource<TestEntity> {
+
+		@Override
+		public boolean publishEvent(TestEntity sourceObject, OrderEvent orderEvent) {
+			return false;
+		}
+	}
+
 	@MockBean
 	private JpaRepository<Outbox, Long> outboxBaseRepository;
-	
+
 	@MockBean
 	private OutboxRepository outboxRepository;
-	
+
 	@MockBean
 	private JpaRepository<TestEntity, Long> domainObjectRepository;
-	
+
 	private EventPublisher<TestEntity> eventPublisher;
 	
-	@Before
-	public void setUp() {
-		eventPublisher = new EventPublisher<TestEntity>(eventSource, outboxRepository, domainObjectRepository); 
-	}
-	
+	private Outbox outbox;
+
 	@Test
 	public void testNoOutboxTransactionPending() {
+		eventPublisher = new EventPublisher<TestEntity>(new TestEventSourceOk(), outboxRepository,
+				domainObjectRepository);
 		when(outboxRepository.pop()).thenReturn(null);
 		eventPublisher.publish();
 		verify(domainObjectRepository, times(0)).getOne(10L);
 	}
+
+	@Before
+	public void setup() {
+		ObjectMapper objectMapper = new ObjectMapper();
+		
+		OrderEvent orderEvent = new OrderEvent();
+		orderEvent.setAction(Action.ITEMFETCHED);
+		
+		outbox = new Outbox();
+		outbox.setId(100L);
+		outbox.setDomainObjectId(1L);
+		try {
+			outbox.setOrderEvent(objectMapper.writeValueAsString(orderEvent));
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	@Test
 	public void testGetObjectOkPublishEventOk() {
-		Outbox outbox = new Outbox();
-		outbox.setId(100L);
-		outbox.setDomainObjectId(1L);
 		TestEntity testEntity = new TestEntity(1L);
+		eventPublisher = new EventPublisher<TestEntity>(new TestEventSourceOk(), outboxRepository,
+				domainObjectRepository);
 		when(outboxRepository.pop()).thenReturn(outbox);
 		when(domainObjectRepository.getOne(1L)).thenReturn(testEntity);
-		when(eventSource.publishEvent(testEntity)).thenReturn(true);
 		eventPublisher.publish();
 		verify(outboxRepository, times(1)).save(outbox);
 		verify(outboxRepository, times(1)).delete(outbox);
@@ -81,13 +113,10 @@ public class EventPublisherTest {
 
 	@Test
 	public void testGetObjectOkPublishEventKo() {
-		Outbox outbox = new Outbox();
-		outbox.setId(100L);
-		outbox.setDomainObjectId(1L);
 		TestEntity testEntity = new TestEntity(1L);
+		eventPublisher = new EventPublisher<TestEntity>(new TestEventSourceKo(), outboxRepository, domainObjectRepository);
 		when(outboxRepository.pop()).thenReturn(outbox);
 		when(domainObjectRepository.getOne(1L)).thenReturn(testEntity);
-		when(eventSource.publishEvent(testEntity)).thenReturn(false);
 		eventPublisher.publish();
 		verify(outboxRepository, times(2)).save(outbox);
 		assertFalse("Processing is TRUE", outbox.isProcessing());
@@ -95,13 +124,12 @@ public class EventPublisherTest {
 
 	@Test
 	public void testWhenGetObjectExceptionThenDeleteOutboxTransaction() {
-		Outbox outbox = new Outbox();
-		outbox.setId(100L);
-		outbox.setDomainObjectId(1L);
+		eventPublisher = new EventPublisher<TestEntity>(new TestEventSourceOk(), outboxRepository, domainObjectRepository);
 		when(outboxRepository.pop()).thenReturn(outbox);
 		when(domainObjectRepository.getOne(1L)).thenThrow(new EntityNotFoundException());
 		eventPublisher.publish();
 		verify(outboxRepository, times(1)).delete(outbox);
+		assertTrue("Processing is FALSE", outbox.isProcessing());
 	}
-	
+
 }

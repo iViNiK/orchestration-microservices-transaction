@@ -10,6 +10,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 import it.vinicioflamini.omt.common.entity.Order;
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 import it.vinicioflamini.omt.common.rest.payload.OrderResponse;
@@ -23,7 +25,7 @@ public class OrderService {
 	@Autowired
 	private OrderFacade orderFacade;
 
-	public OrderResponse createOrder(OrderRequest request) {
+	public OrderResponse createOrder(OrderRequest request) throws JsonProcessingException {
 		Order order = orderFacade.saveAndRequestMessage(request);
 		
 		OrderResponse response = new OrderResponse();

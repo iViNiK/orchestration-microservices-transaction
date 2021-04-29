@@ -12,6 +12,7 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
+import it.vinicioflamini.omt.common.domain.Action;
 import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 import it.vinicioflamini.omt.orchestrator.kafka.channel.OrchestratorChannel;
@@ -28,7 +29,7 @@ public class OrderPlacedEventListener {
 	@StreamListener(target = OrchestratorChannel.INPUT_ORDER)
 	public void listenOrderPlaced(@Payload OrderEvent orderEvent) {
 
-		if (OrderEvent.Action.ORDERPLACED.equals(orderEvent.getAction())) {
+		if (Action.ORDERPLACED.equals(orderEvent.getAction())) {
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Received an \"OrderPlacedEvent\" for order id: %d", orderEvent.getOrderId()));
 				logger.info(String.format("Going to call inventory service for order id: %d", orderEvent.getOrderId()));

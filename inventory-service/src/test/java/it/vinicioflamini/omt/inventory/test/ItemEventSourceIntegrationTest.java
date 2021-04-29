@@ -1,6 +1,5 @@
 package it.vinicioflamini.omt.inventory.test;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -21,23 +20,25 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.MimeTypeUtils;
 
-import it.vinicioflamini.omt.common.message.ItemEvent;
+import it.vinicioflamini.omt.common.domain.Action;
+import it.vinicioflamini.omt.common.entity.Item;
+import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.inventory.kafka.channel.InventoryChannel;
-import it.vinicioflamini.omt.inventory.kafka.source.ItemFetchedEventSource;
+import it.vinicioflamini.omt.inventory.kafka.source.InventoryEventSource;
 
 @RunWith(SpringRunner.class)
-public class ItemFetchedEventSourceIntegrationTest {
+public class ItemEventSourceIntegrationTest {
 	@TestConfiguration
 	static class ItemFetchedEventSourceIntegrationTestContextConfiguration {
 
 		@Bean
-		public ItemFetchedEventSource itemFetchedEventSource() {
-			return new ItemFetchedEventSource();
+		public InventoryEventSource itemEventSource() {
+			return new InventoryEventSource();
 		}
 	}
 
 	@Autowired
-	private ItemFetchedEventSource itemFetchedEventSource;
+	private InventoryEventSource itemEventSource;
 
 	@MockBean
 	private InventoryChannel inventoryChannel;
@@ -49,18 +50,24 @@ public class ItemFetchedEventSourceIntegrationTest {
 	
 	@Before
 	public void setUp() {
-		message = MessageBuilder.withPayload(new ItemEvent())
-				.setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON).build();
-
 		when(inventoryChannel.outboundInventory()).thenReturn(messageChannel);
-		when(messageChannel.send(message)).thenReturn(true);	
 	}
 
 	@Test
 	public void publishItemFetchedEvent() {
-		itemFetchedEventSource.publishItemFetchedEvent(10L, 10L);
+		Item item = new Item(10L, 10L);
+		
+		OrderEvent orderEvent = new OrderEvent();
+		orderEvent.setOrderId(10L);
+		orderEvent.setItemId(10L);
+		orderEvent.setAction(Action.ITEMFETCHED);
+		
+		message = MessageBuilder.withPayload(orderEvent)
+				.setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON).build();
+		when(messageChannel.send(message)).thenReturn(true);	
+
+		itemEventSource.publishEvent(item, orderEvent);
 		verify(inventoryChannel, times(1)).outboundInventory();
-		assertEquals(ItemEvent.Action.ITEMFETCHED, itemFetchedEventSource.getEvent(10L, 10L).getAction());
 		assertTrue(messageChannel.send(message));
 	}
 }

@@ -5,7 +5,9 @@ import org.springframework.lang.Nullable;
 public enum DomainObjects {
 
 	ORDER("ORD"),
-	ITEM("ITM");
+	ITEM("ITM"),
+	PAYMENT("PAY"),
+	SHIPMENT("SHP");
 	
 	private final String shortCode;
 	  

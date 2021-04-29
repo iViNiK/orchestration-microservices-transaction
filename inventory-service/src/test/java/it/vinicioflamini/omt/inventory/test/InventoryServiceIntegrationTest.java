@@ -1,11 +1,8 @@
 package it.vinicioflamini.omt.inventory.test;
 
-import static org.mockito.Mockito.lenient;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +11,14 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import it.vinicioflamini.omt.inventory.domain.ItemProxy;
-import it.vinicioflamini.omt.inventory.kafka.source.ItemFetchedEventSource;
-import it.vinicioflamini.omt.inventory.kafka.source.ItemOutOfStockEventSource;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import it.vinicioflamini.omt.common.domain.Action;
+import it.vinicioflamini.omt.common.domain.DomainObjects;
+import it.vinicioflamini.omt.common.domain.OutboxProxy;
+import it.vinicioflamini.omt.common.entity.Item;
+import it.vinicioflamini.omt.common.message.OrderEvent;
+import it.vinicioflamini.omt.inventory.domain.ItemFacade;
 import it.vinicioflamini.omt.inventory.service.InventoryService;
 
 @RunWith(SpringRunner.class)
@@ -28,38 +30,34 @@ public class InventoryServiceIntegrationTest {
 		public InventoryService inventoryService() {
 			return new InventoryService();
 		}
+		
+		@Bean
+		public ItemFacade itemFacade() {
+			return new ItemFacade();
+		}
+
 	}
 
 	@Autowired
 	private InventoryService inventoryService;
 
 	@MockBean
-	private ItemFetchedEventSource itemFetchedEventSource;
-
-	@MockBean
-	private ItemOutOfStockEventSource itemOutOfStockEventSource;
-	
-	@MockBean
-	private ItemProxy itemProxy;
-
-	@Before
-	public void setUp() {
-		lenient().doNothing().when(itemFetchedEventSource).publishItemFetchedEvent(10L, 10L);
-		lenient().doNothing().when(itemOutOfStockEventSource).publishItemOutOfStockEvent(10L, 10L);
-	}
+	private OutboxProxy outboxProxy;
 
 	@Test
-	public void testItemNotInStockThenPublishItemOutOfStockEvent() {
-		when(itemProxy.isItemInStock(10L)).thenReturn(false);
-		inventoryService.fetchItem(10L, 10L);
-		verify(itemOutOfStockEventSource, times(1)).publishItemOutOfStockEvent(10L, 10L);
-	}
-
-	@Test
-	public void testItemInStockThenPublishItemFetchedEvent() {
-		when(itemProxy.isItemInStock(10L)).thenReturn(true);
-		inventoryService.fetchItem(10L, 10L);
-		verify(itemFetchedEventSource, times(1)).publishItemFetchedEvent(10L, 10L);
+	public void testItemNotInStockThenPublishItemOutOfStockEventElsePublishItemFetchedEvent() throws JsonProcessingException {
+		Item item = inventoryService.fetchItem(10L, 10L);
+		OrderEvent orderEvent = new OrderEvent();
+		orderEvent.setItemId(10L);
+		if (item == null) {
+			orderEvent.setAction(Action.ITEMOUTOFSTOCK);
+			verify(outboxProxy, times(1)).requestMessage(10L, DomainObjects.ITEM, orderEvent);	
+		} else {
+			orderEvent.setOrderId(10L);
+			orderEvent.setAction(Action.ITEMFETCHED);
+			verify(outboxProxy, times(1)).requestMessage(10L, DomainObjects.ITEM, orderEvent);
+		}
+		
 	}
 
 }

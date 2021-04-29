@@ -5,23 +5,12 @@
 */
 package it.vinicioflamini.omt.common.message;
 
+import it.vinicioflamini.omt.common.domain.Action;
+
 public class ShippingEvent {
 
 	private Long shippingId;
-	private Long orderId;
 	private Action action;
-
-	public enum Action {
-		SHIPMENTPROCESSED, SHIPMENTFAILED
-	}
-
-	public Long getOrderId() {
-		return orderId;
-	}
-
-	public void setOrderId(Long orderId) {
-		this.orderId = orderId;
-	}
 
 	public Long getShippingId() {
 		return shippingId;

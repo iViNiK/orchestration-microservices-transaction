@@ -12,24 +12,27 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.MimeTypeUtils;
 
-import it.vinicioflamini.omt.common.message.ShippingEvent;
+import it.vinicioflamini.omt.common.domain.EventSource;
+import it.vinicioflamini.omt.common.entity.Shipment;
+import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.shipping.kafka.channel.ShippingChannel;
 
 @Component
-public class GoodsShippedEventSource {
+public class ShipmentEventSource implements EventSource<Shipment> {
 
 	@Autowired
 	private ShippingChannel shippingChannel;
 
-	public void publishGoodsShippedEvent(Long shippingId, Long orderId, boolean processed) {
+	public boolean publishEvent(Shipment shipment, OrderEvent orderEvent) {
+		OrderEvent message = new OrderEvent();
+		message.setOrderId(shipment.getOrderId());
+		message.setItemId(shipment.getItemId());
+		message.setPaymentId(shipment.getPaymentId());
+		message.setCustomerId(shipment.getCustomerId());
+		message.setCustomerId(shipment.getShipmentId());
 
-		ShippingEvent message = new ShippingEvent();
-		message.setShippingId(shippingId);
-		message.setOrderId(orderId);
-		message.setAction(processed ? ShippingEvent.Action.SHIPMENTPROCESSED : ShippingEvent.Action.SHIPMENTFAILED);
-		
 		MessageChannel messageChannel = shippingChannel.outboundShippingt();
-		messageChannel.send(MessageBuilder.withPayload(message)
+		return messageChannel.send(MessageBuilder.withPayload(message)
 				.setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON)
 				.build());
 	}
