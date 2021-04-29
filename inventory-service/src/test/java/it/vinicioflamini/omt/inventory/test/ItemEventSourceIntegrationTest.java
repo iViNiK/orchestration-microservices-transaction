@@ -55,7 +55,7 @@ public class ItemEventSourceIntegrationTest {
 
 	@Test
 	public void publishItemFetchedEvent() {
-		Item item = new Item(10L, 10L);
+		Item item = new Item(10L, "Item Name");
 		
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setOrderId(10L);

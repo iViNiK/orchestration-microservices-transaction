@@ -5,6 +5,8 @@
 */
 package it.vinicioflamini.omt.inventory.service;
 
+import javax.transaction.Transactional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,7 @@ public class InventoryService {
 	@Autowired
 	private ItemFacade itemFacade;
 
+	@Transactional
 	public Item fetchItem(Long orderId, Long itemId) throws JsonProcessingException {
 		if (itemFacade.isItemInStock(itemId)) {
 			if (logger.isInfoEnabled()) {
@@ -37,6 +40,7 @@ public class InventoryService {
 		}
 	}
 
+	@Transactional
 	public Item compensateItem(Long orderId, Long itemId) throws JsonProcessingException {
 		if (logger.isInfoEnabled()) {
 			logger.info(String.format("Order %d was not processed", orderId));

@@ -5,6 +5,8 @@
 */
 package it.vinicioflamini.omt.order.service;
 
+import javax.transaction.Transactional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,7 @@ public class OrderService {
 	@Autowired
 	private OrderFacade orderFacade;
 
+	@Transactional
 	public OrderResponse createOrder(OrderRequest request) throws JsonProcessingException {
 		Order order = orderFacade.saveAndRequestMessage(request);
 		

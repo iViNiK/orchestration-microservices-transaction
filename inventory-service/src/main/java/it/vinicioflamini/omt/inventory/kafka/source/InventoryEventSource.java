@@ -24,16 +24,14 @@ public class InventoryEventSource implements EventSource<Item> {
 	
 	@Override
 	public boolean publishEvent(Item item, OrderEvent orderEvent) {
-		OrderEvent message = new OrderEvent();
-		message.setOrderId(item.getOrderId());
-		message.setItemId(item.getItemId());
+		orderEvent.setItemId(item.getId());
 
 		if (logger.isInfoEnabled()) {
-			logger.info(String.format("Going to send an %s for item %d", orderEvent.getAction().getName(), item.getItemId()));
+			logger.info(String.format("Going to send an %s for item %d", orderEvent.getAction().getName(), item.getId()));
 		}
 
 		MessageChannel messageChannel = inventoryChannel.outboundInventory();
-		return messageChannel.send(MessageBuilder.withPayload(message)
+		return messageChannel.send(MessageBuilder.withPayload(orderEvent)
 				.setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON).build());
 
 	}

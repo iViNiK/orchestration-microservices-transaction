@@ -29,7 +29,7 @@ public class InventoryController {
 	public ResponseEntity<String> fetchItem(@RequestBody OrderRequest request) {
 		try {
 			Item item = inventoryService.fetchItem(request.getOrderId(), request.getItemId());
-			return new ResponseEntity<>(String.format("Request placed for item %d", item.getItemId()), HttpStatus.OK);
+			return new ResponseEntity<>(String.format("Request placed for item %d fetching", item.getId()), HttpStatus.OK);
 		} catch (JsonProcessingException e) {
 			throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR, e.getLocalizedMessage());
 		}
@@ -39,7 +39,7 @@ public class InventoryController {
 	public ResponseEntity<String> compensateOrder(@RequestBody OrderRequest request) {
 		try {
 			Item item = inventoryService.compensateItem(request.getOrderId(), request.getItemId());
-			return new ResponseEntity<>(String.format("Request placed for item %d compensation", item.getItemId()), HttpStatus.OK);
+			return new ResponseEntity<>(String.format("Request placed for item %d compensation", item.getId()), HttpStatus.OK);
 		} catch (JsonProcessingException e) {
 			throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR, e.getLocalizedMessage());
 		}

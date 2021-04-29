@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "order_items")
+@Table(name = "items")
 public class Item implements Serializable {
 	private static final long serialVersionUID = -3459939362488939257L;
 
@@ -17,16 +17,16 @@ public class Item implements Serializable {
 	@GeneratedValue
 	private Long id;
 
-	@Column(name = "item_id", nullable = false)
-	private Long itemId;
+	@Column(name = "item_name", nullable = false, length = 300)
+	private String itemName;
+	
+	@Column(name = "quantity", nullable = false)
+	private Integer quantity;
 
-	@Column(name = "order_id", nullable = false)
-	private Long orderId;
-
-	public Item(Long itemId, Long orderId) {
+	public Item(Long id, String itemName) {
 		super();
-		this.itemId = itemId;
-		this.orderId = orderId;
+		this.id = id;
+		this.itemName = itemName;
 	}
 
 	public Long getId() {
@@ -37,20 +37,21 @@ public class Item implements Serializable {
 		this.id = id;
 	}
 
-	public Long getItemId() {
-		return itemId;
+	public String getItemName() {
+		return itemName;
 	}
 
-	public void setItemId(Long itemId) {
-		this.itemId = itemId;
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
 	}
 
-	public Long getOrderId() {
-		return orderId;
+	public Integer getQuantity() {
+		return quantity;
 	}
 
-	public void setOrderId(Long orderId) {
-		this.orderId = orderId;
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
 	}
+
 
 }
