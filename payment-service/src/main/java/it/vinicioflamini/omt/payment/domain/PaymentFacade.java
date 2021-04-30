@@ -26,31 +26,33 @@ public class PaymentFacade {
 	@Transactional
 	public void completePayment(Long orderId, Long itemId, Long paymentId, Long customerId) throws JsonProcessingException {
 		Payment payment = new Payment(paymentId, itemId, orderId, customerId);
+		payment.setApproved(Boolean.TRUE);
 		
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setOrderId(orderId);
 		orderEvent.setItemId(itemId);
 		orderEvent.setCustomerId(customerId);
-		orderEvent.setPaymentId(paymentId);
+		orderEvent.setPaymentId(payment.getId());
 		orderEvent.setAction(Action.PAYMENTRECEIVED);
 		
 		paymentRepository.save(payment);
-		outboundProxy.requestMessage(paymentId, DomainObjects.PAYMENT, orderEvent);
+		outboundProxy.requestMessage(payment.getId(), DomainObjects.PAYMENT, orderEvent);
 	}
 
 	@Transactional
-	public void rejectPayment(Long paymentId) throws JsonProcessingException {
-		Payment payment = paymentRepository.getOne(paymentId);
+	public void rejectPayment(Long orderId, Long itemId, Long customerId) throws JsonProcessingException {
+		Payment payment = new Payment(null, itemId, orderId, customerId);
+		payment.setApproved(Boolean.FALSE);
 		
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setOrderId(payment.getOrderId());
 		orderEvent.setItemId(payment.getItemId());
 		orderEvent.setCustomerId(payment.getCustomerId());
-		orderEvent.setPaymentId(paymentId);
+		orderEvent.setPaymentId(payment.getId());
 		orderEvent.setAction(Action.PAYMENTFAILED);
 		
-		paymentRepository.delete(payment);
-		outboundProxy.requestMessage(paymentId, DomainObjects.PAYMENT, orderEvent);
+		paymentRepository.save(payment);
+		outboundProxy.requestMessage(payment.getId(), DomainObjects.PAYMENT, orderEvent);
 	}
 
 }

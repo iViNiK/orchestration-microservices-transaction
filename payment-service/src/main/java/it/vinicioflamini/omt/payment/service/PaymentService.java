@@ -39,7 +39,7 @@ public class PaymentService {
 				logger.info(String.format("Payment failed for order id: %d", orderId));
 				logger.info(String.format("Going to send a \"PaymentNotReceivedEvent\" for order %d", orderId));
 			}
-			paymentFacade.rejectPayment(paymentId);
+			paymentFacade.rejectPayment(orderId, itemId, customerId);
 		}
 		
 		return paymentId;

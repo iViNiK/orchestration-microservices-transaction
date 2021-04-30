@@ -28,13 +28,25 @@ public class Payment implements Serializable {
 
 	@Column(name = "customer_id", nullable = false)
 	private Long customerId;
-
+	
+	@Column(name = "approved", nullable = false)
+	private boolean approved;
+	
 	public Payment(Long paymentId, Long itemId, Long orderId, Long customerId) {
 		super();
 		this.paymentId = paymentId;
 		this.itemId = itemId;
 		this.orderId = orderId;
 		this.customerId = customerId;
+		this.approved = false;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public Long getPaymentId() {
@@ -67,6 +79,14 @@ public class Payment implements Serializable {
 
 	public void setCustomerId(Long customerId) {
 		this.customerId = customerId;
+	}
+
+	public boolean isApproved() {
+		return approved;
+	}
+
+	public void setApproved(boolean approved) {
+		this.approved = approved;
 	}
 
 }
