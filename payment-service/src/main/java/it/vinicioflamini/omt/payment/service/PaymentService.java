@@ -5,6 +5,8 @@
 */
 package it.vinicioflamini.omt.payment.service;
 
+import javax.transaction.Transactional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +26,7 @@ public class PaymentService {
 	@Autowired
 	private PaymentFacade paymentFacade;
 
+	@Transactional
 	public Long makePayment(Long orderId, Long itemId, Long customerId) throws JsonProcessingException {
 		if (processPayment()) {
 			if (logger.isInfoEnabled()) {
@@ -36,7 +39,7 @@ public class PaymentService {
 				logger.info(String.format("Payment failed for order id: %d", orderId));
 				logger.info(String.format("Going to send a \"PaymentNotReceivedEvent\" for order %d", orderId));
 			}
-			paymentFacade.rejectPayment(orderId, itemId, paymentId, customerId);
+			paymentFacade.rejectPayment(paymentId);
 		}
 		
 		return paymentId;
