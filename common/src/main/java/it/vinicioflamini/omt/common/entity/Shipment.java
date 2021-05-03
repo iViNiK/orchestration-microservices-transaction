@@ -40,12 +40,16 @@ public class Shipment implements Serializable {
 	@Column(name = "customer_id", nullable = false)
 	private Long customerId;
 
+	@Column(name = "processed", nullable = false)
+	private boolean processed;
+	
 	public Shipment(Long paymentId, Long itemId, Long orderId, Long customerId) {
 		super();
 		this.paymentId = paymentId;
 		this.itemId = itemId;
 		this.orderId = orderId;
 		this.customerId = customerId;
+		this.processed = false;
 	}
 
 	public Long getPaymentId() {
@@ -78,6 +82,14 @@ public class Shipment implements Serializable {
 
 	public void setCustomerId(Long customerId) {
 		this.customerId = customerId;
+	}
+
+	public boolean isProcessed() {
+		return processed;
+	}
+
+	public void setProcessed(boolean processed) {
+		this.processed = processed;
 	}
 
 }

@@ -8,7 +8,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import it.vinicioflamini.omt.common.domain.Action;
 import it.vinicioflamini.omt.common.domain.DomainObjects;
 import it.vinicioflamini.omt.common.domain.OutboxProxy;
+import it.vinicioflamini.omt.common.entity.Shipment;
 import it.vinicioflamini.omt.common.message.OrderEvent;
+import it.vinicioflamini.omt.shipping.repository.ShipmentRepository;
 
 @Component
 public class ShippingFacade {
@@ -16,7 +18,14 @@ public class ShippingFacade {
 	@Autowired
 	private OutboxProxy outboundProxy;
 	
+	@Autowired ShipmentRepository shipmentRepository;
+	
 	public void completeShipment(Long orderId, Long itemId, Long paymentId, Long customerId, Long shipmentId) throws JsonProcessingException {
+		Shipment shipment = new Shipment(paymentId, itemId, orderId, customerId);
+		shipment.setProcessed(Boolean.TRUE);
+		
+		shipmentRepository.save(shipment);
+		
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setOrderId(orderId);
 		orderEvent.setItemId(itemId);
@@ -29,6 +38,11 @@ public class ShippingFacade {
 	}
 
 	public void rejectShipment(Long orderId, Long itemId, Long paymentId, Long customerId, Long shipmentId) throws JsonProcessingException {
+		Shipment shipment = new Shipment(paymentId, itemId, orderId, customerId);
+		shipment.setProcessed(Boolean.FALSE);
+		
+		shipmentRepository.save(shipment);
+
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setOrderId(orderId);
 		orderEvent.setItemId(itemId);
