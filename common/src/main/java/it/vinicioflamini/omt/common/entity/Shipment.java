@@ -17,19 +17,8 @@ public class Shipment implements Serializable {
 	@GeneratedValue
 	private Long id;
 
-	public Long getShipmentId() {
-		return shipmentId;
-	}
-
-	public void setShipmentId(Long shipmentId) {
-		this.shipmentId = shipmentId;
-	}
-
 	@Column(name = "shipment_id", nullable = false)
 	private Long shipmentId;
-
-	@Column(name = "payment_id", nullable = false)
-	private Long paymentId;
 
 	@Column(name = "item_id", nullable = false)
 	private Long itemId;
@@ -43,21 +32,29 @@ public class Shipment implements Serializable {
 	@Column(name = "processed", nullable = false)
 	private boolean processed;
 	
-	public Shipment(Long paymentId, Long itemId, Long orderId, Long customerId) {
+	public Shipment(Long shipmentId, Long itemId, Long orderId, Long customerId) {
 		super();
-		this.paymentId = paymentId;
+		this.shipmentId = shipmentId;
 		this.itemId = itemId;
 		this.orderId = orderId;
 		this.customerId = customerId;
 		this.processed = false;
 	}
 
-	public Long getPaymentId() {
-		return paymentId;
+	public Long getId() {
+		return id;
 	}
 
-	public void setPaymentId(Long paymentId) {
-		this.paymentId = paymentId;
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Long getShipmentId() {
+		return shipmentId;
+	}
+
+	public void setShipmentId(Long shipmentId) {
+		this.shipmentId = shipmentId;
 	}
 
 	public Long getItemId() {

@@ -27,8 +27,7 @@ public class ShippingController {
 	@PostMapping()
 	public ResponseEntity<String> processShippment(@RequestBody OrderRequest req) {
 		try {
-			Long shipmentId = shippingService.processShippment(req.getOrderId(), req.getItemId(), req.getPaymentId(),
-					req.getCustomerId());
+			Long shipmentId = shippingService.processShipment(req.getOrderId(), req.getItemId(), req.getCustomerId());
 			return new ResponseEntity<>(String.format("Request placed for shippment %d", shipmentId), HttpStatus.OK);
 		} catch (JsonProcessingException e) {
 			throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR, e.getLocalizedMessage());

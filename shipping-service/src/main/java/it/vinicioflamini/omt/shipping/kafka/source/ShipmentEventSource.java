@@ -27,11 +27,10 @@ public class ShipmentEventSource implements EventSource<Shipment> {
 		OrderEvent message = new OrderEvent();
 		message.setOrderId(shipment.getOrderId());
 		message.setItemId(shipment.getItemId());
-		message.setPaymentId(shipment.getPaymentId());
 		message.setCustomerId(shipment.getCustomerId());
 		message.setCustomerId(shipment.getShipmentId());
 
-		MessageChannel messageChannel = shippingChannel.outboundShippingt();
+		MessageChannel messageChannel = shippingChannel.outboundShipping();
 		return messageChannel.send(MessageBuilder.withPayload(message)
 				.setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON)
 				.build());

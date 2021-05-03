@@ -24,20 +24,20 @@ public class ShippingService {
 	@Autowired
 	private ShippingFacade shippingFacade;
 
-	public Long processShippment(Long orderId, Long itemId, Long paymentId, Long customerId)
+	public Long processShipment(Long orderId, Long itemId, Long customerId)
 			throws JsonProcessingException {
-		if (processShipment(orderId)) {
+		if (callShipmentService(orderId, itemId, customerId)) {
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Shipping completed successfully for order %d", orderId));
 				logger.info(String.format("Going to send a \"ShipmentProcessedEvent\" for order %d", orderId));
 			}
-			shippingFacade.completeShipment(orderId, itemId, paymentId, customerId, shipmentId);
+			shippingFacade.completeShipment(shipmentId, orderId, itemId, customerId);
 		} else {
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Shipping failed for order id: %d", orderId));
 				logger.info(String.format("Going to send a \"ShipmentFailedEvent\" for order %d", orderId));
 			}
-			shippingFacade.rejectShipment(orderId, itemId, paymentId, customerId, shipmentId);
+			shippingFacade.rejectShipment(shipmentId, orderId, itemId, customerId);
 		}
 
 		return shipmentId;
@@ -45,7 +45,7 @@ public class ShippingService {
 
 	/**/
 
-	private boolean processShipment(Long orderId) {
+	private boolean callShipmentService(Long orderId, Long itemId, Long customerId) {
 		/* TODO: place the shipment and set the ID */
 		if (Math.random() < 0.5) {
 			shipmentId = 1234L;

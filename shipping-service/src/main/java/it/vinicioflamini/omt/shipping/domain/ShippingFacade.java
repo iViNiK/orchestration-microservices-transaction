@@ -20,8 +20,8 @@ public class ShippingFacade {
 	
 	@Autowired ShipmentRepository shipmentRepository;
 	
-	public void completeShipment(Long orderId, Long itemId, Long paymentId, Long customerId, Long shipmentId) throws JsonProcessingException {
-		Shipment shipment = new Shipment(paymentId, itemId, orderId, customerId);
+	public void completeShipment(Long shipmentId, Long orderId, Long itemId, Long customerId) throws JsonProcessingException {
+		Shipment shipment = new Shipment(shipmentId, itemId, orderId, customerId);
 		shipment.setProcessed(Boolean.TRUE);
 		
 		shipmentRepository.save(shipment);
@@ -30,15 +30,14 @@ public class ShippingFacade {
 		orderEvent.setOrderId(orderId);
 		orderEvent.setItemId(itemId);
 		orderEvent.setCustomerId(customerId);
-		orderEvent.setPaymentId(paymentId);
-		orderEvent.setShipmentId(shipmentId);
+		orderEvent.setShipmentId(shipment.getId());
 		orderEvent.setAction(Action.SHIPMENTPROCESSED);
 		
-		outboundProxy.requestMessage(paymentId, DomainObjects.SHIPMENT, orderEvent);
+		outboundProxy.requestMessage(shipment.getId(), DomainObjects.SHIPMENT, orderEvent);
 	}
 
-	public void rejectShipment(Long orderId, Long itemId, Long paymentId, Long customerId, Long shipmentId) throws JsonProcessingException {
-		Shipment shipment = new Shipment(paymentId, itemId, orderId, customerId);
+	public void rejectShipment(Long shipmentId, Long orderId, Long itemId, Long customerId) throws JsonProcessingException {
+		Shipment shipment = new Shipment(shipmentId, itemId, orderId, customerId);
 		shipment.setProcessed(Boolean.FALSE);
 		
 		shipmentRepository.save(shipment);
@@ -47,11 +46,10 @@ public class ShippingFacade {
 		orderEvent.setOrderId(orderId);
 		orderEvent.setItemId(itemId);
 		orderEvent.setCustomerId(customerId);
-		orderEvent.setPaymentId(paymentId);
-		orderEvent.setShipmentId(shipmentId);
+		orderEvent.setShipmentId(shipment.getId());
 		orderEvent.setAction(Action.SHIPMENTFAILED);
 		
-		outboundProxy.requestMessage(paymentId, DomainObjects.SHIPMENT, orderEvent);
+		outboundProxy.requestMessage(shipment.getId(), DomainObjects.SHIPMENT, orderEvent);
 	}
 
 }

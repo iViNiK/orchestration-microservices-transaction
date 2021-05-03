@@ -13,6 +13,6 @@ public interface ShippingChannel {
 	final String OUTPUT = "shipping-out";
 
 	@Output(OUTPUT)
-	MessageChannel outboundShippingt();
+	MessageChannel outboundShipping();
 
 }

@@ -72,7 +72,7 @@ public class PaymentServiceIntegrationTest {
 		OrderRequest orderRequest = new OrderRequest();
 		orderRequest.setOrderId(10L);
 		
-		Payment payment = new Payment(null, 10L, 10L, 10L);
+		Payment payment = new Payment(10L, 10L, 10L, 10L);
 		
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setOrderId(payment.getOrderId());
@@ -86,6 +86,7 @@ public class PaymentServiceIntegrationTest {
 			payment.setApproved(Boolean.TRUE);
 			orderEvent.setAction(Action.PAYMENTRECEIVED);
 		} else {
+			payment.setPaymentId(null);
 			payment.setApproved(Boolean.FALSE);
 			orderEvent.setAction(Action.PAYMENTFAILED);
 		}
