@@ -9,6 +9,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 
 import it.vinicioflamini.omt.common.domain.Action;
 import it.vinicioflamini.omt.common.domain.DomainObjects;
+import it.vinicioflamini.omt.common.domain.OrderStatus;
 import it.vinicioflamini.omt.common.domain.OutboxProxy;
 import it.vinicioflamini.omt.common.entity.Order;
 import it.vinicioflamini.omt.common.message.OrderEvent;
@@ -25,7 +26,7 @@ public class OrderFacade {
 	private OutboxProxy outboundProxy;
 
 	@Transactional
-	public Order saveAndRequestMessage(OrderRequest request) throws JsonProcessingException {
+	public Order placeOrder(OrderRequest request) throws JsonProcessingException {
 		Order order = new Order();
 		order.setItemId(request.getItemId());
 		/* TODO: order service should call inventory service to get item name by item id */
@@ -33,6 +34,8 @@ public class OrderFacade {
 		order.setCustomerId(request.getCustomerId());
 		/* TODO: order service should call customer service to get customer name by id */
 		order.setCustomerName("customer-abc");
+		order.setStatus(OrderStatus.PLACED);
+		
 		orderRepository.save(order);
 		
 		OrderEvent orderEvent = new OrderEvent();
@@ -46,8 +49,11 @@ public class OrderFacade {
 	}
 	
 	@Transactional
-	public void remove(Long orderId) {
-		orderRepository.deleteById(orderId);
+	public void rejectOrder(Long orderId) {
+		Order order = orderRepository.getOne(orderId);
+		order.setStatus(OrderStatus.NOTPLACED);
+		
+		orderRepository.save(order);
 	}
 	
 	

@@ -1,6 +1,6 @@
 package it.vinicioflamini.omt.order.test;
 
-import static org.mockito.Mockito.doNothing;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -20,6 +20,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 
 import it.vinicioflamini.omt.common.domain.Action;
 import it.vinicioflamini.omt.common.domain.DomainObjects;
+import it.vinicioflamini.omt.common.domain.OrderStatus;
 import it.vinicioflamini.omt.common.domain.OutboxProxy;
 import it.vinicioflamini.omt.common.entity.Order;
 import it.vinicioflamini.omt.common.message.OrderEvent;
@@ -66,16 +67,17 @@ public class OrderServiceIntegrationTest {
 	public void testCreateOrderOkThenPublishOrderPlacedEvent() throws JsonProcessingException {
 		OrderRequest orderRequest = new OrderRequest();
 		orderRequest.setOrderId(10L);
-		
+
 		Order order = new Order();
-		
+
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setOrderId(10L);
 		orderEvent.setAction(Action.ORDERPLACED);
-		
+
 		when(orderRepository.save(order)).thenReturn(order);
-		orderService.createOrder(orderRequest);
 		
+		orderService.createOrder(orderRequest);
+
 		verify(outboxProxy, times(1)).requestMessage(null, DomainObjects.ORDER, orderEvent);
 	}
 
@@ -89,9 +91,16 @@ public class OrderServiceIntegrationTest {
 
 	@Test
 	public void testCompensateOrderOk() throws JsonProcessingException {
-		OrderRequest orderRequest = new OrderRequest();
-		doNothing().when(orderRepository).deleteById(10L);
-		orderService.createOrder(orderRequest);
+		Order order = new Order();
+		order.setId(10L);
+		
+		when(orderRepository.getOne(10L)).thenReturn(order);
+		when(orderRepository.save(order)).thenReturn(order);
+
+		orderService.compensateOrder(order.getId());
+
+		assertTrue("ORDER STATUS NOT VALID", order.getStatus().equals(OrderStatus.NOTPLACED));
+
 		verify(outboxProxy, times(0)).requestMessage(10L, DomainObjects.ITEM, new OrderEvent());
 	}
 

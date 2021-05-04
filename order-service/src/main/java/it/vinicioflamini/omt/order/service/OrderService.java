@@ -29,7 +29,7 @@ public class OrderService {
 
 	@Transactional
 	public OrderResponse createOrder(OrderRequest request) throws JsonProcessingException {
-		Order order = orderFacade.saveAndRequestMessage(request);
+		Order order = orderFacade.placeOrder(request);
 		
 		OrderResponse response = new OrderResponse();
 		response.setMessage(String.format("Order %d placed successfully", order.getId()));
@@ -41,7 +41,7 @@ public class OrderService {
 	}
 
 	public void compensateOrder(Long orderId) {
-		orderFacade.remove(orderId);
+		orderFacade.rejectOrder(orderId);
 
 		if (logger.isInfoEnabled()) {
 			logger.info(String.format("Order %d was DELETED", orderId));
