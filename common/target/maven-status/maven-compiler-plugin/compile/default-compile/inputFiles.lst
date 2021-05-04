@@ -2,6 +2,7 @@ E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\common\s
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\common\src\main\java\it\vinicioflamini\omt\common\domain\OutboxProxy.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\common\src\main\java\it\vinicioflamini\omt\common\rest\payload\OrderResponse.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\common\src\main\java\it\vinicioflamini\omt\common\domain\EventPublisher.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\common\src\main\java\it\vinicioflamini\omt\common\domain\OrderStatus.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\common\src\main\java\it\vinicioflamini\omt\common\entity\Item.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\common\src\main\java\it\vinicioflamini\omt\common\message\OrderEvent.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\common\src\main\java\it\vinicioflamini\omt\common\entity\Outbox.java

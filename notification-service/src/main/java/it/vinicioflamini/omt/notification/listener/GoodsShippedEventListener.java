@@ -18,19 +18,27 @@ import it.vinicioflamini.omt.notification.kafka.channel.NotificationChannel;
 @Component
 public class GoodsShippedEventListener {
 
+	private OrderEvent receivedMessage;
+
 	private static final Logger logger = LoggerFactory.getLogger(GoodsShippedEventListener.class);
 
 	@StreamListener(NotificationChannel.INPUT_SHIPPING)
 	public void listenGoodsShipped(@Payload OrderEvent event) {
+		receivedMessage = event;
 
 		if (Action.SHIPMENTPROCESSED.equals(event.getAction())) {
+			event.setAction(Action.CUSTOMERNOTIFIEDSHIPMENTPROCESSED);
+			
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Received %s for shipment %d", event.getAction().getName(),
 						event.getShipmentId()));
 				logger.info(String.format("Going to notify customer for shippment %d reached", event.getShipmentId()));
 			}
 		}
+	}
 
+	public OrderEvent getReceivedMessage() {
+		return receivedMessage;
 	}
 
 }

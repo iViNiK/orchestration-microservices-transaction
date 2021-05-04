@@ -1,0 +1,4 @@
+it\vinicioflamini\omt\order\test\OrderEventSourceIntegrationTest$ItemFetchedEventSourceIntegrationTestContextConfiguration.class
+it\vinicioflamini\omt\order\test\OrderServiceIntegrationTest.class
+it\vinicioflamini\omt\order\test\OrderEventSourceIntegrationTest.class
+it\vinicioflamini\omt\order\test\OrderServiceIntegrationTest$InventoryServiceIntegrationTestContextConfiguration.class

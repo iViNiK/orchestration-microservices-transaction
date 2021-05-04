@@ -1,6 +1,7 @@
 it\vinicioflamini\omt\common\domain\Action.class
 it\vinicioflamini\omt\common\domain\DomainObjects.class
 it\vinicioflamini\omt\common\domain\EventPublisher.class
+it\vinicioflamini\omt\common\domain\OrderStatus.class
 it\vinicioflamini\omt\common\entity\Payment.class
 it\vinicioflamini\omt\common\rest\payload\OrderRequest.class
 it\vinicioflamini\omt\common\entity\Item.class
