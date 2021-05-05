@@ -26,12 +26,15 @@ public class ItemOutOfStockEventListener {
 
 	private static final Logger logger = LoggerFactory.getLogger(ItemOutOfStockEventListener.class);
 
+	private OrderEvent receivedMessage;
+	
 	@StreamListener(OrchestratorChannel.INPUT_INVENTORY)
 	public void listenOutOfStockItem(@Payload OrderEvent event) {
-
+		receivedMessage = event;
+		
 		if (Action.ITEMOUTOFSTOCK.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
-				logger.info(String.format("Received an \"ItemOutOfStock\" for item %d", event.getItemId()));
+				logger.info(String.format("Received an \"ItemOutOfStock\" for order %d", event.getOrderId()));
 				logger.info(String.format("Going to call order service to compensate order %d",
 						event.getOrderId()));
 			}
@@ -42,5 +45,9 @@ public class ItemOutOfStockEventListener {
 
 			orderRestClient.compensateOrder(req);
 		}
+	}
+	
+	public OrderEvent getReceivedMessage() {
+		return receivedMessage;
 	}
 }

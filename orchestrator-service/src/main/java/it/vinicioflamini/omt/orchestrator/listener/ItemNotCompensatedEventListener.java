@@ -26,13 +26,16 @@ public class ItemNotCompensatedEventListener {
 
 	private static final Logger logger = LoggerFactory.getLogger(ItemNotCompensatedEventListener.class);
 
+	private OrderEvent receivedMessage;
+	
 	@StreamListener(OrchestratorChannel.INPUT_INVENTORY)
 	public void listenItemNotFetched(@Payload OrderEvent event) {
-
+		receivedMessage = event;
+		
 		if (Action.ITEMNOTCOMPENSATED.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
-				logger.info(String.format("Received an \"ItemNotCompensated\" for item id: %d", event.getItemId()));
-				logger.info(String.format("Going to call order service to compensate inventory for order with id: %d",
+				logger.info(String.format("Received an \"ItemNotCompensated\" for order %d", event.getOrderId()));
+				logger.info(String.format("Going to call order service to compensate inventory for order %d",
 						event.getOrderId()));
 			}
 			
@@ -42,5 +45,9 @@ public class ItemNotCompensatedEventListener {
 
 			inventoryRestClient.compensateInventory(req);
 		}
+	}
+
+	public OrderEvent getReceivedMessage() {
+		return receivedMessage;
 	}
 }

@@ -26,13 +26,16 @@ public class ItemFetchedEventListener {
 
 	private static final Logger logger = LoggerFactory.getLogger(ItemFetchedEventListener.class);
 
+	private OrderEvent receivedMessage;
+	
 	@StreamListener(OrchestratorChannel.INPUT_INVENTORY)
 	public void listenItemFetchedEvent(@Payload OrderEvent event) {
-
+		receivedMessage = event;
+		
 		if (Action.ITEMFETCHED.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
 				logger.info(
-						String.format("Received an \"ItemFetchedEvent\" for item %d", event.getItemId()));
+						String.format("Received an \"ItemFetchedEvent\" for order %d", event.getOrderId()));
 			}
 			
 			if (event.getOrderId() != null && event.getItemId() != null) {
@@ -54,6 +57,10 @@ public class ItemFetchedEventListener {
 			}
 		}
 
+	}
+
+	public OrderEvent getReceivedMessage() {
+		return receivedMessage;
 	}
 
 }

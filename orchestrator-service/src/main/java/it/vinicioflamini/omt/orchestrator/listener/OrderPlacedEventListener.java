@@ -26,22 +26,28 @@ public class OrderPlacedEventListener {
 
 	private static final Logger logger = LoggerFactory.getLogger(OrderPlacedEventListener.class);
 
+	private OrderEvent receivedMessage;
+	
 	@StreamListener(target = OrchestratorChannel.INPUT_ORDER)
-	public void listenOrderPlaced(@Payload OrderEvent orderEvent) {
-
-		if (Action.ORDERPLACED.equals(orderEvent.getAction())) {
+	public void listenOrderPlaced(@Payload OrderEvent event) {
+		receivedMessage = event;
+		
+		if (Action.ORDERPLACED.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
-				logger.info(String.format("Received an \"OrderPlacedEvent\" for order id: %d", orderEvent.getOrderId()));
-				logger.info(String.format("Going to call inventory service for order id: %d", orderEvent.getOrderId()));
+				logger.info(String.format("Received an \"OrderPlacedEvent\" for order %d", event.getOrderId()));
+				logger.info(String.format("Going to call inventory service for order %d", event.getOrderId()));
 			}
 			
 			OrderRequest req = new OrderRequest();
-			req.setOrderId(orderEvent.getOrderId());
-			req.setItemId(orderEvent.getItemId());
-			req.setCustomerId(orderEvent.getCustomerId());
+			req.setOrderId(event.getOrderId());
+			req.setItemId(event.getItemId());
+			req.setCustomerId(event.getCustomerId());
 
 			inventoryRestClient.doInventory(req);
 		}
 	}
 
+	public OrderEvent getReceivedMessage() {
+		return receivedMessage;
+	}
 }
