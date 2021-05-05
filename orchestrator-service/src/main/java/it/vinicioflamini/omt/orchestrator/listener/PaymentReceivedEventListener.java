@@ -26,9 +26,12 @@ public class PaymentReceivedEventListener {
 
 	private static final Logger logger = LoggerFactory.getLogger(PaymentReceivedEventListener.class);
 
+	private OrderEvent receivedMessage;
+	
 	@StreamListener(OrchestratorChannel.INPUT_PAYMENT)
 	public void listenItemFetchedEvent(@Payload OrderEvent event) {
-
+		receivedMessage = event;
+		
 		if (Action.PAYMENTRECEIVED.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Received a \"PaymentReceivedEvent\" for order id: %d",
@@ -48,5 +51,9 @@ public class PaymentReceivedEventListener {
 				shipmentRestClient.processShipment(req);
 			}
 		}
+	}
+	
+	public OrderEvent getReceivedMessage() {
+		return receivedMessage;
 	}
 }

@@ -26,9 +26,12 @@ public class PaymentFailedEventListener {
 
 	private static final Logger logger = LoggerFactory.getLogger(PaymentFailedEventListener.class);
 
+	private OrderEvent receivedMessage;
+	
 	@StreamListener(OrchestratorChannel.INPUT_PAYMENT)
 	public void listenPaymentFailed(@Payload OrderEvent event) {
-
+		receivedMessage = event;
+		
 		if (Action.PAYMENTFAILED.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Received a \"PaymentFailedEvent\" for order id: %d",
@@ -46,5 +49,9 @@ public class PaymentFailedEventListener {
 				inventoryRestClient.compensateInventory(req);
 			}
 		}
+	}
+	
+	public OrderEvent getReceivedMessage() {
+		return receivedMessage;
 	}
 }

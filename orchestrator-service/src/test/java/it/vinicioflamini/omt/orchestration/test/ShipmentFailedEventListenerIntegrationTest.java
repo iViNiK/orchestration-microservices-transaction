@@ -26,13 +26,13 @@ import it.vinicioflamini.omt.common.domain.Action;
 import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 import it.vinicioflamini.omt.orchestrator.kafka.channel.OrchestratorChannel;
-import it.vinicioflamini.omt.orchestrator.listener.OrderPlacedEventListener;
-import it.vinicioflamini.omt.orchestrator.rest.InventoryRestClient;
+import it.vinicioflamini.omt.orchestrator.listener.ShipmentFailedEventListener;
+import it.vinicioflamini.omt.orchestrator.rest.ShipmentRestClient;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = { OrderPlacedEventListenerIntegrationTest.App.class, TestProducer.class, OrderPlacedEventListener.class })
+@SpringBootTest(classes = { ShipmentFailedEventListenerIntegrationTest.App.class, TestProducer.class, ShipmentFailedEventListener.class })
 @EnableBinding(OrchestratorChannel.class)
-public class OrderPlacedEventListenerIntegrationTest {
+public class ShipmentFailedEventListenerIntegrationTest {
 	@SpringBootApplication(exclude = TestSupportBinderAutoConfiguration.class)
 	static class App {
 
@@ -42,15 +42,15 @@ public class OrderPlacedEventListenerIntegrationTest {
 	private TestProducer producer;
 
 	@Autowired
-	private OrderPlacedEventListener consumer;
+	private ShipmentFailedEventListener consumer;
 
-	private final static String TOPIC = OrchestratorChannel.INPUT_ORDER;
+	private final static String TOPIC = OrchestratorChannel.INPUT_SHIPMENT;
 
 	@ClassRule
 	public static EmbeddedKafkaRule embeddedKafka = new EmbeddedKafkaRule(1, true, TOPIC);
 	
 	@MockBean
-	private InventoryRestClient inventoryRestClient;
+	private ShipmentRestClient shipmentRestClient;
 
 	@BeforeClass
 	public static void setup() {
@@ -65,25 +65,23 @@ public class OrderPlacedEventListenerIntegrationTest {
 	}
 
 	@Test
-	public void testOrderPlacedThenDoInventory() {
+	public void testShipmentFailedThenDoProcessShipmentAgain() {
 		OrderEvent event = new OrderEvent();
 		event.setOrderId(10L);
-		event.setItemId(10L);
-		event.setAction(Action.ORDERPLACED);
+		event.setAction(Action.SHIPMENTFAILED);
 		
 		OrderRequest req = new OrderRequest();
 		req.setOrderId(event.getOrderId());
-		req.setItemId(event.getItemId());
 
-		producer.getSource().inboundOrder().send(MessageBuilder.withPayload(event).setHeader("type", "string").build());
+		producer.getSource().inboundShipment().send(MessageBuilder.withPayload(event).setHeader("type", "string").build());
 
 		waitAtMost(5, TimeUnit.SECONDS).untilAsserted(() -> {
 			then(event).isEqualTo(consumer.getReceivedMessage());
 		});
 		
-		assertEquals(Action.ORDERPLACED, consumer.getReceivedMessage().getAction());
+		assertEquals(Action.SHIPMENTFAILED, consumer.getReceivedMessage().getAction());
 		
-		verify(inventoryRestClient, times(1)).doInventory(req);
+		verify(shipmentRestClient, times(1)).processShipment(req);
 	}
 
 }

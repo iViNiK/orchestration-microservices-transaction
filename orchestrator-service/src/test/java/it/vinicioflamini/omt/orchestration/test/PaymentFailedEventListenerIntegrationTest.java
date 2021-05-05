@@ -26,13 +26,13 @@ import it.vinicioflamini.omt.common.domain.Action;
 import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 import it.vinicioflamini.omt.orchestrator.kafka.channel.OrchestratorChannel;
-import it.vinicioflamini.omt.orchestrator.listener.OrderPlacedEventListener;
+import it.vinicioflamini.omt.orchestrator.listener.PaymentFailedEventListener;
 import it.vinicioflamini.omt.orchestrator.rest.InventoryRestClient;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = { OrderPlacedEventListenerIntegrationTest.App.class, TestProducer.class, OrderPlacedEventListener.class })
+@SpringBootTest(classes = { PaymentFailedEventListenerIntegrationTest.App.class, TestProducer.class, PaymentFailedEventListener.class })
 @EnableBinding(OrchestratorChannel.class)
-public class OrderPlacedEventListenerIntegrationTest {
+public class PaymentFailedEventListenerIntegrationTest {
 	@SpringBootApplication(exclude = TestSupportBinderAutoConfiguration.class)
 	static class App {
 
@@ -42,9 +42,9 @@ public class OrderPlacedEventListenerIntegrationTest {
 	private TestProducer producer;
 
 	@Autowired
-	private OrderPlacedEventListener consumer;
+	private PaymentFailedEventListener consumer;
 
-	private final static String TOPIC = OrchestratorChannel.INPUT_ORDER;
+	private final static String TOPIC = OrchestratorChannel.INPUT_PAYMENT;
 
 	@ClassRule
 	public static EmbeddedKafkaRule embeddedKafka = new EmbeddedKafkaRule(1, true, TOPIC);
@@ -65,25 +65,23 @@ public class OrderPlacedEventListenerIntegrationTest {
 	}
 
 	@Test
-	public void testOrderPlacedThenDoInventory() {
+	public void testPaymentFailedThenDoCompensateInventory() {
 		OrderEvent event = new OrderEvent();
 		event.setOrderId(10L);
-		event.setItemId(10L);
-		event.setAction(Action.ORDERPLACED);
+		event.setAction(Action.PAYMENTFAILED);
 		
 		OrderRequest req = new OrderRequest();
 		req.setOrderId(event.getOrderId());
-		req.setItemId(event.getItemId());
 
-		producer.getSource().inboundOrder().send(MessageBuilder.withPayload(event).setHeader("type", "string").build());
+		producer.getSource().inboundPayment().send(MessageBuilder.withPayload(event).setHeader("type", "string").build());
 
 		waitAtMost(5, TimeUnit.SECONDS).untilAsserted(() -> {
 			then(event).isEqualTo(consumer.getReceivedMessage());
 		});
 		
-		assertEquals(Action.ORDERPLACED, consumer.getReceivedMessage().getAction());
+		assertEquals(Action.PAYMENTFAILED, consumer.getReceivedMessage().getAction());
 		
-		verify(inventoryRestClient, times(1)).doInventory(req);
+		verify(inventoryRestClient, times(1)).compensateInventory(req);
 	}
 
 }

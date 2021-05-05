@@ -26,9 +26,12 @@ public class ShipmentFailedEventListener {
 
 	private static final Logger logger = LoggerFactory.getLogger(ShipmentFailedEventListener.class);
 
+	private OrderEvent receivedMessage;
+	
 	@StreamListener(OrchestratorChannel.INPUT_SHIPMENT)
 	public void listenPaymentFailed(@Payload OrderEvent event) {
-
+		receivedMessage = event;
+		
 		if (Action.SHIPMENTFAILED.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Received a \"ShipmentFailedEvent\" for order %d",
@@ -50,5 +53,9 @@ public class ShipmentFailedEventListener {
 				}
 			}
 		}
+	}
+	
+	public OrderEvent getReceivedMessage() {
+		return receivedMessage;
 	}
 }
