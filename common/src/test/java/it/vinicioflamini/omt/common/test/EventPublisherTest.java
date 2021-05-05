@@ -2,11 +2,13 @@ package it.vinicioflamini.omt.common.test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.PersistenceException;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -43,21 +45,8 @@ public class EventPublisherTest {
 		}
 	}
 
-	public class TestEventSourceOk implements EventSource<TestEntity> {
-
-		@Override
-		public boolean publishEvent(TestEntity sourceObject, OrderEvent orderEvent) {
-			return true;
-		}
-	}
-
-	public class TestEventSourceKo implements EventSource<TestEntity> {
-
-		@Override
-		public boolean publishEvent(TestEntity sourceObject, OrderEvent orderEvent) {
-			return false;
-		}
-	}
+	@MockBean
+	private EventSource<TestEntity> eventSource;
 
 	@MockBean
 	private JpaRepository<Outbox, Long> outboxBaseRepository;
@@ -71,15 +60,6 @@ public class EventPublisherTest {
 	private EventPublisher<TestEntity> eventPublisher;
 	
 	private Outbox outbox;
-
-	@Test
-	public void testNoOutboxTransactionPending() {
-		eventPublisher = new EventPublisher<TestEntity>(new TestEventSourceOk(), outboxRepository,
-				domainObjectRepository);
-		when(outboxRepository.pop()).thenReturn(null);
-		eventPublisher.publish();
-		verify(domainObjectRepository, times(0)).getOne(10L);
-	}
 
 	@Before
 	public void setup() {
@@ -97,26 +77,40 @@ public class EventPublisherTest {
 			e.printStackTrace();
 		}
 	}
-	
+
+	@Test
+	public void testNoOutboxTransactionPending() {
+		eventPublisher = new EventPublisher<TestEntity>(eventSource, outboxRepository,
+				domainObjectRepository);
+		when(outboxRepository.pop()).thenReturn(null);
+		eventPublisher.publish();
+		verify(domainObjectRepository, times(0)).getOne(10L);
+		verify(eventSource, times(0)).publishEvent(null, null);
+	}
+
 	@Test
 	public void testGetObjectOkPublishEventOk() {
 		TestEntity testEntity = new TestEntity(1L);
-		eventPublisher = new EventPublisher<TestEntity>(new TestEventSourceOk(), outboxRepository,
+		eventPublisher = new EventPublisher<TestEntity>(eventSource, outboxRepository,
 				domainObjectRepository);
 		when(outboxRepository.pop()).thenReturn(outbox);
+		when(outboxRepository.save(outbox)).thenReturn(outbox);
 		when(domainObjectRepository.getOne(1L)).thenReturn(testEntity);
+		when(eventSource.publishEvent(testEntity, getOrderEvent(outbox))).thenReturn(true);
 		eventPublisher.publish();
 		verify(outboxRepository, times(1)).save(outbox);
-		verify(outboxRepository, times(1)).delete(outbox);
 		assertTrue("Processing is FALSE", outbox.isProcessing());
+		verify(outboxRepository, times(1)).delete(outbox);
 	}
 
 	@Test
 	public void testGetObjectOkPublishEventKo() {
 		TestEntity testEntity = new TestEntity(1L);
-		eventPublisher = new EventPublisher<TestEntity>(new TestEventSourceKo(), outboxRepository, domainObjectRepository);
+		eventPublisher = new EventPublisher<TestEntity>(eventSource, outboxRepository, domainObjectRepository);
 		when(outboxRepository.pop()).thenReturn(outbox);
+		when(outboxRepository.save(outbox)).thenReturn(outbox);
 		when(domainObjectRepository.getOne(1L)).thenReturn(testEntity);
+		when(eventSource.publishEvent(testEntity, getOrderEvent(outbox))).thenReturn(false);
 		eventPublisher.publish();
 		verify(outboxRepository, times(2)).save(outbox);
 		assertFalse("Processing is TRUE", outbox.isProcessing());
@@ -124,12 +118,39 @@ public class EventPublisherTest {
 
 	@Test
 	public void testWhenGetObjectExceptionThenDeleteOutboxTransaction() {
-		eventPublisher = new EventPublisher<TestEntity>(new TestEventSourceOk(), outboxRepository, domainObjectRepository);
+		eventPublisher = new EventPublisher<TestEntity>(eventSource, outboxRepository, domainObjectRepository);
 		when(outboxRepository.pop()).thenReturn(outbox);
+		when(outboxRepository.save(outbox)).thenReturn(outbox);
 		when(domainObjectRepository.getOne(1L)).thenThrow(new EntityNotFoundException());
 		eventPublisher.publish();
 		verify(outboxRepository, times(1)).delete(outbox);
 		assertTrue("Processing is FALSE", outbox.isProcessing());
+		verify(eventSource, times(0)).publishEvent(null, null);
 	}
 
+	@Test
+	public void testGetObjectOkPublishEventExceptionWhenUpdatingOutbox() {
+		eventPublisher = new EventPublisher<TestEntity>(eventSource, outboxRepository,
+				domainObjectRepository);
+		when(outboxRepository.pop()).thenReturn(outbox);
+		when(outboxRepository.save(outbox)).thenThrow(new PersistenceException());
+		eventPublisher.publish();
+		verify(eventSource, times(0)).publishEvent(null, null);
+		assertFalse("Processing is TRUE", outbox.isProcessing());
+	}
+
+	/**/
+	
+	@SuppressWarnings("finally")
+	private OrderEvent getOrderEvent(Outbox o) {
+		ObjectMapper objectMapper = new ObjectMapper();
+		OrderEvent orderEvent = null;
+		try {
+			orderEvent = objectMapper.readValue(o.getOrderEvent(), OrderEvent.class);
+		} catch (Exception e) {
+			fail("Cannot parse OrderEvent");
+		} finally {
+			return orderEvent;
+		}
+	}
 }

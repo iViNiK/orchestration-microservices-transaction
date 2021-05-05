@@ -3,6 +3,7 @@ package it.vinicioflamini.omt.common.domain;
 import java.io.IOException;
 
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.PersistenceException;
 import javax.transaction.Transactional;
 
 import org.slf4j.Logger;
@@ -42,12 +43,12 @@ public class EventPublisher<T> {
 		Outbox o = outboxRepository.pop();
 
 		if (o != null) {
-			o.setProcessing(true);
-			outboxRepository.save(o);
-
 			try {
+				o.setProcessing(true);
+				o = outboxRepository.save(o);
+
 				if (o.getOrderEvent() == null) {
-					throw new IOException("Order Event is NULL");
+					throw new EntityNotFoundException("Order Event is NULL");
 				}
 
 				T domainObject = domainObjectRepository.getOne(o.getDomainObjectId());
@@ -79,15 +80,14 @@ public class EventPublisher<T> {
 				}
 
 				outboxRepository.delete(o);
-			} catch (IOException e) {
+			} catch (PersistenceException|IOException e) {
 				if (logger.isInfoEnabled()) {
-					logger.info(String.format("Could not publish event %s. Going to delete outbox transaction.",
+					logger.info(String.format("Could not publish event %s. Going to retry outbox transaction.",
 							o.getOrderEvent()));
 				}
 
-				outboxRepository.delete(o);
+				o.setProcessing(false);
 			}
-
 		}
 	}
 
