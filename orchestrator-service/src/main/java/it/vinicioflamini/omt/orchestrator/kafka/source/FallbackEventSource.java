@@ -1,4 +1,4 @@
-package it.vinicioflamini.omt.common.domain;
+package it.vinicioflamini.omt.orchestrator.kafka.source;
 
 import java.io.IOException;
 
@@ -8,9 +8,13 @@ import javax.transaction.Transactional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.MessageChannel;
+import org.springframework.messaging.MessageHeaders;
+import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.util.Assert;
+import org.springframework.stereotype.Component;
+import org.springframework.util.MimeTypeUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -18,33 +22,16 @@ import it.vinicioflamini.omt.common.entity.Outbox;
 import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.common.repository.OutboxRepository;
 
-public class EventPublisher<T> {
+@Component
+public class FallbackEventSource {
 
-	private static final Logger logger = LoggerFactory.getLogger(EventPublisher.class);
+	private static final Logger logger = LoggerFactory.getLogger(FallbackEventSource.class);
 
-	private EventSource<T> eventSource;
+	@Autowired
 	private OutboxRepository outboxRepository;
-	private JpaRepository<T, Long> domainObjectRepository;
-	private T domainObject;
-
-	public EventPublisher(EventSource<T> eventSource, OutboxRepository outboxRepository,
-			JpaRepository<T, Long> domainObjectRepository) {
-		super();
-		Assert.notNull(eventSource, "EventSource must not be NULL");
-		Assert.notNull(outboxRepository, "OutboxRepository must not be NULL");
-		Assert.notNull(domainObjectRepository, "DomainObjectRepository must not be NULL");
-		this.eventSource = eventSource;
-		this.outboxRepository = outboxRepository;
-		this.domainObjectRepository = domainObjectRepository;
-	}
-
-	public EventPublisher(EventSource<T> eventSource, OutboxRepository outboxRepository) {
-		super();
-		Assert.notNull(eventSource, "EventSource must not be NULL");
-		Assert.notNull(outboxRepository, "OutboxRepository must not be NULL");
-		this.eventSource = eventSource;
-		this.outboxRepository = outboxRepository;
-	}
+	
+	@Autowired
+	private MessageChannelFactory messageChannelFactory;
 
 	@Scheduled(cron = "${application.outbox.polling.cron}")
 	@Transactional
@@ -60,18 +47,13 @@ public class EventPublisher<T> {
 					throw new EntityNotFoundException("OrderEvent is NULL");
 				}
 
-				if (domainObject == null) {
-					if (domainObjectRepository != null) {
-						domainObject = domainObjectRepository.getOne(o.getDomainObjectId());
-					} else {
-						throw new IOException("DomainObject is NULL");
-					}
-				}
-
 				ObjectMapper objectMapper = new ObjectMapper();
 				OrderEvent orderEvent = objectMapper.readValue(o.getOrderEvent(), OrderEvent.class);
 
-				if (eventSource.publishEvent(domainObject, orderEvent)) {
+				MessageChannel messageChannel = messageChannelFactory.getMessageChannel(o.getChannelId());
+
+				if (messageChannel != null && messageChannel.send(MessageBuilder.withPayload(orderEvent)
+						.setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON).build())) {
 					if (logger.isInfoEnabled()) {
 						logger.info(String.format("Event for object %s with id %d was published successfully",
 								o.getDomainObjectCode(), o.getDomainObjectId()));
@@ -98,17 +80,13 @@ public class EventPublisher<T> {
 				outboxRepository.delete(o);
 			} catch (PersistenceException | IOException e) {
 				if (logger.isInfoEnabled()) {
-					logger.info(String.format("Could not publish event %s.%nError: %s.%nGoing to retry outbox transaction.",
-							o.getOrderEvent(), e.getLocalizedMessage()));
+					logger.info(
+							String.format("Could not publish event %s.%nError: %s.%nGoing to retry outbox transaction.",
+									o.getOrderEvent(), e.getLocalizedMessage()));
 				}
 
 				o.setProcessing(false);
 			}
 		}
 	}
-
-	public void setDomainObject(T domainObject) {
-		this.domainObject = domainObject;
-	}
-
 }

@@ -21,7 +21,10 @@ public class Outbox {
 	
 	@Column(name = "domain_object_code", nullable = false, length = 10)
 	private String domainObjectCode;
-	
+
+	@Column(name = "channel_id", nullable = false, length = 100)
+	private String channelId;
+
 	@Column(name = "order_event", nullable = true, length = 1000)
 	private String orderEvent; 
 	
@@ -53,6 +56,14 @@ public class Outbox {
 
 	public void setDomainObjectCode(String domainObjectCode) {
 		this.domainObjectCode = domainObjectCode;
+	}
+
+	public String getChannelId() {
+		return channelId;
+	}
+
+	public void setChannelId(String channelId) {
+		this.channelId = channelId;
 	}
 
 	public String getOrderEvent() {

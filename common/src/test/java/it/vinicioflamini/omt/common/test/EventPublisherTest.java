@@ -129,6 +129,32 @@ public class EventPublisherTest {
 	}
 
 	@Test
+	public void testWhenNoDomainObjectAndNoDomainRepositoryThenRetryOutboxTransaction() {
+		eventPublisher = new EventPublisher<TestEntity>(eventSource, outboxRepository);
+		when(outboxRepository.pop()).thenReturn(outbox);
+		when(outboxRepository.save(outbox)).thenReturn(outbox);
+		eventPublisher.publish();
+		verify(eventSource, times(0)).publishEvent(null, null);
+		assertFalse("Processing is TRUE", outbox.isProcessing());
+		verify(eventSource, times(0)).publishEvent(null, null);
+	}
+
+	@Test
+	public void testWhenDomainObjectAndNoDomainRepositoryThenPublishEvent() {
+		TestEntity testEntity = new TestEntity(1L);
+		eventPublisher = new EventPublisher<TestEntity>(eventSource, outboxRepository);
+		eventPublisher.setDomainObject(testEntity);
+		when(outboxRepository.pop()).thenReturn(outbox);
+		when(outboxRepository.save(outbox)).thenReturn(outbox);
+		when(eventSource.publishEvent(testEntity, getOrderEvent(outbox))).thenReturn(true);
+		eventPublisher.publish();
+		verify(outboxRepository, times(1)).save(outbox);
+		assertTrue("Processing is FALSE", outbox.isProcessing());
+		verify(outboxRepository, times(1)).delete(outbox);
+	}
+
+	
+	@Test
 	public void testGetObjectOkPublishEventExceptionWhenUpdatingOutbox() {
 		eventPublisher = new EventPublisher<TestEntity>(eventSource, outboxRepository,
 				domainObjectRepository);
@@ -137,6 +163,7 @@ public class EventPublisherTest {
 		eventPublisher.publish();
 		verify(eventSource, times(0)).publishEvent(null, null);
 		assertFalse("Processing is TRUE", outbox.isProcessing());
+		verify(eventSource, times(0)).publishEvent(null, null);
 	}
 
 	/**/

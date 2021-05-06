@@ -7,14 +7,20 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import it.vinicioflamini.omt.common.domain.Action;
+import it.vinicioflamini.omt.common.domain.DomainObjects;
+import it.vinicioflamini.omt.common.domain.OutboxProxy;
+import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
-import it.vinicioflamini.omt.orchestrator.kafka.source.PaymentFailedEventSource;
+import it.vinicioflamini.omt.orchestrator.kafka.channel.OrchestratorChannel;
 
 @Component
 public class PaymentRestClientFallback implements PaymentRestClient {
 
 	@Autowired
-	PaymentFailedEventSource paymentNotReceivedEventSource;
+	private OutboxProxy outboundProxy;
 	
 	private static final Logger logger = LoggerFactory.getLogger(PaymentRestClientFallback.class);
 	
@@ -25,11 +31,25 @@ public class PaymentRestClientFallback implements PaymentRestClient {
 		 * you need to realign inventory by posting a PAYMENTNOTRECEIVED event
 		 */
 		if (logger.isInfoEnabled()) {
-			logger.info(String.format("Executing Fallback during payment for order %d", req.getOrderId()));
+			logger.info(String.format("Executing payment fallback for order %d", req.getOrderId()));
 		}
 		
-		paymentNotReceivedEventSource.publishPaymentNotReceivedEvent(req.getOrderId(), req.getItemId());
-		
+		OrderEvent orderEvent = new OrderEvent();
+		orderEvent.setOrderId(req.getOrderId());
+		orderEvent.setAction(Action.PAYMENTFAILED);
+
+		try {
+			outboundProxy.requestMessage(req.getOrderId(), DomainObjects.ORDER, OrchestratorChannel.OUTPUT_PAYMENT, orderEvent);
+		} catch (JsonProcessingException e) {
+			if (logger.isErrorEnabled()) {
+				logger.error(
+						String.format("Could not execute payment fallback for order %d.%nError is: %s",
+								req.getOrderId(), e.getLocalizedMessage()));
+			}
+
+			return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+		}
+
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 

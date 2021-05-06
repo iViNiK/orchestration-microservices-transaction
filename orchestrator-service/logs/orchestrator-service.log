@@ -20540,3 +20540,25 @@
 2021-05-05 20:10:22,387  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Going to call shipment service for order id: 10 
 2021-05-05 20:14:36,427  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Received a "ShipmentFailedEvent" for order 10 
 2021-05-05 20:14:36,427  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Going to call shipment service to process shipment for order 10 
+2021-05-06 07:16:57,902  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | The following profiles are active: dev 
+2021-05-06 07:17:09,177  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 3 
+2021-05-06 07:17:09,177  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 3 
+2021-05-06 07:17:09,519  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | Started OrchestrationServiceApplication in 13.696 seconds (JVM running for 15.392) 
+2021-05-06 07:17:12,580  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 3 
+2021-05-06 07:17:12,580  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 3 
+2021-05-06 07:17:16,631  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 3 
+2021-05-06 07:17:16,631  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 3 
+2021-05-06 07:17:18,696  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 7 
+2021-05-06 07:17:18,696  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 7 
+2021-05-06 07:17:19,699  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 7 
+2021-05-06 07:17:19,700  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 7 
+2021-05-06 07:17:21,713  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 7 
+2021-05-06 07:17:21,714  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 7 
+2021-05-06 07:17:21,756  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 5 
+2021-05-06 07:17:21,756  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 5 
+2021-05-06 07:17:22,761  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 5 
+2021-05-06 07:17:22,761  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 5 
+2021-05-06 07:17:24,777  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 5 
+2021-05-06 07:17:24,777  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 5 
+2021-05-06 07:23:54,972  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | The following profiles are active: dev 
+2021-05-06 07:24:05,892  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | Started OrchestrationServiceApplication in 12.95 seconds (JVM running for 14.294) 

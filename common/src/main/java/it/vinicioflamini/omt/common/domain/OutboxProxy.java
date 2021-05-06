@@ -34,4 +34,19 @@ public class OutboxProxy {
 		return outboxRepository.save(outbox);
 	}
 
+	@Transactional
+	public Outbox requestMessage(Long objectId, DomainObjects object, String channelId, OrderEvent orderEvent) throws JsonProcessingException {
+		ObjectMapper objectMapper = new ObjectMapper();
+		
+		Outbox outbox = new Outbox();
+		outbox.setDomainObjectId(objectId);
+		outbox.setDomainObjectCode(object.getCode());
+		outbox.setChannelId(channelId);
+		outbox.setOrderEvent(objectMapper.writeValueAsString(orderEvent));
+		outbox.setDateTime(new Timestamp(System.currentTimeMillis()));
+		outbox.setProcessing(false);
+		
+		return outboxRepository.save(outbox);
+	}
+
 }
