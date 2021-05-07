@@ -1,0 +1,10 @@
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestration\test\FallbackEventSourceTest.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestration\test\PaymentFailedEventListenerIntegrationTest.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestration\test\ShipmentFailedEventListenerIntegrationTest.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestration\test\ItemFetchedEventListenerIntegrationTest.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestration\test\OrderNotPlacedEventListenerIntegrationTest.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestration\test\ItemOutOfStockEventListenerIntegrationTest.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestration\test\OrderPlacedEventListenerIntegrationTest.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestration\test\TestProducer.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestration\test\ItemNotCompensatedEventListenerIntegrationTest.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestration\test\PaymentReceivedEventListenerIntegrationTest.java

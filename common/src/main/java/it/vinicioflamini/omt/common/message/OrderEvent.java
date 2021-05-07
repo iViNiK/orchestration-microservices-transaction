@@ -50,4 +50,10 @@ public class OrderEvent extends OrderRequest {
 				+ ((getAction() == null) ? 0 : getAction().hashCode());
 	}
 
+	@Override
+	public String toString() {
+		return String.format("OrderEvent ** orderId: %d, itemId: %d, customerId: %d, paymentId: %d, shipmentId: %d, action: %s ",
+				getOrderId(), getItemId(), getCustomerId(), getPaymentId(), getShipmentId(), getAction());
+	}
+
 }

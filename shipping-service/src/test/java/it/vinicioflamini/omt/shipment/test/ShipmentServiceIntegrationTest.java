@@ -79,6 +79,8 @@ public class ShipmentServiceIntegrationTest {
 		orderEvent.setItemId(shipment.getItemId());
 		orderEvent.setCustomerId(shipment.getCustomerId());
 		
+		when(shipmentRepository.save(shipment)).thenReturn(shipment);
+		
 		Long shipmentId = shippingService.processShipment(10L, 10L, 10L);
 		
 		if (shipmentId != null) {
@@ -91,8 +93,8 @@ public class ShipmentServiceIntegrationTest {
 			orderEvent.setAction(Action.SHIPMENTFAILED);
 		}
 
-		when(shipmentRepository.save(shipment)).thenReturn(shipment);
 		orderEvent.setShipmentId(shipment.getId());
+		
 		verify(outboxProxy, times(1)).requestMessage(null, DomainObjects.SHIPMENT, orderEvent);	
 
 	}

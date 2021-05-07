@@ -500,3 +500,15 @@
 2021-05-04 11:44:29,128  INFO | main | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id null was processed 
 2021-05-04 11:44:29,253  INFO | main | i.v.omt.notification.listener.OrderEventListener       | Received event CUSTOMERNOTIFIEDORDERNOTPROCESSED for order null 
 2021-05-04 11:44:29,254  INFO | main | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id null could not be processed 
+2021-05-07 08:38:28,115  INFO | main | i.v.o.n.test.GoodsShippedEventListenerIntegrationTest  | Starting GoodsShippedEventListenerIntegrationTest on DESKTOP-VOMVIUL with PID 4436 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-05-07 08:38:28,121  INFO | main | i.v.o.n.test.GoodsShippedEventListenerIntegrationTest  | The following profiles are active: dev 
+2021-05-07 08:38:34,058  INFO | main | i.v.o.n.test.GoodsShippedEventListenerIntegrationTest  | Started GoodsShippedEventListenerIntegrationTest in 6.452 seconds (JVM running for 10.049) 
+2021-05-07 08:38:34,752  INFO | main | i.v.omt.notification.listener.GoodsShippedEventListener | Received CUSTOMERNOTIFIEDSHIPMENTPROCESSED for shipment null 
+2021-05-07 08:38:34,752  INFO | main | i.v.omt.notification.listener.GoodsShippedEventListener | Going to notify customer for shippment null reached 
+2021-05-07 08:38:41,335  INFO | main | i.v.o.n.test.OrderEventListenerIntegrationTest         | Starting OrderEventListenerIntegrationTest on DESKTOP-VOMVIUL with PID 4436 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-05-07 08:38:41,335  INFO | main | i.v.o.n.test.OrderEventListenerIntegrationTest         | The following profiles are active: dev 
+2021-05-07 08:38:44,066  INFO | main | i.v.o.n.test.OrderEventListenerIntegrationTest         | Started OrderEventListenerIntegrationTest in 2.773 seconds (JVM running for 20.057) 
+2021-05-07 08:38:44,074  INFO | main | i.v.omt.notification.listener.OrderEventListener       | Received event CUSTOMERNOTIFIEDORDERPROCESSED for order null 
+2021-05-07 08:38:44,074  INFO | main | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id null was processed 
+2021-05-07 08:38:44,188  INFO | main | i.v.omt.notification.listener.OrderEventListener       | Received event CUSTOMERNOTIFIEDORDERNOTPROCESSED for order null 
+2021-05-07 08:38:44,188  INFO | main | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id null could not be processed 

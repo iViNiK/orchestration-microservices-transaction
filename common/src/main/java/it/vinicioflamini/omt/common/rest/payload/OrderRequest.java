@@ -83,7 +83,7 @@ public class OrderRequest {
 
 	@Override
 	public String toString() {
-		return String.format("OrderEvent ** orderId: %d, itemId: %d, customerId: %d, paymentId: %d, shipmentId: %d ",
+		return String.format("OrderRequest ** orderId: %d, itemId: %d, customerId: %d, paymentId: %d, shipmentId: %d ",
 				getOrderId(), getItemId(), getCustomerId(), getPaymentId(), getShipmentId());
 	}
 }

@@ -20562,3 +20562,21 @@
 2021-05-06 07:17:24,777  INFO | [Ljava.lang.String;@1f7e309.container-0-C-1 | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 5 
 2021-05-06 07:23:54,972  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | The following profiles are active: dev 
 2021-05-06 07:24:05,892  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | Started OrchestrationServiceApplication in 12.95 seconds (JVM running for 14.294) 
+2021-05-07 08:39:08,718  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order 10 
+2021-05-07 08:39:08,749  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Going to call payment service for order 10 
+2021-05-07 08:39:09,002  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order null 
+2021-05-07 08:39:09,002  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Unable to call payment service. Order ID (null) and/or Item ID (null) are NULL. 
+2021-05-07 08:39:19,497  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Received an "ItemNotCompensated" for order 10 
+2021-05-07 08:39:19,497  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Going to call order service to compensate inventory for order 10 
+2021-05-07 08:39:30,494  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Received an "ItemOutOfStock" for order 10 
+2021-05-07 08:39:30,494  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Going to call order service to compensate order 10 
+2021-05-07 08:39:41,002  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 10 
+2021-05-07 08:39:41,002  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 10 
+2021-05-07 08:39:51,046  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order 10 
+2021-05-07 08:39:51,046  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order 10 
+2021-05-07 08:39:59,117  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Received a "PaymentFailedEvent" for order id: 10 
+2021-05-07 08:39:59,117  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Going to call item service to compensate item for order id: 10 
+2021-05-07 08:40:08,230  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Received a "PaymentReceivedEvent" for order id: 10 
+2021-05-07 08:40:08,230  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Going to call shipment service for order id: 10 
+2021-05-07 08:40:16,185  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Received a "ShipmentFailedEvent" for order 10 
+2021-05-07 08:40:16,185  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Going to call shipment service to process shipment for order 10 
