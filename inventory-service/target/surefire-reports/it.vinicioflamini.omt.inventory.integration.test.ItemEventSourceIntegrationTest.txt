@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: it.vinicioflamini.omt.inventory.integration.test.ItemEventSourceIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 s - in it.vinicioflamini.omt.inventory.integration.test.ItemEventSourceIntegrationTest

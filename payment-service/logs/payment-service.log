@@ -332,3 +332,12 @@
 2021-04-29 09:35:52,879  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 6028 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
 2021-04-29 09:35:52,883  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
 2021-04-29 09:35:59,937  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 7.689 seconds (JVM running for 8.656) 
+2021-05-11 09:50:17,231  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 14276 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-11 09:50:17,231  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-11 09:50:26,092  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 9.505 seconds (JVM running for 10.794) 
+2021-05-11 09:55:22,028  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 5796 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-11 09:55:22,029  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | The following profiles are active: dev 
+2021-05-11 09:55:31,998  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | Started TestingWebApplicationTest in 10.379 seconds (JVM running for 11.428) 
+2021-05-11 10:06:11,582  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 12476 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-11 10:06:11,582  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | The following profiles are active: dev 
+2021-05-11 10:06:21,467  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | Started TestingWebApplicationTest in 10.32 seconds (JVM running for 11.376) 

@@ -19118,3 +19118,66 @@
 2021-05-11 07:42:00,177  INFO | main | it.vinicioflamini.omt.order.test.contract.PackageTest  | The following profiles are active: dev 
 2021-05-11 07:42:01,139  INFO | main | it.vinicioflamini.omt.order.test.contract.PackageTest  | Starting PackageTest on DESKTOP-VOMVIUL with PID 4628 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
 2021-05-11 07:42:01,139  INFO | main | it.vinicioflamini.omt.order.test.contract.PackageTest  | The following profiles are active: dev 
+2021-05-11 08:36:58,973  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 8688 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:36:58,973  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:38:09,093  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 11948 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:38:09,093  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:40:47,268  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 13824 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:40:47,268  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:41:42,492  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 412 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:41:42,492  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:43:30,836  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 2508 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:43:30,836  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:45:49,118  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 8744 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:45:49,119  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:49:24,049  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 14268 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:49:24,049  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:51:13,349  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 6796 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:51:13,350  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:52:02,610  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 6340 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:52:02,611  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:53:59,752  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 4920 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:53:59,752  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:55:55,661  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 10944 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:55:55,661  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:56:54,780  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 11804 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:56:54,780  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:57:35,066  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 1060 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:57:35,066  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:58:19,972  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 8948 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:58:19,972  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:58:39,153  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 5408 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:58:39,153  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:59:02,994  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 128.591 seconds (JVM running for 129.669) 
+2021-05-11 08:59:34,913  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 13392 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:59:34,914  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 08:59:43,472  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 128.788 seconds (JVM running for 129.868) 
+2021-05-11 08:59:59,023  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 8400 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 08:59:59,023  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 09:00:30,257  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 130.683 seconds (JVM running for 131.771) 
+2021-05-11 09:00:47,496  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 128.742 seconds (JVM running for 129.884) 
+2021-05-11 09:02:07,580  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 128.952 seconds (JVM running for 130.072) 
+2021-05-11 09:02:52,925  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 7512 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 09:02:52,925  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 09:05:04,295  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 131.78 seconds (JVM running for 132.954) 
+2021-05-11 09:13:25,772  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 968 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 09:13:25,772  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 09:15:23,271  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 117.882 seconds (JVM running for 119.131) 
+2021-05-11 09:15:50,739  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | Starting OrderServiceApplication on DESKTOP-VOMVIUL with PID 1108 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 09:15:50,740  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | The following profiles are active: dev 
+2021-05-11 09:15:59,704  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | Started OrderServiceApplication in 9.584 seconds (JVM running for 10.777) 
+2021-05-11 09:20:14,466  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 4644 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 09:20:14,466  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 09:20:24,316  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 10.238 seconds (JVM running for 11.346) 
+2021-05-11 09:35:39,197  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 7496 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 09:35:39,197  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 09:35:48,950  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 10.128 seconds (JVM running for 11.168) 
+2021-05-11 09:37:55,422  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 4644 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 09:37:55,422  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 09:38:05,233  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 10.207 seconds (JVM running for 11.314) 
+2021-05-11 09:49:57,840  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | Starting OrderServiceApplication on DESKTOP-VOMVIUL with PID 5756 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 09:49:57,841  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | The following profiles are active: dev 
+2021-05-11 09:50:06,570  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | Started OrderServiceApplication in 9.321 seconds (JVM running for 10.507) 
+2021-05-11 10:07:00,108  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 9396 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-11 10:07:00,108  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | The following profiles are active: dev 
+2021-05-11 10:07:10,121  INFO | main | i.v.omt.order.test.TestingWebApplicationTest           | Started TestingWebApplicationTest in 10.414 seconds (JVM running for 11.456) 
