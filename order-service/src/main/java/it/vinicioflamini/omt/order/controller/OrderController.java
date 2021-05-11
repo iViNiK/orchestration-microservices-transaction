@@ -23,7 +23,7 @@ public class OrderController {
 
 	@Autowired
 	private OrderService orderService;
-	
+
 	@PostMapping()
 	public OrderResponse placeOrder(@RequestBody OrderRequest request) {
 		try {
@@ -32,13 +32,16 @@ public class OrderController {
 			throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR, e.getLocalizedMessage());
 		}
 	}
-	
+
 	@PostMapping("/compensate")
 	public OrderResponse compensateOrder(@RequestBody OrderRequest req) {
-		 orderService.compensateOrder(req.getOrderId());
-		 OrderResponse response = new OrderResponse();
-		 response.setMessage("Order Compensate request has placed");
-		 return response;
+		orderService.compensateOrder(req.getOrderId());
+
+		OrderResponse response = new OrderResponse();
+		response.setMessage(String.format("Order %d Compensate request has placed", req.getOrderId()));
+		response.setOrderId(req.getOrderId());
+
+		return response;
 	}
 
 }

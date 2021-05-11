@@ -30,7 +30,11 @@ public class OrderService {
 	@Transactional
 	public OrderResponse createOrder(OrderRequest request) throws JsonProcessingException {
 		Order order = orderFacade.placeOrder(request);
-		
+
+		if (logger.isInfoEnabled()) {
+			logger.info(String.format("Order %d was CREATED", order.getId()));
+		}
+
 		OrderResponse response = new OrderResponse();
 		response.setMessage(String.format("Order %d placed successfully", order.getId()));
 		response.setOrderId(order.getId());
@@ -44,7 +48,7 @@ public class OrderService {
 		orderFacade.rejectOrder(orderId);
 
 		if (logger.isInfoEnabled()) {
-			logger.info(String.format("Order %d was DELETED", orderId));
+			logger.info(String.format("Order %d was REJECTED", orderId));
 		}
 	}
 

@@ -19,14 +19,12 @@ public class ShippingService {
 
 	private static final Logger logger = LoggerFactory.getLogger(ShippingService.class);
 
-	private Long shipmentId = null;
-
 	@Autowired
 	private ShippingFacade shippingFacade;
 
-	public Long processShipment(Long orderId, Long itemId, Long customerId)
-			throws JsonProcessingException {
-		if (callShipmentService(orderId, itemId, customerId)) {
+	public Long processShipment(Long orderId, Long itemId, Long customerId) throws JsonProcessingException {
+		Long shipmentId = callShipmentService(orderId, itemId, customerId);
+		if (shipmentId != null) {
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Shipping completed successfully for order %d", orderId));
 				logger.info(String.format("Going to send a \"ShipmentProcessedEvent\" for order %d", orderId));
@@ -45,14 +43,12 @@ public class ShippingService {
 
 	/**/
 
-	private boolean callShipmentService(Long orderId, Long itemId, Long customerId) {
+	private Long callShipmentService(Long orderId, Long itemId, Long customerId) {
 		/* TODO: place the shipment and set the ID */
 		if (Math.random() < 0.5) {
-			shipmentId = 1234L;
-			return true;
+			return 1234L;
 		}
-
-		return false;
+		return null;
 	}
 
 }
