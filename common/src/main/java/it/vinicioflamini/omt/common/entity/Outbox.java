@@ -22,7 +22,7 @@ public class Outbox {
 	@Column(name = "domain_object_code", nullable = false, length = 10)
 	private String domainObjectCode;
 
-	@Column(name = "channel_id", nullable = false, length = 100)
+	@Column(name = "channel_id", nullable = true, length = 100)
 	private String channelId;
 
 	@Column(name = "order_event", nullable = true, length = 1000)
@@ -34,6 +34,10 @@ public class Outbox {
 	@Column(name = "processing", nullable = false)
 	private boolean processing;
 
+	public Outbox() {
+		super();
+	}
+	
 	public Long getId() {
 		return id;
 	}

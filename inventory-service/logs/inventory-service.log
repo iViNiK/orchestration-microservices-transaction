@@ -989,3 +989,175 @@
 2021-05-11 10:12:37,038  INFO | main | i.v.omt.inventory.test.TestingWebApplicationTest       | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 12540 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
 2021-05-11 10:12:37,044  INFO | main | i.v.omt.inventory.test.TestingWebApplicationTest       | The following profiles are active: dev 
 2021-05-11 10:12:46,891  INFO | main | i.v.omt.inventory.test.TestingWebApplicationTest       | Started TestingWebApplicationTest in 10.267 seconds (JVM running for 11.271) 
+2021-05-11 10:51:12,381  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 3044 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 10:51:12,381  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 10:51:33,738  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 22.076 seconds (JVM running for 26.033) 
+2021-05-11 11:01:17,716  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 13540 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:01:17,717  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:01:26,824  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 9.667 seconds (JVM running for 12.576) 
+2021-05-11 11:04:13,776  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 6540 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:04:13,777  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:04:22,905  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 9.657 seconds (JVM running for 12.459) 
+2021-05-11 11:04:56,379  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 6936 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:04:56,379  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:05:05,725  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 9.878 seconds (JVM running for 12.884) 
+2021-05-11 11:06:12,611  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 13060 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:06:12,611  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:06:21,908  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 9.83 seconds (JVM running for 12.7) 
+2021-05-11 11:18:27,376  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 260 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:18:27,376  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:18:36,813  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 9.998 seconds (JVM running for 12.789) 
+2021-05-11 11:19:22,957  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 13304 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:19:22,958  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:19:35,193  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.799 seconds (JVM running for 15.782) 
+2021-05-11 11:22:54,328  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 12324 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:22:54,329  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:23:03,480  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 9.655 seconds (JVM running for 12.549) 
+2021-05-11 11:27:48,063  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 8620 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:27:48,063  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:27:57,095  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 9.614 seconds (JVM running for 12.479) 
+2021-05-11 11:33:04,626  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 4936 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:33:04,627  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:33:13,838  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 9.752 seconds (JVM running for 12.543) 
+2021-05-11 11:38:47,562  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 11352 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:38:47,563  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:38:59,670  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.648 seconds (JVM running for 15.503) 
+2021-05-11 11:39:00,513  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item 10 is out of stock for order 10 
+2021-05-11 11:40:10,988  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 8856 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:40:10,989  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:40:22,475  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.017 seconds (JVM running for 14.928) 
+2021-05-11 11:40:23,192  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item 10 is out of stock for order 10 
+2021-05-11 11:45:02,257  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 9456 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:45:02,258  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:45:13,765  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.104 seconds (JVM running for 14.93) 
+2021-05-11 11:45:14,535  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item 10 is out of stock for order 10 
+2021-05-11 11:55:13,311  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 11084 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:55:13,312  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:55:25,126  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.415 seconds (JVM running for 15.263) 
+2021-05-11 11:55:25,860  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item 10 is out of stock for order 10 
+2021-05-11 11:58:12,877  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 12768 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:58:12,878  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:58:24,778  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.449 seconds (JVM running for 15.379) 
+2021-05-11 11:58:25,462  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item 10 is out of stock for order 10 
+2021-05-11 11:59:23,657  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 1620 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 11:59:23,657  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 11:59:35,388  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.282 seconds (JVM running for 15.09) 
+2021-05-11 11:59:36,123  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item 10 is out of stock for order 10 
+2021-05-11 12:01:49,160  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 3908 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:01:49,160  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:02:00,818  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.18 seconds (JVM running for 14.971) 
+2021-05-11 12:02:01,527  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item 10 is out of stock for order 10 
+2021-05-11 12:11:39,837  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 7092 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:11:39,837  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:11:51,860  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.534 seconds (JVM running for 15.452) 
+2021-05-11 12:11:52,574  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item 10 is out of stock for order 10 
+2021-05-11 12:13:52,629  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 2676 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:13:52,630  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:14:04,443  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.312 seconds (JVM running for 15.207) 
+2021-05-11 12:14:05,137  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order -1 
+2021-05-11 12:17:18,178  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 7160 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:17:18,179  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:17:29,660  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.037 seconds (JVM running for 14.874) 
+2021-05-11 12:17:30,344  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 12:35:19,813  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 12196 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:35:19,813  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:38:21,894  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 3360 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:38:21,894  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:39:13,827  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 8752 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:39:13,828  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:41:04,295  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 13184 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:41:04,296  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:41:17,267  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 13.521 seconds (JVM running for 16.433) 
+2021-05-11 12:41:17,979  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 12:42:54,026  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 12076 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:42:54,026  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:43:06,571  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 13.11 seconds (JVM running for 16.13) 
+2021-05-11 12:43:07,167  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 12:46:14,751  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 10412 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:46:14,752  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:47:35,374  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 14124 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:47:35,375  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:47:47,960  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 13.119 seconds (JVM running for 16.041) 
+2021-05-11 12:47:48,602  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 12:48:59,689  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 9460 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:48:59,689  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:49:12,167  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 13.02 seconds (JVM running for 16.081) 
+2021-05-11 12:49:12,707  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 12:49:40,775  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 2784 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:49:40,775  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:49:53,718  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 13.476 seconds (JVM running for 16.451) 
+2021-05-11 12:49:54,343  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 12:51:08,267  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 13816 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:51:08,267  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:51:20,647  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.917 seconds (JVM running for 15.921) 
+2021-05-11 12:51:21,288  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-11 12:52:21,542  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 5960 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:52:21,542  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:52:34,065  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 13.073 seconds (JVM running for 16.135) 
+2021-05-11 12:52:34,622  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 12:52:35,123  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-11 12:54:24,144  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 7248 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:54:24,145  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:54:36,650  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 13.089 seconds (JVM running for 15.977) 
+2021-05-11 12:54:37,220  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-11 12:54:37,601  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 12:56:25,342  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 3492 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 12:56:25,342  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 12:56:37,953  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 13.201 seconds (JVM running for 16.283) 
+2021-05-11 12:56:38,576  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 12:56:39,013  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-11 13:22:45,269  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 3360 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 13:22:45,269  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 13:22:57,982  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 13.262 seconds (JVM running for 16.222) 
+2021-05-11 13:22:58,485  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 13:22:58,924  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-11 13:23:46,162  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 2440 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 13:23:46,162  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 13:24:11,434  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 26.18 seconds (JVM running for 31.9) 
+2021-05-11 13:24:11,968  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 13:24:12,167  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order -1 
+2021-05-11 13:26:18,891  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 9488 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 13:26:18,892  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 13:26:31,736  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 13.417 seconds (JVM running for 16.293) 
+2021-05-11 13:26:32,320  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 13:26:32,804  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-11 15:38:13,330  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 1464 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 15:38:13,330  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 15:39:22,721  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 5232 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 15:39:22,722  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 15:40:31,949  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 12664 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 15:40:31,949  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 15:44:12,222  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 13528 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 15:44:12,228  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 15:46:59,805  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 14064 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 15:46:59,805  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 15:47:10,803  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 11.513 seconds (JVM running for 14.2) 
+2021-05-11 15:47:11,366  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 15:47:11,934  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-11 15:59:46,616  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 6064 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 15:59:46,616  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 16:01:43,835  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 2176 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 16:01:43,835  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 16:07:59,666  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 3424 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 16:07:59,666  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 16:09:32,913  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 6388 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 16:09:32,914  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 16:09:52,362  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 20.345 seconds (JVM running for 24.717) 
+2021-05-11 16:09:53,086  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 16:09:53,825  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-11 16:10:41,035  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 7964 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 16:10:41,035  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 16:10:59,052  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 18.828 seconds (JVM running for 22.674) 
+2021-05-11 16:10:59,702  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 16:11:00,160  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-11 16:11:00,379  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-11 16:15:49,419  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 13344 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 16:15:49,420  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 16:16:07,187  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 18.58 seconds (JVM running for 23.203) 
+2021-05-11 16:16:07,980  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 16:16:08,699  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-11 17:00:31,271  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 12996 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-11 17:00:31,272  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-11 17:00:54,188  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 23.935 seconds (JVM running for 29.151) 
+2021-05-11 17:00:55,100  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-11 17:00:55,865  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 

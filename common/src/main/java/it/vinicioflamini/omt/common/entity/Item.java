@@ -22,6 +22,10 @@ public class Item implements Serializable {
 	
 	@Column(name = "quantity", nullable = false)
 	private Integer quantity;
+	
+	public Item() {
+		super();
+	}
 
 	public Item(Long id, String itemName) {
 		super();

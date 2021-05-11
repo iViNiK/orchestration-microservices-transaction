@@ -32,6 +32,10 @@ public class Shipment implements Serializable {
 	@Column(name = "processed", nullable = false)
 	private boolean processed;
 	
+	public Shipment() {
+		super();
+	}
+	
 	public Shipment(Long shipmentId, Long itemId, Long orderId, Long customerId) {
 		super();
 		this.shipmentId = shipmentId;

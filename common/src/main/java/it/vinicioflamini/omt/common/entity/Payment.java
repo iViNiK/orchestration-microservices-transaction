@@ -32,6 +32,10 @@ public class Payment implements Serializable {
 	@Column(name = "approved", nullable = false)
 	private boolean approved;
 	
+	public Payment() {
+		super();
+	}
+	
 	public Payment(Long paymentId, Long itemId, Long orderId, Long customerId) {
 		super();
 		this.paymentId = paymentId;

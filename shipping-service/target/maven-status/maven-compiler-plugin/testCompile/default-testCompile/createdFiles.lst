@@ -1,0 +1,5 @@
+it\vinicioflamini\omt\shipment\integration\test\ShipmentServiceIntegrationTest.class
+it\vinicioflamini\omt\shipment\integration\test\ShipmentServiceIntegrationTest$InventoryServiceIntegrationTestContextConfiguration.class
+it\vinicioflamini\omt\shipment\test\TestingWebApplicationTest.class
+it\vinicioflamini\omt\shipment\integration\test\ShipmentEventSourceIntegrationTest$ItemFetchedEventSourceIntegrationTestContextConfiguration.class
+it\vinicioflamini\omt\shipment\integration\test\ShipmentEventSourceIntegrationTest.class

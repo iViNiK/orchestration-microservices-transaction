@@ -22,5 +22,4 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableCircuitBreaker
 public class ApplicationConfiguration {
 
-
 }

@@ -45,6 +45,10 @@ public class Order implements Serializable {
 	@Column(name = "status", nullable = true)
 	private OrderStatus status;
 	
+	public Order() {
+		super();
+	}
+	
 	public Long getId() {
 		return id;
 	}
