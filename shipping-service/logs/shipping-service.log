@@ -272,3 +272,23 @@
 2021-04-29 10:05:09,778  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 8592 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
 2021-04-29 10:05:09,787  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
 2021-04-29 10:05:17,289  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 8.173 seconds (JVM running for 9.184) 
+2021-05-12 15:53:14,402  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Starting PackageTest on DESKTOP-VOMVIUL with PID 4848 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-12 15:53:14,404  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | The following profiles are active: dev 
+2021-05-12 15:53:24,713  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Started PackageTest in 10.765 seconds (JVM running for 13.558) 
+2021-05-12 15:53:25,240  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: -1 
+2021-05-12 15:53:25,240  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order -1 
+2021-05-12 15:55:42,508  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Starting PackageTest on DESKTOP-VOMVIUL with PID 14580 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-12 15:55:42,508  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | The following profiles are active: dev 
+2021-05-12 15:55:53,013  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Started PackageTest in 11.022 seconds (JVM running for 13.609) 
+2021-05-12 15:55:53,546  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order -1 
+2021-05-12 15:55:53,546  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order -1 
+2021-05-12 16:06:36,365  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Starting PackageTest on DESKTOP-VOMVIUL with PID 6880 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-12 16:06:36,366  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | The following profiles are active: dev 
+2021-05-12 16:06:46,342  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Started PackageTest in 10.507 seconds (JVM running for 13.151) 
+2021-05-12 16:06:46,871  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order -1 
+2021-05-12 16:06:46,871  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order -1 
+2021-05-12 16:23:17,425  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Starting PackageTest on DESKTOP-VOMVIUL with PID 8308 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-12 16:23:17,426  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | The following profiles are active: dev 
+2021-05-12 16:23:27,438  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Started PackageTest in 10.49 seconds (JVM running for 13.356) 
+2021-05-12 16:23:27,939  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: -1 
+2021-05-12 16:23:27,939  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order -1 

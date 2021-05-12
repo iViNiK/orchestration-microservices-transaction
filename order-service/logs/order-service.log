@@ -19255,3 +19255,28 @@
 2021-05-12 09:30:18,850  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Started PackageTest in 8.361 seconds (JVM running for 10.599) 
 2021-05-12 09:30:19,439  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order 1 was CREATED 
 2021-05-12 09:30:19,737  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order -1 was REJECTED 
+2021-05-12 14:54:30,251  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Starting PackageTest on DESKTOP-VOMVIUL with PID 6296 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-12 14:54:30,251  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | The following profiles are active: dev 
+2021-05-12 14:54:38,380  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Started PackageTest in 8.493 seconds (JVM running for 10.821) 
+2021-05-12 14:54:38,941  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order 1 was CREATED 
+2021-05-12 14:54:39,244  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order -1 was REJECTED 
+2021-05-12 15:07:26,311  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Starting PackageTest on DESKTOP-VOMVIUL with PID 11552 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-12 15:07:26,318  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | The following profiles are active: dev 
+2021-05-12 15:07:34,736  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Started PackageTest in 8.78 seconds (JVM running for 11.155) 
+2021-05-12 15:07:35,314  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order 1 was CREATED 
+2021-05-12 15:07:35,657  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order -1 was REJECTED 
+2021-05-12 15:54:30,224  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Starting PackageTest on DESKTOP-VOMVIUL with PID 15036 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-12 15:54:30,225  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | The following profiles are active: dev 
+2021-05-12 15:54:40,417  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Started PackageTest in 10.677 seconds (JVM running for 13.422) 
+2021-05-12 15:54:41,028  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order 1 was CREATED 
+2021-05-12 15:54:41,399  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order -1 was REJECTED 
+2021-05-12 16:05:21,721  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Starting PackageTest on DESKTOP-VOMVIUL with PID 13652 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-12 16:05:21,722  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | The following profiles are active: dev 
+2021-05-12 16:05:32,076  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Started PackageTest in 10.87 seconds (JVM running for 13.784) 
+2021-05-12 16:05:32,781  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order 1 was CREATED 
+2021-05-12 16:05:33,102  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order -1 was REJECTED 
+2021-05-12 16:21:54,729  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Starting PackageTest on DESKTOP-VOMVIUL with PID 12660 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-12 16:21:54,729  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | The following profiles are active: dev 
+2021-05-12 16:22:04,949  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Started PackageTest in 10.738 seconds (JVM running for 13.523) 
+2021-05-12 16:22:05,567  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order 1 was CREATED 
+2021-05-12 16:22:05,897  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order -1 was REJECTED 

@@ -341,3 +341,113 @@
 2021-05-11 10:06:11,582  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 12476 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
 2021-05-11 10:06:11,582  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | The following profiles are active: dev 
 2021-05-11 10:06:21,467  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | Started TestingWebApplicationTest in 10.32 seconds (JVM running for 11.376) 
+2021-05-12 09:52:03,682  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 12808 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 09:52:03,682  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 09:52:11,628  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.293 seconds (JVM running for 10.508) 
+2021-05-12 09:52:12,122  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 09:52:12,122  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 09:53:18,998  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 16820 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 09:53:18,999  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 09:53:26,779  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.121 seconds (JVM running for 10.323) 
+2021-05-12 09:53:27,260  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 09:53:27,260  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:04:19,706  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 13500 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:04:19,706  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:04:27,490  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.123 seconds (JVM running for 10.348) 
+2021-05-12 10:04:27,956  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 10:04:27,956  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:06:48,397  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 16136 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:06:48,398  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:06:56,242  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.182 seconds (JVM running for 10.451) 
+2021-05-12 10:06:56,710  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:06:56,710  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 10:38:28,291  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 12032 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:38:28,292  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:38:36,137  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.191 seconds (JVM running for 10.399) 
+2021-05-12 10:38:36,606  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:38:36,606  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 10:40:28,957  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 10708 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:40:28,957  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:40:36,816  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.188 seconds (JVM running for 10.463) 
+2021-05-12 10:40:37,305  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:40:37,305  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 10:41:19,651  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 16392 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:41:19,651  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:41:27,461  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.15 seconds (JVM running for 10.351) 
+2021-05-12 10:41:27,920  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 10:41:27,920  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:42:08,544  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 728 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:42:08,545  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:42:16,340  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.139 seconds (JVM running for 10.43) 
+2021-05-12 10:42:16,810  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:42:16,810  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 10:43:30,209  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 10496 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:43:30,210  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:43:37,981  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.121 seconds (JVM running for 10.329) 
+2021-05-12 10:43:38,452  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 10:43:38,452  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:45:15,226  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 7180 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:45:15,227  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:45:22,981  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.099 seconds (JVM running for 10.302) 
+2021-05-12 10:45:23,453  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:45:23,453  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 10:47:09,873  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 17196 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:47:09,873  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:47:17,731  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.176 seconds (JVM running for 10.461) 
+2021-05-12 10:47:18,205  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 10:47:18,206  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:51:18,366  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 16632 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:51:18,366  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:51:26,162  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.156 seconds (JVM running for 10.359) 
+2021-05-12 10:51:26,624  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 10:51:26,624  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:57:24,592  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 14620 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:57:24,592  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:57:32,485  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.234 seconds (JVM running for 10.442) 
+2021-05-12 10:57:32,956  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:57:32,956  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 14:50:47,265  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 5996 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 14:50:47,266  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 14:50:55,422  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.516 seconds (JVM running for 10.855) 
+2021-05-12 14:50:55,924  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 14:50:55,924  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 14:52:51,872  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 5724 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 14:52:51,872  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 14:52:59,790  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.273 seconds (JVM running for 10.59) 
+2021-05-12 14:53:00,302  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 14:53:00,303  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 14:55:07,135  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 4988 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 14:55:07,135  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 14:55:15,097  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.308 seconds (JVM running for 10.603) 
+2021-05-12 14:55:15,585  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 14:55:15,585  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 15:08:04,925  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 1792 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 15:08:04,931  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 15:08:12,640  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.061 seconds (JVM running for 10.459) 
+2021-05-12 15:08:13,110  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 15:08:13,111  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 15:15:09,734  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 10508 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 15:15:09,734  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 15:15:18,017  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.627 seconds (JVM running for 10.817) 
+2021-05-12 15:15:18,480  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 15:15:18,481  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 15:20:53,027  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 6152 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 15:20:53,027  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 15:21:02,964  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.437 seconds (JVM running for 13.191) 
+2021-05-12 15:21:03,569  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 15:21:03,569  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 15:55:19,964  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 13952 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 15:55:19,965  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 15:55:30,107  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.645 seconds (JVM running for 13.297) 
+2021-05-12 15:55:30,677  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 15:55:30,677  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 16:06:13,565  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 116 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 16:06:13,566  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 16:06:23,868  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.798 seconds (JVM running for 13.471) 
+2021-05-12 16:06:24,440  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 16:06:24,440  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 16:22:36,171  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 2104 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 16:22:36,171  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 16:22:45,980  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.363 seconds (JVM running for 13.071) 
+2021-05-12 16:22:46,563  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 16:22:46,563  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 

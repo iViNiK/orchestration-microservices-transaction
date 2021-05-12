@@ -24,7 +24,7 @@ public class PaymentController {
 	@Autowired
 	private PaymentService paymentService;
 
-	@PostMapping()
+	@PostMapping("/")
 	public ResponseEntity<String> makePayment(@RequestBody OrderRequest req) {
 		try {
 			Long paymentId = paymentService.makePayment(req.getOrderId(), req.getItemId(), req.getCustomerId());

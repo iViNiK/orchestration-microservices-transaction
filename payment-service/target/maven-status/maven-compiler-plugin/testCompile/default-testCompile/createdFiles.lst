@@ -1,5 +1,7 @@
-it\vinicioflamini\omt\payment\integration\test\PaymentServiceIntegrationTest.class
 it\vinicioflamini\omt\payment\integration\test\PaymentEventSourceIntegrationTest$ItemFetchedEventSourceIntegrationTestContextConfiguration.class
 it\vinicioflamini\omt\payment\test\TestingWebApplicationTest.class
+it\vinicioflamini\omt\payment\test\PackageTest.class
+it\vinicioflamini\omt\payment\integration\test\PaymentServiceIntegrationTest.class
+it\vinicioflamini\omt\payment\test\BaseTestClass.class
 it\vinicioflamini\omt\payment\integration\test\PaymentEventSourceIntegrationTest.class
 it\vinicioflamini\omt\payment\integration\test\PaymentServiceIntegrationTest$InventoryServiceIntegrationTestContextConfiguration.class

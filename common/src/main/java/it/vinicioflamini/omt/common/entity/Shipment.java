@@ -17,7 +17,7 @@ public class Shipment implements Serializable {
 	@GeneratedValue
 	private Long id;
 
-	@Column(name = "shipment_id", nullable = false)
+	@Column(name = "shipment_id", nullable = true)
 	private Long shipmentId;
 
 	@Column(name = "item_id", nullable = false)
@@ -29,7 +29,7 @@ public class Shipment implements Serializable {
 	@Column(name = "customer_id", nullable = false)
 	private Long customerId;
 
-	@Column(name = "processed", nullable = false)
+	@Column(name = "processed", nullable = true)
 	private boolean processed;
 	
 	public Shipment() {

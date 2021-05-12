@@ -21927,3 +21927,159 @@
 2021-05-12 09:35:06,457  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | Started ShipmentFailedEventListenerIntegrationTest in 5.556 seconds (JVM running for 214.044) 
 2021-05-12 09:35:06,472  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Received a "ShipmentFailedEvent" for order 10 
 2021-05-12 09:35:06,472  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Going to call shipment service to process shipment for order 10 
+2021-05-12 14:56:10,333  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-12 14:56:12,974  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 14:56:22,036  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 14:56:26,989  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | Started ItemFetchedEventListenerIntegrationTest in 16.683 seconds (JVM running for 20.831) 
+2021-05-12 14:56:27,065  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order 10 
+2021-05-12 14:56:27,065  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Going to call payment service for order 10 
+2021-05-12 14:56:27,348  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order null 
+2021-05-12 14:56:27,348  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Unable to call payment service. Order ID (null) and/or Item ID (null) are NULL. 
+2021-05-12 14:56:32,698  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | Started InventoryServiceContractVerifierTest in 25.365 seconds (JVM running for 26.545) 
+2021-05-12 14:56:35,873  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | Started ItemNotCompensatedEventListenerIntegrationTest in 16.611 seconds (JVM running for 29.715) 
+2021-05-12 14:56:35,921  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Received an "ItemNotCompensated" for order 10 
+2021-05-12 14:56:35,921  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Going to call order service to compensate inventory for order 10 
+2021-05-12 14:57:43,047  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 14:57:48,005  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | Started ItemOutOfStockEventListenerIntegrationTest in 6.21 seconds (JVM running for 101.847) 
+2021-05-12 14:57:48,020  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Received an "ItemOutOfStock" for order 10 
+2021-05-12 14:57:48,020  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Going to call order service to compensate order 10 
+2021-05-12 15:09:05,630  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-12 15:09:08,144  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:09:15,373  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:09:21,345  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | Started ItemFetchedEventListenerIntegrationTest in 15.547 seconds (JVM running for 19.465) 
+2021-05-12 15:09:21,418  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order 10 
+2021-05-12 15:09:21,418  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Going to call payment service for order 10 
+2021-05-12 15:09:21,701  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order null 
+2021-05-12 15:09:21,701  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Unable to call payment service. Order ID (null) and/or Item ID (null) are NULL. 
+2021-05-12 15:09:27,007  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | Started InventoryServiceContractVerifierTest in 23.989 seconds (JVM running for 25.128) 
+2021-05-12 15:09:28,326  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | Started ItemNotCompensatedEventListenerIntegrationTest in 14.942 seconds (JVM running for 26.449) 
+2021-05-12 15:09:28,378  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Received an "ItemNotCompensated" for order 10 
+2021-05-12 15:09:28,379  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Going to call order service to compensate inventory for order 10 
+2021-05-12 15:10:27,907  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:10:33,797  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | Started ItemOutOfStockEventListenerIntegrationTest in 6.854 seconds (JVM running for 91.918) 
+2021-05-12 15:10:33,820  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Received an "ItemOutOfStock" for order 10 
+2021-05-12 15:10:33,821  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Going to call order service to compensate order 10 
+2021-05-12 15:11:21,111  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:11:27,329  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | Started OrderNotPlacedEventListenerIntegrationTest in 7.198 seconds (JVM running for 145.449) 
+2021-05-12 15:11:27,343  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 10 
+2021-05-12 15:11:27,343  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 10 
+2021-05-12 15:11:41,177  INFO | main | i.v.o.o.i.test.OrderPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:11:47,450  INFO | main | i.v.o.o.i.test.OrderPlacedEventListenerIntegrationTest | Started OrderPlacedEventListenerIntegrationTest in 7.209 seconds (JVM running for 165.571) 
+2021-05-12 15:11:47,472  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order 10 
+2021-05-12 15:11:47,472  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order 10 
+2021-05-12 15:12:19,540  INFO | main | i.v.o.o.i.t.PaymentFailedEventListenerIntegrationTest  | The following profiles are active: dev 
+2021-05-12 15:12:24,100  INFO | main | i.v.o.o.i.t.PaymentFailedEventListenerIntegrationTest  | Started PaymentFailedEventListenerIntegrationTest in 5.51 seconds (JVM running for 202.222) 
+2021-05-12 15:12:24,121  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Received a "PaymentFailedEvent" for order id: 10 
+2021-05-12 15:12:24,121  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Going to call item service to compensate item for order id: 10 
+2021-05-12 15:13:11,117  INFO | main | i.v.o.o.i.t.PaymentReceivedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:13:17,222  INFO | main | i.v.o.o.i.t.PaymentReceivedEventListenerIntegrationTest | Started PaymentReceivedEventListenerIntegrationTest in 7.049 seconds (JVM running for 255.342) 
+2021-05-12 15:13:17,235  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Received a "PaymentReceivedEvent" for order id: 10 
+2021-05-12 15:13:17,235  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Going to call shipment service for order id: 10 
+2021-05-12 15:13:34,709  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:13:41,403  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | Started ShipmentFailedEventListenerIntegrationTest in 7.62 seconds (JVM running for 279.523) 
+2021-05-12 15:13:41,418  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Received a "ShipmentFailedEvent" for order 10 
+2021-05-12 15:13:41,418  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Going to call shipment service to process shipment for order 10 
+2021-05-12 15:56:53,386  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-12 15:56:58,350  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:57:24,053  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | Started ItemFetchedEventListenerIntegrationTest in 30.495 seconds (JVM running for 37.405) 
+2021-05-12 15:57:24,105  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order 10 
+2021-05-12 15:57:24,106  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Going to call payment service for order 10 
+2021-05-12 15:57:24,373  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order null 
+2021-05-12 15:57:24,373  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Unable to call payment service. Order ID (null) and/or Item ID (null) are NULL. 
+2021-05-12 15:57:34,540  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:57:48,022  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | Started ItemNotCompensatedEventListenerIntegrationTest in 15.661 seconds (JVM running for 61.382) 
+2021-05-12 15:57:48,073  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Received an "ItemNotCompensated" for order 10 
+2021-05-12 15:57:48,073  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Going to call order service to compensate inventory for order 10 
+2021-05-12 15:58:35,929  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:58:40,944  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | Started ItemOutOfStockEventListenerIntegrationTest in 6.14 seconds (JVM running for 114.303) 
+2021-05-12 15:58:40,973  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Received an "ItemOutOfStock" for order 10 
+2021-05-12 15:58:40,973  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Going to call order service to compensate order 10 
+2021-05-12 15:59:13,465  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 15:59:19,927  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | Started OrderNotPlacedEventListenerIntegrationTest in 7.665 seconds (JVM running for 153.279) 
+2021-05-12 15:59:19,944  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 10 
+2021-05-12 15:59:19,944  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 10 
+2021-05-12 16:08:04,852  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-12 16:08:10,486  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:08:36,936  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | Started ItemFetchedEventListenerIntegrationTest in 31.892 seconds (JVM running for 38.687) 
+2021-05-12 16:08:37,008  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order 10 
+2021-05-12 16:08:37,008  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Going to call payment service for order 10 
+2021-05-12 16:08:37,261  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order null 
+2021-05-12 16:08:37,261  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Unable to call payment service. Order ID (null) and/or Item ID (null) are NULL. 
+2021-05-12 16:08:45,901  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:08:59,603  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | Started ItemNotCompensatedEventListenerIntegrationTest in 16.187 seconds (JVM running for 61.35) 
+2021-05-12 16:08:59,655  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Received an "ItemNotCompensated" for order 10 
+2021-05-12 16:08:59,655  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Going to call order service to compensate inventory for order 10 
+2021-05-12 16:09:51,164  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:09:56,330  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | Started ItemOutOfStockEventListenerIntegrationTest in 6.31 seconds (JVM running for 118.076) 
+2021-05-12 16:09:56,347  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Received an "ItemOutOfStock" for order 10 
+2021-05-12 16:09:56,347  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Going to call order service to compensate order 10 
+2021-05-12 16:15:04,339  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-12 16:15:08,853  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:15:34,485  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | Started ItemFetchedEventListenerIntegrationTest in 30.453 seconds (JVM running for 36.997) 
+2021-05-12 16:15:34,554  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order 10 
+2021-05-12 16:15:34,554  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Going to call payment service for order 10 
+2021-05-12 16:15:34,838  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order null 
+2021-05-12 16:15:34,838  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Unable to call payment service. Order ID (null) and/or Item ID (null) are NULL. 
+2021-05-12 16:15:44,256  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:15:57,725  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | Started ItemNotCompensatedEventListenerIntegrationTest in 15.641 seconds (JVM running for 60.254) 
+2021-05-12 16:15:57,793  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Received an "ItemNotCompensated" for order 10 
+2021-05-12 16:15:57,793  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Going to call order service to compensate inventory for order 10 
+2021-05-12 16:16:53,992  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:16:59,008  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | Started ItemOutOfStockEventListenerIntegrationTest in 6.173 seconds (JVM running for 121.538) 
+2021-05-12 16:16:59,027  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Received an "ItemOutOfStock" for order 10 
+2021-05-12 16:16:59,027  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Going to call order service to compensate order 10 
+2021-05-12 16:17:47,763  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:17:52,406  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | Started OrderNotPlacedEventListenerIntegrationTest in 5.715 seconds (JVM running for 174.935) 
+2021-05-12 16:17:52,420  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 10 
+2021-05-12 16:17:52,420  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 10 
+2021-05-12 16:17:53,330  INFO | main | i.v.o.o.i.test.OrderPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:17:59,551  INFO | main | i.v.o.o.i.test.OrderPlacedEventListenerIntegrationTest | Started OrderPlacedEventListenerIntegrationTest in 8.123 seconds (JVM running for 182.064) 
+2021-05-12 16:17:59,567  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order 10 
+2021-05-12 16:17:59,567  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order 10 
+2021-05-12 16:18:44,779  INFO | main | i.v.o.o.i.t.PaymentFailedEventListenerIntegrationTest  | The following profiles are active: dev 
+2021-05-12 16:18:48,766  INFO | main | i.v.o.o.i.t.PaymentFailedEventListenerIntegrationTest  | Started PaymentFailedEventListenerIntegrationTest in 5.043 seconds (JVM running for 231.295) 
+2021-05-12 16:18:48,779  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Received a "PaymentFailedEvent" for order id: 10 
+2021-05-12 16:18:48,779  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Going to call item service to compensate item for order id: 10 
+2021-05-12 16:19:01,811  INFO | main | i.v.o.o.i.t.PaymentReceivedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:19:06,952  INFO | main | i.v.o.o.i.t.PaymentReceivedEventListenerIntegrationTest | Started PaymentReceivedEventListenerIntegrationTest in 6.221 seconds (JVM running for 249.465) 
+2021-05-12 16:19:06,965  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Received a "PaymentReceivedEvent" for order id: 10 
+2021-05-12 16:19:06,966  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Going to call shipment service for order id: 10 
+2021-05-12 16:19:47,894  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:19:51,888  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | Started ShipmentFailedEventListenerIntegrationTest in 5.049 seconds (JVM running for 294.418) 
+2021-05-12 16:19:51,904  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Received a "ShipmentFailedEvent" for order 10 
+2021-05-12 16:19:51,904  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Going to call shipment service to process shipment for order 10 
+2021-05-12 16:24:34,248  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-12 16:24:39,396  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:25:06,374  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | Started ItemFetchedEventListenerIntegrationTest in 32.237 seconds (JVM running for 39.172) 
+2021-05-12 16:25:06,419  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order 10 
+2021-05-12 16:25:06,419  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Going to call payment service for order 10 
+2021-05-12 16:25:06,663  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order null 
+2021-05-12 16:25:06,663  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Unable to call payment service. Order ID (null) and/or Item ID (null) are NULL. 
+2021-05-12 16:25:16,091  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:25:30,025  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | Started ItemNotCompensatedEventListenerIntegrationTest in 16.107 seconds (JVM running for 62.937) 
+2021-05-12 16:25:30,071  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Received an "ItemNotCompensated" for order 10 
+2021-05-12 16:25:30,072  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Going to call order service to compensate inventory for order 10 
+2021-05-12 16:26:37,692  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:26:38,994  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:26:46,615  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | Started OrderNotPlacedEventListenerIntegrationTest in 9.53 seconds (JVM running for 139.527) 
+2021-05-12 16:26:46,641  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 10 
+2021-05-12 16:26:46,641  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 10 
+2021-05-12 16:26:47,507  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | Started ItemOutOfStockEventListenerIntegrationTest in 11.351 seconds (JVM running for 140.304) 
+2021-05-12 16:26:47,522  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Received an "ItemOutOfStock" for order 10 
+2021-05-12 16:26:47,522  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Going to call order service to compensate order 10 
+2021-05-12 16:28:00,479  INFO | main | i.v.o.o.i.test.OrderPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:28:05,051  INFO | main | i.v.o.o.i.test.OrderPlacedEventListenerIntegrationTest | Started OrderPlacedEventListenerIntegrationTest in 5.653 seconds (JVM running for 217.963) 
+2021-05-12 16:28:05,065  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order 10 
+2021-05-12 16:28:05,065  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order 10 
+2021-05-12 16:28:05,530  INFO | main | i.v.o.o.i.t.PaymentFailedEventListenerIntegrationTest  | The following profiles are active: dev 
+2021-05-12 16:28:10,821  INFO | main | i.v.o.o.i.t.PaymentFailedEventListenerIntegrationTest  | Started PaymentFailedEventListenerIntegrationTest in 6.948 seconds (JVM running for 223.619) 
+2021-05-12 16:28:10,833  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Received a "PaymentFailedEvent" for order id: 10 
+2021-05-12 16:28:10,833  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Going to call item service to compensate item for order id: 10 
+2021-05-12 16:29:13,411  INFO | main | i.v.o.o.i.t.PaymentReceivedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:29:15,638  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-12 16:29:18,313  INFO | main | i.v.o.o.i.t.PaymentReceivedEventListenerIntegrationTest | Started PaymentReceivedEventListenerIntegrationTest in 5.975 seconds (JVM running for 291.226) 
+2021-05-12 16:29:18,329  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Received a "PaymentReceivedEvent" for order id: 10 
+2021-05-12 16:29:18,329  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Going to call shipment service for order id: 10 
+2021-05-12 16:29:21,257  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | Started ShipmentFailedEventListenerIntegrationTest in 7.162 seconds (JVM running for 294.054) 
+2021-05-12 16:29:21,268  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Received a "ShipmentFailedEvent" for order 10 
+2021-05-12 16:29:21,269  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Going to call shipment service to process shipment for order 10 

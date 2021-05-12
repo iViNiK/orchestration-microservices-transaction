@@ -24,7 +24,7 @@ public class ShippingController {
 	@Autowired
 	private ShippingService shippingService;
 
-	@PostMapping()
+	@PostMapping("/")
 	public ResponseEntity<String> processShippment(@RequestBody OrderRequest req) {
 		try {
 			Long shipmentId = shippingService.processShipment(req.getOrderId(), req.getItemId(), req.getCustomerId());

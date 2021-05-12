@@ -1,0 +1,26 @@
+{
+  "id" : "dafb0315-a1de-46d0-a0bf-ad94d8dee241",
+  "request" : {
+    "url" : "/",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['orderId'] == -1)]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['itemId'] == -1)]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['customerId'] == -1)]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[\\S\\s]+",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "dafb0315-a1de-46d0-a0bf-ad94d8dee241",
+  "priority" : 1
+}

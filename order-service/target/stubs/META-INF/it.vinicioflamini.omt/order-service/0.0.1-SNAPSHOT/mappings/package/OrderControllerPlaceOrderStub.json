@@ -1,5 +1,5 @@
 {
-  "id" : "2e2c7e08-70c7-41d6-bfd3-d483ac42ba77",
+  "id" : "1518ae05-b3de-4186-9346-c798d222a74b",
   "request" : {
     "url" : "/",
     "method" : "POST",
@@ -19,6 +19,6 @@
     "body" : "{\"message\":\"[\\\\S\\\\s]+\",\"orderId\":\"-?(\\\\d*\\\\.\\\\d+|\\\\d+)\",\"itemId\":-1,\"customerId\":-1}",
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "2e2c7e08-70c7-41d6-bfd3-d483ac42ba77",
+  "uuid" : "1518ae05-b3de-4186-9346-c798d222a74b",
   "priority" : 1
 }

@@ -17,19 +17,19 @@ public class Payment implements Serializable {
 	@GeneratedValue
 	private Long id;
 
-	@Column(name = "payment_id", nullable = false)
+	@Column(name = "payment_id", nullable = true)
 	private Long paymentId;
 
-	@Column(name = "item_id", nullable = false)
+	@Column(name = "item_id", nullable = true)
 	private Long itemId;
 
-	@Column(name = "order_id", nullable = false)
+	@Column(name = "order_id", nullable = true)
 	private Long orderId;
 
-	@Column(name = "customer_id", nullable = false)
+	@Column(name = "customer_id", nullable = true)
 	private Long customerId;
 	
-	@Column(name = "approved", nullable = false)
+	@Column(name = "approved", nullable = true)
 	private boolean approved;
 	
 	public Payment() {

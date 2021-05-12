@@ -18,6 +18,7 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.MimeTypeUtils;
 
@@ -28,6 +29,7 @@ import it.vinicioflamini.omt.payment.kafka.channel.PaymentChannel;
 import it.vinicioflamini.omt.payment.kafka.source.PaymentEventSource;
 
 @RunWith(SpringRunner.class)
+@DirtiesContext
 public class PaymentEventSourceIntegrationTest {
 	@TestConfiguration
 	static class ItemFetchedEventSourceIntegrationTestContextConfiguration {
