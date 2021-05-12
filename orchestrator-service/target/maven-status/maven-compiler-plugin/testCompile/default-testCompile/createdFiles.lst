@@ -7,6 +7,7 @@ it\vinicioflamini\omt\orchestrator\integration\test\ItemOutOfStockEventListenerI
 it\vinicioflamini\omt\orchestrator\integration\test\ItemNotCompensatedEventListenerIntegrationTest$App.class
 it\vinicioflamini\omt\orchestrator\integration\test\TestProducer.class
 it\vinicioflamini\omt\orchestrator\integration\test\OrderPlacedEventListenerIntegrationTest.class
+it\vinicioflamini\omt\orchestrator\contract\test\InventoryServiceContractVerifierTest.class
 it\vinicioflamini\omt\orchestrator\integration\test\OrderPlacedEventListenerIntegrationTest$App.class
 it\vinicioflamini\omt\orchestrator\integration\test\ShipmentFailedEventListenerIntegrationTest.class
 it\vinicioflamini\omt\orchestrator\integration\test\ItemFetchedEventListenerIntegrationTest.class

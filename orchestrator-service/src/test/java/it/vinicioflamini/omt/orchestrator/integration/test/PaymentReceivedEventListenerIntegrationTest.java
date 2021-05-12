@@ -20,6 +20,7 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.test.binder.TestSupportBinderAutoConfiguration;
 import org.springframework.kafka.test.rule.EmbeddedKafkaRule;
 import org.springframework.messaging.support.MessageBuilder;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import it.vinicioflamini.omt.common.domain.Action;
@@ -32,6 +33,7 @@ import it.vinicioflamini.omt.orchestrator.rest.ShipmentRestClient;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = { PaymentReceivedEventListenerIntegrationTest.App.class, TestProducer.class, PaymentReceivedEventListener.class })
 @EnableBinding(OrchestratorChannel.class)
+@DirtiesContext
 public class PaymentReceivedEventListenerIntegrationTest {
 	@SpringBootApplication(exclude = TestSupportBinderAutoConfiguration.class)
 	static class App {

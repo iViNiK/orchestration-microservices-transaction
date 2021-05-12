@@ -1,5 +1,5 @@
 {
-  "id" : "1d99b5b9-c765-467e-b3e9-edf62b87aa45",
+  "id" : "1caa39f4-2b60-4077-bb72-c525954586e0",
   "request" : {
     "url" : "/compensate",
     "method" : "POST",
@@ -19,6 +19,6 @@
     "body" : "Request placed for item -1 compensation",
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "1d99b5b9-c765-467e-b3e9-edf62b87aa45",
+  "uuid" : "1caa39f4-2b60-4077-bb72-c525954586e0",
   "priority" : 1
 }

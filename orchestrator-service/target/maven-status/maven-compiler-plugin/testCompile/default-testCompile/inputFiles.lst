@@ -3,6 +3,7 @@ E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestr
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestrator\integration\test\PaymentReceivedEventListenerIntegrationTest.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestrator\integration\test\TestProducer.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestrator\integration\test\FallbackEventSourceTest.java
+E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestrator\contract\test\InventoryServiceContractVerifierTest.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestrator\integration\test\ItemOutOfStockEventListenerIntegrationTest.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestrator\integration\test\ItemFetchedEventListenerIntegrationTest.java
 E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\orchestrator-service\src\test\java\it\vinicioflamini\omt\orchestrator\integration\test\PaymentFailedEventListenerIntegrationTest.java

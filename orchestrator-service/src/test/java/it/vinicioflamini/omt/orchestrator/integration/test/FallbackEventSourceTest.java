@@ -21,6 +21,7 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.MimeTypeUtils;
 
@@ -35,6 +36,7 @@ import it.vinicioflamini.omt.orchestrator.kafka.source.FallbackEventSource;
 import it.vinicioflamini.omt.orchestrator.kafka.source.MessageChannelFactory;
 
 @RunWith(SpringRunner.class)
+@DirtiesContext
 public class FallbackEventSourceTest {
 
 	@TestConfiguration

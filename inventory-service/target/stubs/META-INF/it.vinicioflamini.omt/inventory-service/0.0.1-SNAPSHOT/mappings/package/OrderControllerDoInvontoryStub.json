@@ -1,5 +1,5 @@
 {
-  "id" : "306126d0-ec33-4266-a73e-147801ae7f9c",
+  "id" : "f88ec464-bdc8-4c55-82ef-937e761dfe48",
   "request" : {
     "url" : "/",
     "method" : "POST",
@@ -19,6 +19,6 @@
     "body" : "Request placed for item -1 fetching",
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "306126d0-ec33-4266-a73e-147801ae7f9c",
+  "uuid" : "f88ec464-bdc8-4c55-82ef-937e761dfe48",
   "priority" : 1
 }
