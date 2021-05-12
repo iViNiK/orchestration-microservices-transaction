@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: it.vinicioflamini.omt.orchestrator.integration.test.ItemNotCompensatedEventListenerIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.626 s - in it.vinicioflamini.omt.orchestrator.integration.test.ItemNotCompensatedEventListenerIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 81.242 s - in it.vinicioflamini.omt.orchestrator.integration.test.ItemNotCompensatedEventListenerIntegrationTest

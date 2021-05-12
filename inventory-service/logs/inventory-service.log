@@ -1210,3 +1210,35 @@
 2021-05-12 07:22:51,061  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 12.118 seconds (JVM running for 14.806) 
 2021-05-12 07:22:51,706  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
 2021-05-12 07:22:52,082  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-12 07:29:52,946  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 5300 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-12 07:29:52,947  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-12 07:30:01,347  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 8.752 seconds (JVM running for 11.029) 
+2021-05-12 07:30:01,820  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-12 07:30:02,132  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-12 07:30:05,076  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-12 07:31:31,387  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 3836 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-12 07:31:31,387  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-12 07:31:39,757  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 8.733 seconds (JVM running for 11.015) 
+2021-05-12 07:31:40,248  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-12 07:31:40,544  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-12 07:31:45,027  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-12 07:33:28,721  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 13796 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-12 07:33:28,721  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-12 07:33:37,312  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 8.953 seconds (JVM running for 11.294) 
+2021-05-12 07:33:37,791  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-12 07:33:38,116  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-12 07:33:40,094  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-12 07:33:45,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item -1 
+2021-05-12 07:46:00,747  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 15012 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-12 07:46:00,747  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-12 07:46:09,134  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 8.72 seconds (JVM running for 11.077) 
+2021-05-12 07:46:09,618  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-12 07:46:09,931  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-12 07:46:10,072  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-12 07:46:15,004  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item -1 
+2021-05-12 07:51:08,127  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 2876 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-12 07:51:08,127  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-12 07:51:16,133  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 8.373 seconds (JVM running for 10.706) 
+2021-05-12 07:51:16,633  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-12 07:51:16,956  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-12 07:51:20,081  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
