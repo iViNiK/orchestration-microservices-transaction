@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: it.vinicioflamini.omt.orchestrator.integration.test.FallbackEventSourceTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.996 s - in it.vinicioflamini.omt.orchestrator.integration.test.FallbackEventSourceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.467 s - in it.vinicioflamini.omt.orchestrator.integration.test.FallbackEventSourceTest

@@ -17,7 +17,7 @@ import static io.restassured.module.mockmvc.RestAssuredMockMvc.*;
 public class PackageTest extends BaseTestClass {
 
 	@Test
-	public void validate_orderControllerCompensateStub() throws Exception {
+	public void validate_inventoryControllerCompensateStub() throws Exception {
 		// given:
 			MockMvcRequestSpecification request = given()
 					.header("Content-Type", "application/json")
@@ -36,7 +36,7 @@ public class PackageTest extends BaseTestClass {
 	}
 
 	@Test
-	public void validate_orderControllerDoInvontoryStub() throws Exception {
+	public void validate_inventoryControllerDoInvontoryStub() throws Exception {
 		// given:
 			MockMvcRequestSpecification request = given()
 					.header("Content-Type", "application/json")

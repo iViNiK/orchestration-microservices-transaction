@@ -15,6 +15,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -31,6 +32,7 @@ import it.vinicioflamini.omt.order.repository.OrderRepository;
 import it.vinicioflamini.omt.order.service.OrderService;
 
 @RunWith(SpringRunner.class)
+@DirtiesContext
 public class OrderServiceIntegrationTest {
 	@TestConfiguration
 	static class InventoryServiceIntegrationTestContextConfiguration {
