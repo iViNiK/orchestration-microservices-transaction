@@ -22190,3 +22190,153 @@
 2021-05-12 17:06:00,887  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | Started ShipmentFailedEventListenerIntegrationTest in 5.298 seconds (JVM running for 302.196) 
 2021-05-12 17:06:00,897  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Received a "ShipmentFailedEvent" for order 10 
 2021-05-12 17:06:00,897  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Going to call shipment service to process shipment for order 10 
+2021-05-12 17:17:46,271  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | Started InventoryServiceContractVerifierTest in 1004.995 seconds (JVM running for 1007.579) 
+2021-05-13 08:42:30,963  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 08:45:33,808  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 08:52:03,591  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | The following profiles are active: dev 
+2021-05-13 08:52:04,088  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 08:52:04,188  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 08:52:54,243  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 08:52:55,195  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 08:53:49,643  INFO | main | i.v.o.o.c.test.ShippingServiceContractVerifierTest     | The following profiles are active: dev 
+2021-05-13 08:54:15,181  INFO | main | i.v.omt.orchestrator.kafka.source.FallbackEventSource  | Event for object null with id 1 was NOT published. Going to reset outbox transaction. 
+2021-05-13 08:54:15,202  INFO | main | i.v.omt.orchestrator.kafka.source.FallbackEventSource  | Event for object null with id 1 was published successfully 
+2021-05-13 08:54:19,567  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 08:54:26,611  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | Started ItemFetchedEventListenerIntegrationTest in 7.916 seconds (JVM running for 151.456) 
+2021-05-13 08:54:26,691  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order 10 
+2021-05-13 08:54:26,691  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Going to call payment service for order 10 
+2021-05-13 08:54:26,929  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order null 
+2021-05-13 08:54:26,929  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Unable to call payment service. Order ID (null) and/or Item ID (null) are NULL. 
+2021-05-13 08:54:39,845  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 08:54:45,915  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | Started ItemNotCompensatedEventListenerIntegrationTest in 6.909 seconds (JVM running for 170.771) 
+2021-05-13 08:54:46,005  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Received an "ItemNotCompensated" for order 10 
+2021-05-13 08:54:46,006  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Going to call order service to compensate inventory for order 10 
+2021-05-13 08:55:27,839  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 08:55:33,247  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | Started ItemOutOfStockEventListenerIntegrationTest in 6.326 seconds (JVM running for 218.093) 
+2021-05-13 08:55:33,265  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Received an "ItemOutOfStock" for order 10 
+2021-05-13 08:55:33,265  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Going to call order service to compensate order 10 
+2021-05-13 08:55:49,113  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 08:55:54,340  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | Started OrderNotPlacedEventListenerIntegrationTest in 6.157 seconds (JVM running for 239.196) 
+2021-05-13 08:55:54,358  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 10 
+2021-05-13 08:55:54,358  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 10 
+2021-05-13 08:56:34,005  INFO | main | i.v.o.o.i.test.OrderPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 08:56:39,288  INFO | main | i.v.o.o.i.test.OrderPlacedEventListenerIntegrationTest | Started OrderPlacedEventListenerIntegrationTest in 6.174 seconds (JVM running for 284.134) 
+2021-05-13 08:56:39,305  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order 10 
+2021-05-13 08:56:39,305  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order 10 
+2021-05-13 08:56:59,388  INFO | main | i.v.o.o.i.t.PaymentFailedEventListenerIntegrationTest  | The following profiles are active: dev 
+2021-05-13 08:57:04,565  INFO | main | i.v.o.o.i.t.PaymentFailedEventListenerIntegrationTest  | Started PaymentFailedEventListenerIntegrationTest in 6.037 seconds (JVM running for 309.421) 
+2021-05-13 08:57:04,579  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Received a "PaymentFailedEvent" for order id: 10 
+2021-05-13 08:57:04,579  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Going to call item service to compensate item for order id: 10 
+2021-05-13 08:57:38,994  INFO | main | i.v.o.o.i.t.PaymentReceivedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 08:57:43,810  INFO | main | i.v.o.o.i.t.PaymentReceivedEventListenerIntegrationTest | Started PaymentReceivedEventListenerIntegrationTest in 5.741 seconds (JVM running for 348.655) 
+2021-05-13 08:57:43,827  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Received a "PaymentReceivedEvent" for order id: 10 
+2021-05-13 08:57:43,827  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Going to call shipment service for order id: 10 
+2021-05-13 08:58:06,535  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 08:58:11,244  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | Started ShipmentFailedEventListenerIntegrationTest in 5.559 seconds (JVM running for 376.1) 
+2021-05-13 08:58:11,258  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Received a "ShipmentFailedEvent" for order 10 
+2021-05-13 08:58:11,258  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Going to call shipment service to process shipment for order 10 
+2021-05-13 09:09:03,270  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | Started PaymentServiceContractVerifierTest in 1025.556 seconds (JVM running for 1028.126) 
+2021-05-13 09:13:54,378  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 09:13:54,397  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 09:13:54,447  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | The following profiles are active: dev 
+2021-05-13 09:14:42,475  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 09:15:05,673  INFO | main | i.v.o.o.c.test.ShippingServiceContractVerifierTest     | The following profiles are active: dev 
+2021-05-13 09:15:38,408  INFO | main | i.v.omt.orchestrator.kafka.source.FallbackEventSource  | Event for object null with id 1 was NOT published. Going to reset outbox transaction. 
+2021-05-13 09:15:38,423  INFO | main | i.v.omt.orchestrator.kafka.source.FallbackEventSource  | Event for object null with id 1 was published successfully 
+2021-05-13 09:15:42,767  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 09:15:49,807  INFO | main | i.v.o.o.i.test.ItemFetchedEventListenerIntegrationTest | Started ItemFetchedEventListenerIntegrationTest in 8.147 seconds (JVM running for 123.826) 
+2021-05-13 09:15:49,866  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order 10 
+2021-05-13 09:15:49,866  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Going to call payment service for order 10 
+2021-05-13 09:15:50,119  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Received an "ItemFetchedEvent" for order null 
+2021-05-13 09:15:50,119  INFO | main | i.v.omt.orchestrator.listener.ItemFetchedEventListener | Unable to call payment service. Order ID (null) and/or Item ID (null) are NULL. 
+2021-05-13 09:15:59,075  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 09:16:06,087  INFO | main | i.v.o.o.i.t.ItemNotCompensatedEventListenerIntegrationTest | Started ItemNotCompensatedEventListenerIntegrationTest in 7.917 seconds (JVM running for 140.218) 
+2021-05-13 09:16:06,177  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Received an "ItemNotCompensated" for order 10 
+2021-05-13 09:16:06,177  INFO | main | i.v.o.o.listener.ItemNotCompensatedEventListener       | Going to call order service to compensate inventory for order 10 
+2021-05-13 09:16:47,268  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 09:16:52,949  INFO | main | i.v.o.o.i.t.ItemOutOfStockEventListenerIntegrationTest | Started ItemOutOfStockEventListenerIntegrationTest in 6.729 seconds (JVM running for 186.968) 
+2021-05-13 09:16:52,962  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Received an "ItemOutOfStock" for order 10 
+2021-05-13 09:16:52,962  INFO | main | i.v.o.orchestrator.listener.ItemOutOfStockEventListener | Going to call order service to compensate order 10 
+2021-05-13 09:17:06,502  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 09:17:11,940  INFO | main | i.v.o.o.i.t.OrderNotPlacedEventListenerIntegrationTest | Started OrderNotPlacedEventListenerIntegrationTest in 6.436 seconds (JVM running for 206.071) 
+2021-05-13 09:17:11,965  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Received an "OrderNotPlacedEvent" for order 10 
+2021-05-13 09:17:11,965  INFO | main | i.v.o.orchestrator.listener.OrderNotPlacedEventListener | Going to call order service for order 10 
+2021-05-13 09:17:46,689  INFO | main | i.v.o.o.i.test.OrderPlacedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 09:17:51,744  INFO | main | i.v.o.o.i.test.OrderPlacedEventListenerIntegrationTest | Started OrderPlacedEventListenerIntegrationTest in 5.945 seconds (JVM running for 245.763) 
+2021-05-13 09:17:51,768  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Received an "OrderPlacedEvent" for order 10 
+2021-05-13 09:17:51,769  INFO | main | i.v.omt.orchestrator.listener.OrderPlacedEventListener | Going to call inventory service for order 10 
+2021-05-13 09:18:20,684  INFO | main | i.v.o.o.i.t.PaymentFailedEventListenerIntegrationTest  | The following profiles are active: dev 
+2021-05-13 09:18:25,676  INFO | main | i.v.o.o.i.t.PaymentFailedEventListenerIntegrationTest  | Started PaymentFailedEventListenerIntegrationTest in 5.811 seconds (JVM running for 279.806) 
+2021-05-13 09:18:25,688  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Received a "PaymentFailedEvent" for order id: 10 
+2021-05-13 09:18:25,688  INFO | main | i.v.o.orchestrator.listener.PaymentFailedEventListener | Going to call item service to compensate item for order id: 10 
+2021-05-13 09:18:39,021  INFO | main | i.v.o.o.i.t.PaymentReceivedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 09:18:43,950  INFO | main | i.v.o.o.i.t.PaymentReceivedEventListenerIntegrationTest | Started PaymentReceivedEventListenerIntegrationTest in 5.84 seconds (JVM running for 297.969) 
+2021-05-13 09:18:43,962  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Received a "PaymentReceivedEvent" for order id: 10 
+2021-05-13 09:18:43,962  INFO | main | i.v.o.o.listener.PaymentReceivedEventListener          | Going to call shipment service for order id: 10 
+2021-05-13 09:19:31,686  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | The following profiles are active: dev 
+2021-05-13 09:19:36,927  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | Started ShipmentFailedEventListenerIntegrationTest in 6.177 seconds (JVM running for 351.058) 
+2021-05-13 09:19:36,944  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Received a "ShipmentFailedEvent" for order 10 
+2021-05-13 09:19:36,944  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Going to call shipment service to process shipment for order 10 
+2021-05-13 09:30:48,440  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | Started InventoryServiceContractVerifierTest in 1020.048 seconds (JVM running for 1022.581) 
+2021-05-13 09:31:25,243  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 09:33:46,710  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 09:36:07,843  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | Started InventoryServiceContractVerifierTest in 143.392 seconds (JVM running for 144.581) 
+2021-05-13 09:36:29,781  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 09:36:49,707  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | Started InventoryServiceContractVerifierTest in 22.177 seconds (JVM running for 23.337) 
+2021-05-13 09:37:48,263  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 09:38:05,742  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | Started InventoryServiceContractVerifierTest in 19.303 seconds (JVM running for 20.4) 
+2021-05-13 09:42:07,635  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 09:42:24,594  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 18.82 seconds (JVM running for 19.836) 
+2021-05-13 09:47:47,089  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 09:48:04,036  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 18.805 seconds (JVM running for 19.818) 
+2021-05-13 09:50:20,164  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 09:50:37,057  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | Started InventoryServiceContractVerifierTest in 18.762 seconds (JVM running for 19.822) 
+2021-05-13 09:51:01,144  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 09:51:18,058  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | Started InventoryServiceContractVerifierTest in 18.774 seconds (JVM running for 19.86) 
+2021-05-13 09:52:30,996  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 09:52:48,015  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 18.885 seconds (JVM running for 19.886) 
+2021-05-13 09:53:59,884  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 09:54:16,837  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | Started InventoryServiceContractVerifierTest in 18.816 seconds (JVM running for 19.822) 
+2021-05-13 09:55:08,816  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 09:55:26,507  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 19.593 seconds (JVM running for 20.651) 
+2021-05-13 10:00:24,757  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:00:41,663  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 18.775 seconds (JVM running for 19.786) 
+2021-05-13 10:05:13,748  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:05:36,324  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 24.856 seconds (JVM running for 26.621) 
+2021-05-13 10:07:26,450  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | The following profiles are active: dev 
+2021-05-13 10:07:43,363  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | Started PaymentServiceContractVerifierTest in 18.775 seconds (JVM running for 19.848) 
+2021-05-13 10:08:01,296  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | The following profiles are active: dev 
+2021-05-13 10:08:18,107  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | Started PaymentServiceContractVerifierTest in 18.716 seconds (JVM running for 19.764) 
+2021-05-13 10:09:41,631  INFO | main | i.v.o.o.c.test.ShippingServiceContractVerifierTest     | The following profiles are active: dev 
+2021-05-13 10:09:58,370  INFO | main | i.v.o.o.c.test.ShippingServiceContractVerifierTest     | Started ShippingServiceContractVerifierTest in 18.631 seconds (JVM running for 19.651) 
+2021-05-13 10:11:57,012  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | The following profiles are active: dev 
+2021-05-13 10:12:13,792  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | Started PaymentServiceContractVerifierTest in 18.658 seconds (JVM running for 19.791) 
+2021-05-13 10:12:54,852  INFO | main | i.v.o.o.c.test.ShippingServiceContractVerifierTest     | The following profiles are active: dev 
+2021-05-13 10:13:11,627  INFO | main | i.v.o.o.c.test.ShippingServiceContractVerifierTest     | Started ShippingServiceContractVerifierTest in 18.658 seconds (JVM running for 19.687) 
+2021-05-13 10:15:20,272  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | The following profiles are active: dev 
+2021-05-13 10:15:37,171  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | Started PaymentServiceContractVerifierTest in 18.761 seconds (JVM running for 19.826) 
+2021-05-13 10:17:39,658  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:17:56,587  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 18.795 seconds (JVM running for 19.797) 
+2021-05-13 10:19:29,960  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:19:46,784  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 18.688 seconds (JVM running for 19.706) 
+2021-05-13 10:26:12,325  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:26:29,336  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 18.872 seconds (JVM running for 19.873) 
+2021-05-13 10:28:50,759  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:29:07,575  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 18.707 seconds (JVM running for 19.713) 
+2021-05-13 10:29:44,720  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:30:07,155  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 24.731 seconds (JVM running for 26.349) 
+2021-05-13 10:31:40,008  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:32:02,281  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 24.574 seconds (JVM running for 26.135) 
+2021-05-13 10:34:06,220  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:34:28,573  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 24.635 seconds (JVM running for 26.185) 
+2021-05-13 10:39:07,160  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:39:29,642  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 24.78 seconds (JVM running for 26.353) 
+2021-05-13 10:49:11,036  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:49:33,402  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 24.68 seconds (JVM running for 26.244) 
+2021-05-13 10:59:28,006  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 10:59:45,347  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 19.264 seconds (JVM running for 20.3) 
+2021-05-13 11:00:41,056  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 11:00:58,345  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | Started OrderServiceContractVerifierTest in 19.198 seconds (JVM running for 20.228) 
+2021-05-13 11:01:57,358  INFO | main | i.v.o.o.c.test.InventoryServiceContractVerifierTest    | The following profiles are active: dev 
+2021-05-13 11:01:57,407  INFO | main | i.v.o.o.contract.test.OrderServiceContractVerifierTest | The following profiles are active: dev 
+2021-05-13 11:01:57,827  INFO | main | i.v.o.o.c.test.PaymentServiceContractVerifierTest      | The following profiles are active: dev 

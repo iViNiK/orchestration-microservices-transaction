@@ -1,5 +1,5 @@
 {
-  "id" : "e930d5b6-103a-47c0-915f-cc8ff0b07dbc",
+  "id" : "b612c95f-9c72-43a5-ae65-18f6dbfea8c1",
   "request" : {
     "url" : "/",
     "method" : "POST",
@@ -21,6 +21,6 @@
     "body" : "[\\S\\s]+",
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "e930d5b6-103a-47c0-915f-cc8ff0b07dbc",
+  "uuid" : "b612c95f-9c72-43a5-ae65-18f6dbfea8c1",
   "priority" : 1
 }

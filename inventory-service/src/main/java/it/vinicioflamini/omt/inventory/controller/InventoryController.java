@@ -25,7 +25,7 @@ public class InventoryController {
 	@Autowired
 	private InventoryService inventoryService;
 
-	@PostMapping
+	@PostMapping("/")
 	public ResponseEntity<String> fetchItem(@RequestBody OrderRequest request) {
 		try {
 			Item item = inventoryService.fetchItem(request.getOrderId(), request.getItemId());

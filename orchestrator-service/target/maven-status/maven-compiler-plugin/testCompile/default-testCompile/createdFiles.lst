@@ -1,8 +1,11 @@
+it\vinicioflamini\omt\orchestrator\contract\test\PaymentServiceContractVerifierTest.class
 it\vinicioflamini\omt\orchestrator\integration\test\FallbackEventSourceTest.class
 it\vinicioflamini\omt\orchestrator\integration\test\FallbackEventSourceTest$ItemFetchedEventSourceIntegrationTestContextConfiguration.class
 it\vinicioflamini\omt\orchestrator\integration\test\ItemFetchedEventListenerIntegrationTest$App.class
 it\vinicioflamini\omt\orchestrator\integration\test\OrderNotPlacedEventListenerIntegrationTest.class
+it\vinicioflamini\omt\orchestrator\contract\test\OrderServiceContractVerifierTest.class
 it\vinicioflamini\omt\orchestrator\integration\test\PaymentFailedEventListenerIntegrationTest$App.class
+it\vinicioflamini\omt\orchestrator\contract\test\ShippingServiceContractVerifierTest.class
 it\vinicioflamini\omt\orchestrator\integration\test\ItemOutOfStockEventListenerIntegrationTest.class
 it\vinicioflamini\omt\orchestrator\integration\test\ItemNotCompensatedEventListenerIntegrationTest$App.class
 it\vinicioflamini\omt\orchestrator\integration\test\TestProducer.class

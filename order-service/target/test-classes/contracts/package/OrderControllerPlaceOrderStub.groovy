@@ -1,5 +1,5 @@
 import org.springframework.cloud.contract.spec.Contract
-Contract doInventory = Contract.make {
+Contract placeOrder = Contract.make {
 	priority 1
     description "should return message when placeOrder"
     request {

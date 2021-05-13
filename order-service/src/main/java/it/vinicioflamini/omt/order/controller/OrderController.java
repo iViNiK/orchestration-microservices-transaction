@@ -36,12 +36,12 @@ public class OrderController {
 	}
 
 	@PostMapping("/compensate")
-	public ResponseEntity<OrderResponse> compensateOrder(@RequestBody OrderRequest req) {
-		orderService.compensateOrder(req.getOrderId());
+	public ResponseEntity<OrderResponse> compensateOrder(@RequestBody OrderRequest request) {
+		orderService.compensateOrder(request.getOrderId());
 
 		OrderResponse response = new OrderResponse();
-		response.setMessage(String.format("Order %d Compensate request has placed", req.getOrderId()));
-		response.setOrderId(req.getOrderId());
+		response.setMessage(String.format("Order %d Compensate request has placed", request.getOrderId()));
+		response.setOrderId(request.getOrderId());
 
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}

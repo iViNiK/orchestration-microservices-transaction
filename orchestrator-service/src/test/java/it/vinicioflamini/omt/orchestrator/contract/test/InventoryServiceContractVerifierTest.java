@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.cloud.contract.stubrunner.StubFinder;
 import org.springframework.cloud.contract.stubrunner.spring.AutoConfigureStubRunner;
 import org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties;
 import org.springframework.http.HttpEntity;
@@ -22,43 +23,54 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
+import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @DirtiesContext
 @AutoConfigureStubRunner(
 		  stubsMode = StubRunnerProperties.StubsMode.LOCAL,
-		  ids = "it.vinicioflamini.omt:inventory-service:+:stubs:8888")
+		  ids = "it.vinicioflamini.omt:inventory-service:+:stubs")
 public class InventoryServiceContractVerifierTest {
 
-	private final String ENDPOINT_URL = "http://localhost:8888/";
+	private final String ENDPOINT_URL = "http://localhost:%d/";
 
 	private final String RESPONSE_DO_INVENTORY = "Request placed for item -1 fetching";
 	
 	private final String RESPONSE_COMPENSATE = "Request placed for item -1 compensation";
 
+	@Autowired 
+	private StubFinder stubFinder;
+
 	@Autowired
 	private RestTemplateBuilder restTemplateBuilder;
 
 	private RestTemplate restTemplate;
+	
+	private int port;
 
 	@Before
 	public void setup() {
 		restTemplate = restTemplateBuilder.setConnectTimeout(Duration.ofMillis(5000))
 				.setReadTimeout(Duration.ofMillis(5000)).build();
+		
+		port = stubFinder.findStubUrl("inventory-service").getPort();
 	}
 
 	@Test
 	public void verifyDoInventoryEndpointContract() {
-		String request = "{\"orderId\": -1, \"itemId\": -1}";
-
+		OrderRequest request = new OrderRequest();
+		request.setOrderId(-1l);
+		request.setItemId(-1L);
+		
 		// Given:
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 
-		HttpEntity<String> entity = new HttpEntity<>(request, headers);
+		HttpEntity<OrderRequest> entity = new HttpEntity<>(request, headers);
 
 		// When:
-		ResponseEntity<String> response = restTemplate.exchange(ENDPOINT_URL, HttpMethod.POST, entity, String.class);
+		ResponseEntity<String> response = restTemplate.exchange(String.format(ENDPOINT_URL, port), HttpMethod.POST, entity, String.class);
 
 		// then:
 		assertThat(response).isNotNull();
@@ -69,16 +81,18 @@ public class InventoryServiceContractVerifierTest {
 
 	@Test
 	public void verifyCompensateEndpointContract() {
-		String request = "{\"orderId\": -1, \"itemId\": -1}";
+		OrderRequest request = new OrderRequest();
+		request.setOrderId(-1l);
+		request.setItemId(-1L);
 
 		// Given:
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 
-		HttpEntity<String> entity = new HttpEntity<>(request, headers);
+		HttpEntity<OrderRequest> entity = new HttpEntity<>(request, headers);
 
 		// When:
-		ResponseEntity<String> response = restTemplate.exchange(ENDPOINT_URL + "/compensate", HttpMethod.POST, entity, String.class);
+		ResponseEntity<String> response = restTemplate.exchange(String.format(ENDPOINT_URL, port) + "/compensate", HttpMethod.POST, entity, String.class);
 
 		// then:
 		assertThat(response).isNotNull();
