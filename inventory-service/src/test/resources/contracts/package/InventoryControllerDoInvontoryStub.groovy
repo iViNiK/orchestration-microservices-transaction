@@ -10,13 +10,17 @@ Contract doInventory = Contract.make {
 		}
 		body (
         	orderId: -1,
-        	itemId: -1
+        	itemId: -1,
+        	customerId: -1
 		)
     }
     response {
         status 200
         body (
-        	"Request placed for item -1 fetching"
+        	message: producer(regex(nonEmpty())),
+        	orderId: -1,
+        	itemId: -1,
+        	customerId: -1
         )
     }
 }

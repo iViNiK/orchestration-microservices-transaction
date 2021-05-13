@@ -1,5 +1,5 @@
 {
-  "id" : "dcb1ec6d-e6e8-417d-a745-6afe8f8c7eb3",
+  "id" : "5361b395-69c1-4454-9553-f403060c76e0",
   "request" : {
     "url" : "/compensate",
     "method" : "POST",
@@ -12,13 +12,15 @@
       "matchesJsonPath" : "$[?(@.['orderId'] == -1)]"
     }, {
       "matchesJsonPath" : "$[?(@.['itemId'] == -1)]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['customerId'] == -1)]"
     } ]
   },
   "response" : {
     "status" : 200,
-    "body" : "Request placed for item -1 compensation",
+    "body" : "{\"message\":\"[\\\\S\\\\s]+\",\"orderId\":-1,\"itemId\":-1,\"customerId\":-1}",
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "dcb1ec6d-e6e8-417d-a745-6afe8f8c7eb3",
+  "uuid" : "5361b395-69c1-4454-9553-f403060c76e0",
   "priority" : 1
 }

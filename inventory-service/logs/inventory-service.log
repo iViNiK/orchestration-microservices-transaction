@@ -1298,3 +1298,703 @@
 2021-05-13 09:12:36,178  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
 2021-05-13 09:12:36,509  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
 2021-05-13 09:12:40,082  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item -1 
+2021-05-13 11:17:30,721  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 3824 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 11:17:30,722  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 
+2021-05-13 11:17:40,084  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Started InventoryServiceApplication in 10.108 seconds (JVM running for 11.596) 
+2021-05-13 11:20:05,909  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 22 is out of stock for order 1 
+2021-05-13 11:20:10,055  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 22 
+2021-05-13 11:25:50,043  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 22 is out of stock for order 1 
+2021-05-13 11:25:55,023  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 22 
+2021-05-13 11:26:51,019  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 22 is out of stock for order 1 
+2021-05-13 11:26:55,023  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 22 
+2021-05-13 12:00:08,693  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 6584 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 12:00:08,693  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-13 12:00:18,942  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 10.768 seconds (JVM running for 13.418) 
+2021-05-13 12:00:19,565  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-13 12:00:19,985  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-13 12:00:20,091  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item -1 
+2021-05-13 12:00:25,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 12:01:58,123  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 10016 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 12:01:58,123  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-13 12:02:08,224  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 10.593 seconds (JVM running for 13.202) 
+2021-05-13 12:02:08,779  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-13 12:02:09,136  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-13 12:02:10,085  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item -1 
+2021-05-13 12:02:15,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 12:05:37,431  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 11916 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 12:05:37,432  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-13 12:05:47,645  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 10.757 seconds (JVM running for 13.409) 
+2021-05-13 12:05:48,271  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-13 12:05:48,675  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-13 12:05:50,089  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item -1 
+2021-05-13 12:05:55,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 12:13:17,398  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 14788 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 12:13:17,398  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-13 12:13:27,468  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 10.72 seconds (JVM running for 13.356) 
+2021-05-13 12:13:28,028  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-13 12:13:28,442  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-13 12:13:30,083  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item -1 
+2021-05-13 12:13:35,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 12:22:03,996  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 4776 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 12:22:03,997  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 
+2021-05-13 12:22:16,689  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Started InventoryServiceApplication in 13.458 seconds (JVM running for 14.979) 
+2021-05-13 12:23:06,500  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 22 is out of stock for order 1 
+2021-05-13 12:23:10,038  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 22 
+2021-05-13 12:28:05,040  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 22 is out of stock for order 1 
+2021-05-13 12:28:10,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 22 
+2021-05-13 12:36:58,398  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 5256 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 12:36:58,398  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 
+2021-05-13 12:37:06,992  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Started InventoryServiceApplication in 9.235 seconds (JVM running for 10.418) 
+2021-05-13 12:37:30,286  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 1 
+2021-05-13 12:37:35,057  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 12:54:30,030  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 1 
+2021-05-13 12:54:35,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 12:59:05,036  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 1 
+2021-05-13 12:59:10,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 13:05:35,033  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 2 is out of stock for order 1 
+2021-05-13 13:05:40,013  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 13:06:15,028  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 13:06:20,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 13:06:40,025  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 1 
+2021-05-13 13:06:45,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 13:07:10,041  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 1 
+2021-05-13 13:07:15,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 13:07:35,031  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 1 
+2021-05-13 13:07:40,024  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 13:07:45,051  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 1 was not processed 
+2021-05-13 13:07:46,335  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 1 was not processed 
+2021-05-13 13:07:48,383  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 1 was not processed 
+2021-05-13 13:17:42,938  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 1 was not processed 
+2021-05-13 13:17:45,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 13:47:29,240  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 10356 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 13:47:29,241  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-13 13:47:38,820  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 10.1 seconds (JVM running for 12.911) 
+2021-05-13 13:47:39,415  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-13 13:47:39,783  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-13 13:47:40,094  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item -1 
+2021-05-13 13:47:45,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 13:59:52,212  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 11544 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 13:59:52,212  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 
+2021-05-13 14:00:00,822  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Started InventoryServiceApplication in 9.238 seconds (JVM running for 10.431) 
+2021-05-13 14:36:18,556  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 9168 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 14:36:18,556  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 
+2021-05-13 14:36:27,177  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Started InventoryServiceApplication in 9.252 seconds (JVM running for 10.451) 
+2021-05-13 14:36:45,358  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:36:50,047  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:38:32,767  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:38:35,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:40:23,180  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:40:25,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:43:01,928  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 12672 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 14:43:01,928  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 
+2021-05-13 14:43:10,611  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Started InventoryServiceApplication in 9.327 seconds (JVM running for 10.511) 
+2021-05-13 14:44:51,614  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:44:55,036  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:45:03,629  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:45:05,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:45:13,668  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:45:15,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:45:23,710  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:45:25,013  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:45:33,756  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:45:35,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:45:43,798  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:45:45,022  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:48:57,310  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:49:00,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:52:52,002  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:52:55,013  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 14:54:40,892  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 14:54:45,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 15:07:00,052  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 14852 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 15:07:00,053  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 
+2021-05-13 15:07:09,937  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Started InventoryServiceApplication in 10.513 seconds (JVM running for 11.703) 
+2021-05-13 15:07:34,687  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 15:07:35,777  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 15:07:42,176  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 15:07:43,097  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 15:07:52,810  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 15:07:56,584  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 15:08:52,363  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 1 
+2021-05-13 15:09:03,803  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 15:17:07,625  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 3 
+2021-05-13 15:17:18,337  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 15:17:50,030  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 5 
+2021-05-13 15:17:55,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 15:18:50,044  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 7 
+2021-05-13 15:18:55,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 15:19:15,035  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 is out of stock for order 9 
+2021-05-13 15:19:20,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 
+2021-05-13 15:21:05,035  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 11 
+2021-05-13 15:21:10,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 15:21:45,038  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 13 
+2021-05-13 15:21:50,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 15:22:05,028  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 15 
+2021-05-13 15:22:10,018  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 15:22:25,037  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 17 
+2021-05-13 15:22:30,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 15:22:35,028  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 17 was not processed 
+2021-05-13 15:22:40,018  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 15:23:50,033  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 19 
+2021-05-13 15:23:55,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 15:24:00,036  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 19 was not processed 
+2021-05-13 15:24:05,019  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 15:24:20,035  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 21 
+2021-05-13 15:24:25,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 15:24:30,025  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 21 was not processed 
+2021-05-13 15:24:35,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 15:25:05,022  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 23 
+2021-05-13 15:25:10,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 15:25:15,057  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:25:16,188  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:25:18,250  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:34:01,112  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:34:02,301  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:34:04,357  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:44:06,480  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:44:07,662  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:44:09,733  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:50:25,264  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:50:26,458  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 15:50:28,501  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 16:08:25,512  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 16:08:26,700  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 16:08:28,816  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 16:15:20,060  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 25 
+2021-05-13 16:15:25,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:15:30,233  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 25 was not processed 
+2021-05-13 16:15:31,335  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 25 was not processed 
+2021-05-13 16:15:33,380  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 25 was not processed 
+2021-05-13 16:16:55,061  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 27 
+2021-05-13 16:17:00,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:17:05,044  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 27 was not processed 
+2021-05-13 16:17:06,099  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 27 was not processed 
+2021-05-13 16:17:08,234  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 27 was not processed 
+2021-05-13 16:18:00,386  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 8584 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 16:18:00,386  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 
+2021-05-13 16:18:11,262  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Started InventoryServiceApplication in 11.656 seconds (JVM running for 13.091) 
+2021-05-13 16:19:20,415  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 29 
+2021-05-13 16:19:25,042  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:19:30,064  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 29 was not processed 
+2021-05-13 16:19:31,179  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 29 was not processed 
+2021-05-13 16:19:33,289  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 29 was not processed 
+2021-05-13 16:22:40,385  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 16:22:41,568  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 16:22:43,651  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 23 was not processed 
+2021-05-13 16:22:43,685  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 25 was not processed 
+2021-05-13 16:24:50,077  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 31 
+2021-05-13 16:24:55,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:25:00,107  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 31 was not processed 
+2021-05-13 16:25:05,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:25:25,063  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 33 
+2021-05-13 16:25:30,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:25:55,040  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 35 
+2021-05-13 16:26:00,032  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:26:15,043  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 37 
+2021-05-13 16:26:20,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:26:20,055  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 39 
+2021-05-13 16:26:25,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:26:25,077  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 41 
+2021-05-13 16:26:30,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:26:30,074  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 43 
+2021-05-13 16:26:35,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:26:35,100  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 45 
+2021-05-13 16:26:40,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:26:40,066  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 47 
+2021-05-13 16:26:45,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:26:45,099  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 49 
+2021-05-13 16:26:50,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:26:50,085  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 47 was not processed 
+2021-05-13 16:26:50,095  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 51 
+2021-05-13 16:26:55,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:26:55,091  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 49 was not processed 
+2021-05-13 16:26:55,092  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 53 
+2021-05-13 16:27:00,019  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:27:00,084  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 55 
+2021-05-13 16:27:05,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:27:05,081  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 51 was not processed 
+2021-05-13 16:27:05,096  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 57 
+2021-05-13 16:27:10,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:27:10,132  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 53 was not processed 
+2021-05-13 16:27:10,175  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 59 
+2021-05-13 16:27:15,019  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:27:15,094  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 61 
+2021-05-13 16:27:20,003  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:27:20,053  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 55 was not processed 
+2021-05-13 16:27:20,067  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 63 
+2021-05-13 16:27:25,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:27:25,072  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 65 
+2021-05-13 16:27:30,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:27:30,061  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 67 
+2021-05-13 16:27:35,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:27:35,134  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 69 
+2021-05-13 16:27:40,019  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:27:40,071  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 71 
+2021-05-13 16:27:40,093  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 59 was not processed 
+2021-05-13 16:27:45,019  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:27:45,126  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 73 
+2021-05-13 16:27:50,024  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:27:50,084  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 75 
+2021-05-13 16:27:55,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:27:55,052  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 77 
+2021-05-13 16:27:55,063  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 63 was not processed 
+2021-05-13 16:28:00,006  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:28:00,095  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 79 
+2021-05-13 16:28:05,004  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:28:05,043  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 67 was not processed 
+2021-05-13 16:28:05,053  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 81 
+2021-05-13 16:28:10,022  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:28:10,072  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 83 
+2021-05-13 16:28:15,028  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:28:15,058  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 71 was not processed 
+2021-05-13 16:28:15,066  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 85 
+2021-05-13 16:32:00,359  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 15304 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 16:32:00,359  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 
+2021-05-13 16:32:11,456  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Started InventoryServiceApplication in 11.879 seconds (JVM running for 13.428) 
+2021-05-13 16:32:40,398  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 191 
+2021-05-13 16:32:45,025  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:32:45,045  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 193 
+2021-05-13 16:32:50,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:32:50,052  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 191 was not processed 
+2021-05-13 16:32:50,065  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 195 
+2021-05-13 16:32:55,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:32:55,065  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 193 was not processed 
+2021-05-13 16:32:55,066  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 197 
+2021-05-13 16:33:00,007  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:33:00,039  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 199 
+2021-05-13 16:33:05,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:33:05,059  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 201 
+2021-05-13 16:33:10,005  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:33:10,056  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 203 
+2021-05-13 16:33:15,013  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:33:15,059  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 205 
+2021-05-13 16:33:20,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:33:20,059  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 207 
+2021-05-13 16:33:25,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:33:25,050  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 201 was not processed 
+2021-05-13 16:33:25,057  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 209 
+2021-05-13 16:33:30,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:33:30,063  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 211 
+2021-05-13 16:33:35,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:33:35,076  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 213 
+2021-05-13 16:33:40,034  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:33:40,054  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 215 
+2021-05-13 16:33:45,019  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:33:45,067  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 217 
+2021-05-13 16:33:50,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:33:50,084  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 219 
+2021-05-13 16:33:55,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:33:55,060  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 221 
+2021-05-13 16:33:55,065  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 211 was not processed 
+2021-05-13 16:34:00,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:34:00,087  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 223 
+2021-05-13 16:34:05,006  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:34:05,053  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 225 
+2021-05-13 16:34:10,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:34:10,057  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 227 
+2021-05-13 16:34:15,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:34:15,061  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 229 
+2021-05-13 16:34:15,063  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 219 was not processed 
+2021-05-13 16:34:20,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:34:20,067  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 221 was not processed 
+2021-05-13 16:34:20,072  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 231 
+2021-05-13 16:34:25,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:34:25,064  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 233 
+2021-05-13 16:34:30,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:34:30,056  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 235 
+2021-05-13 16:34:35,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:34:35,065  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 237 
+2021-05-13 16:34:40,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:34:40,061  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 239 
+2021-05-13 16:34:45,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:34:45,058  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 241 
+2021-05-13 16:34:45,073  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 229 was not processed 
+2021-05-13 16:34:50,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:34:50,060  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 243 
+2021-05-13 16:34:55,023  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:34:55,060  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 245 
+2021-05-13 16:35:00,044  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:35:00,059  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 247 
+2021-05-13 16:35:05,042  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:35:05,062  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 249 
+2021-05-13 16:35:10,036  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:35:10,068  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 251 
+2021-05-13 16:35:10,081  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 235 was not processed 
+2021-05-13 16:35:15,035  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:35:15,080  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 253 
+2021-05-13 16:35:20,036  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:35:20,079  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 255 
+2021-05-13 16:35:25,083  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 257 
+2021-05-13 16:35:25,084  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 241 was not processed 
+2021-05-13 16:35:25,090  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:35:30,005  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:35:30,057  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 259 
+2021-05-13 16:35:35,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:35:35,091  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 261 
+2021-05-13 16:35:40,033  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:35:40,079  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 263 
+2021-05-13 16:35:45,037  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:35:45,066  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 265 
+2021-05-13 16:35:50,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:35:50,052  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 249 was not processed 
+2021-05-13 16:35:50,058  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 267 
+2021-05-13 16:35:55,023  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:35:55,068  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 269 
+2021-05-13 16:36:00,018  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:36:00,073  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 271 
+2021-05-13 16:36:05,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:36:05,056  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 273 
+2021-05-13 16:36:05,065  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 253 was not processed 
+2021-05-13 16:36:10,029  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:36:10,095  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 255 was not processed 
+2021-05-13 16:36:10,096  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 275 
+2021-05-13 16:36:15,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:36:15,080  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 277 
+2021-05-13 16:36:20,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:36:20,065  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 279 
+2021-05-13 16:36:25,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:36:25,070  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 281 
+2021-05-13 16:36:30,005  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:36:30,053  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 283 
+2021-05-13 16:36:35,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:36:35,054  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 285 
+2021-05-13 16:36:35,058  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 263 was not processed 
+2021-05-13 16:36:40,026  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:36:40,069  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 287 
+2021-05-13 16:36:45,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:36:45,060  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 289 
+2021-05-13 16:36:50,005  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:36:50,043  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 267 was not processed 
+2021-05-13 16:36:50,054  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 291 
+2021-05-13 16:36:55,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:36:55,064  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 293 
+2021-05-13 16:37:00,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:37:00,050  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 271 was not processed 
+2021-05-13 16:37:00,061  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 295 
+2021-05-13 16:37:05,018  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:37:05,064  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 297 
+2021-05-13 16:37:05,084  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 273 was not processed 
+2021-05-13 16:37:10,028  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:37:10,083  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 299 
+2021-05-13 16:37:15,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:37:15,062  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 301 
+2021-05-13 16:37:20,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:37:20,062  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 303 
+2021-05-13 16:37:20,073  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 275 was not processed 
+2021-05-13 16:37:25,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:37:25,061  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 305 
+2021-05-13 16:37:30,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:37:30,051  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 279 was not processed 
+2021-05-13 16:37:30,057  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 307 
+2021-05-13 16:37:35,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:37:35,063  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 281 was not processed 
+2021-05-13 16:37:35,064  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 309 
+2021-05-13 16:37:40,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:37:40,074  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 311 
+2021-05-13 16:37:45,006  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:37:45,042  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 285 was not processed 
+2021-05-13 16:37:45,053  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 313 
+2021-05-13 16:37:50,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:37:50,056  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 315 
+2021-05-13 16:37:55,018  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:37:55,072  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 317 
+2021-05-13 16:37:55,095  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 287 was not processed 
+2021-05-13 16:37:56,208  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 287 was not processed 
+2021-05-13 16:37:58,329  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 287 was not processed 
+2021-05-13 16:38:00,044  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:38:00,049  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 319 
+2021-05-13 16:38:05,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:38:05,059  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 321 
+2021-05-13 16:38:10,018  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:38:10,066  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 323 
+2021-05-13 16:38:15,030  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:38:15,064  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 325 
+2021-05-13 16:38:20,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:38:20,077  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 327 
+2021-05-13 16:38:25,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:38:25,081  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 329 
+2021-05-13 16:38:30,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:38:30,057  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 331 
+2021-05-13 16:38:35,039  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:38:35,126  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 333 
+2021-05-13 16:38:40,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:38:40,058  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 335 
+2021-05-13 16:38:45,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:38:45,069  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 337 
+2021-05-13 16:38:50,018  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:38:50,065  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 339 
+2021-05-13 16:38:55,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:38:55,084  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 341 
+2021-05-13 16:39:00,023  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:39:00,065  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 343 
+2021-05-13 16:39:05,027  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:39:05,057  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 345 
+2021-05-13 16:39:10,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:39:10,067  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 347 
+2021-05-13 16:39:15,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:39:15,086  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 349 
+2021-05-13 16:39:20,006  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:39:20,052  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 351 
+2021-05-13 16:39:25,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:39:25,060  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 353 
+2021-05-13 16:39:30,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:39:30,064  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 355 
+2021-05-13 16:39:35,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:39:35,055  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 357 
+2021-05-13 16:39:35,062  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 313 was not processed 
+2021-05-13 16:39:40,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:39:40,056  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 359 
+2021-05-13 16:39:45,005  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:39:45,054  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 317 was not processed 
+2021-05-13 16:39:45,057  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 361 
+2021-05-13 16:39:46,174  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 317 was not processed 
+2021-05-13 16:39:48,260  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 317 was not processed 
+2021-05-13 16:39:50,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:39:50,047  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 363 
+2021-05-13 16:39:55,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:39:55,064  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 365 
+2021-05-13 16:40:00,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:00,080  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 367 
+2021-05-13 16:40:05,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:05,073  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 369 
+2021-05-13 16:40:10,056  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:10,105  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 371 
+2021-05-13 16:40:15,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:15,073  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 373 
+2021-05-13 16:40:20,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:20,064  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 375 
+2021-05-13 16:40:25,032  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:25,063  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 377 
+2021-05-13 16:40:30,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:30,073  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 379 
+2021-05-13 16:40:35,038  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:35,061  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 381 
+2021-05-13 16:40:40,031  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:40,055  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 383 
+2021-05-13 16:40:45,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:45,074  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 385 
+2021-05-13 16:40:50,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:50,048  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 343 was not processed 
+2021-05-13 16:40:50,062  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 387 
+2021-05-13 16:40:55,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:40:55,105  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 389 
+2021-05-13 16:41:00,024  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:41:00,101  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 391 
+2021-05-13 16:41:10,583  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Starting InventoryServiceApplication on DESKTOP-VOMVIUL with PID 17116 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 16:41:10,583  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | The following profiles are active: dev 
+2021-05-13 16:41:23,122  INFO | main | i.v.omt.inventory.InventoryServiceApplication          | Started InventoryServiceApplication in 13.489 seconds (JVM running for 15.362) 
+2021-05-13 16:41:50,373  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 349 was not processed 
+2021-05-13 16:41:55,037  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:42:05,060  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 347 was not processed 
+2021-05-13 16:42:10,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:42:20,069  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 423 
+2021-05-13 16:42:25,031  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:42:25,083  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 425 
+2021-05-13 16:42:30,013  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:42:30,083  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 427 
+2021-05-13 16:42:35,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:42:35,101  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 429 
+2021-05-13 16:42:40,033  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:42:40,101  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 427 was not processed 
+2021-05-13 16:42:40,130  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 431 
+2021-05-13 16:42:45,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:42:45,094  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 433 
+2021-05-13 16:42:50,042  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:42:50,076  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 435 
+2021-05-13 16:42:55,027  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:42:55,055  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 437 
+2021-05-13 16:42:55,060  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 431 was not processed 
+2021-05-13 16:43:00,024  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:43:00,050  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 439 
+2021-05-13 16:43:05,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:43:05,051  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 435 was not processed 
+2021-05-13 16:43:05,064  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 441 
+2021-05-13 16:43:10,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:43:10,070  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 443 
+2021-05-13 16:43:15,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:43:15,133  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 445 
+2021-05-13 16:43:20,032  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:43:20,163  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 447 
+2021-05-13 16:43:25,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:43:25,661  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 449 
+2021-05-13 16:43:30,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:43:30,120  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 451 
+2021-05-13 16:43:35,032  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:43:35,167  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 453 
+2021-05-13 16:43:35,186  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 443 was not processed 
+2021-05-13 16:43:40,013  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:43:45,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:43:50,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:43:55,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:44:00,013  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:44:15,065  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 451 was not processed 
+2021-05-13 16:44:20,026  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:44:20,090  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 453 was not processed 
+2021-05-13 16:44:25,058  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:48:40,709  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 515 
+2021-05-13 16:48:45,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:48:45,026  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 517 
+2021-05-13 16:48:50,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:48:50,056  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 519 
+2021-05-13 16:48:55,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:48:55,048  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 521 
+2021-05-13 16:49:00,007  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:49:00,042  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 523 
+2021-05-13 16:49:05,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:49:05,044  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 525 
+2021-05-13 16:49:10,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:49:10,063  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 527 
+2021-05-13 16:49:10,901  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 521 was not processed 
+2021-05-13 16:49:15,013  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:49:15,062  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 529 
+2021-05-13 16:49:20,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:49:20,071  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 527 was not processed 
+2021-05-13 16:49:20,072  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 531 
+2021-05-13 16:49:25,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:49:25,054  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 533 
+2021-05-13 16:49:30,022  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:49:30,050  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 535 
+2021-05-13 16:49:30,056  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 529 was not processed 
+2021-05-13 16:49:35,006  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:49:35,055  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 537 
+2021-05-13 16:49:40,022  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:49:40,052  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 539 
+2021-05-13 16:49:45,026  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:49:45,050  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 533 was not processed 
+2021-05-13 16:49:45,066  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 541 
+2021-05-13 16:49:50,005  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:49:50,055  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 543 
+2021-05-13 16:49:55,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:49:55,054  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 545 
+2021-05-13 16:50:00,013  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:50:00,059  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 547 
+2021-05-13 16:50:05,007  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:50:05,056  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 549 
+2021-05-13 16:50:10,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:50:10,042  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 551 
+2021-05-13 16:50:15,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:50:15,048  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 553 
+2021-05-13 16:50:15,051  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 541 was not processed 
+2021-05-13 16:50:20,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:50:20,055  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 555 
+2021-05-13 16:50:25,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:50:25,060  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 557 
+2021-05-13 16:50:30,006  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:50:30,046  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 559 
+2021-05-13 16:50:30,055  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 547 was not processed 
+2021-05-13 16:50:35,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:50:35,048  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 549 was not processed 
+2021-05-13 16:50:35,055  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 561 
+2021-05-13 16:50:40,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:50:40,112  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 563 
+2021-05-13 16:50:40,121  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 551 was not processed 
+2021-05-13 16:50:45,070  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:50:45,110  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 565 
+2021-05-13 16:50:45,111  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 553 was not processed 
+2021-05-13 16:50:50,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:50:50,055  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 567 
+2021-05-13 16:50:55,031  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:50:55,066  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 569 
+2021-05-13 16:50:55,067  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 555 was not processed 
+2021-05-13 16:51:00,026  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:51:00,051  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 571 
+2021-05-13 16:51:00,094  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 557 was not processed 
+2021-05-13 16:51:05,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:51:05,052  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 573 
+2021-05-13 16:51:05,061  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 559 was not processed 
+2021-05-13 16:51:10,007  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:51:10,060  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 575 
+2021-05-13 16:51:15,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:51:15,055  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 577 
+2021-05-13 16:51:20,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:51:20,058  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 579 
+2021-05-13 16:51:20,094  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 561 was not processed 
+2021-05-13 16:51:25,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:51:25,063  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 581 
+2021-05-13 16:51:30,019  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:51:30,058  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 583 
+2021-05-13 16:51:35,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:51:35,045  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 585 
+2021-05-13 16:51:40,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:51:40,068  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 587 
+2021-05-13 16:51:45,019  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:51:45,066  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 589 
+2021-05-13 16:51:50,027  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:51:50,074  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 591 
+2021-05-13 16:51:55,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:51:55,054  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 593 
+2021-05-13 16:52:00,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:52:00,073  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 595 
+2021-05-13 16:52:05,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:52:05,073  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 597 
+2021-05-13 16:52:10,022  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:52:10,065  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 599 
+2021-05-13 16:52:15,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:52:15,061  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 601 
+2021-05-13 16:52:20,007  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:52:20,056  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 603 
+2021-05-13 16:52:25,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:52:25,057  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 605 
+2021-05-13 16:52:30,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:52:30,049  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 607 
+2021-05-13 16:52:35,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:52:35,059  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 609 
+2021-05-13 16:52:40,022  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:52:40,082  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 611 
+2021-05-13 16:52:45,009  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:52:45,056  INFO | http-nio-8894-exec-5 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 613 
+2021-05-13 16:52:50,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:52:50,059  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 615 
+2021-05-13 16:52:50,073  INFO | http-nio-8894-exec-8 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 585 was not processed 
+2021-05-13 16:52:55,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:52:55,050  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 617 
+2021-05-13 16:53:00,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:00,045  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 619 
+2021-05-13 16:53:00,077  INFO | http-nio-8894-exec-10 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 589 was not processed 
+2021-05-13 16:53:05,018  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:05,045  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 591 was not processed 
+2021-05-13 16:53:05,053  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 621 
+2021-05-13 16:53:10,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:10,062  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Item 1 was fetched successfully for order 623 
+2021-05-13 16:53:15,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:15,058  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 595 was not processed 
+2021-05-13 16:53:20,013  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:25,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:25,035  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 599 was not processed 
+2021-05-13 16:53:30,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:30,048  INFO | http-nio-8894-exec-6 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 601 was not processed 
+2021-05-13 16:53:35,006  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:35,054  INFO | http-nio-8894-exec-7 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 603 was not processed 
+2021-05-13 16:53:40,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:45,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:45,043  INFO | http-nio-8894-exec-1 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 607 was not processed 
+2021-05-13 16:53:50,011  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:50,059  INFO | http-nio-8894-exec-3 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 609 was not processed 
+2021-05-13 16:53:55,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:53:55,068  INFO | http-nio-8894-exec-2 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 611 was not processed 
+2021-05-13 16:54:00,006  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:54:05,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:54:05,052  INFO | http-nio-8894-exec-4 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 615 was not processed 
+2021-05-13 16:54:10,018  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:54:15,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:54:20,012  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:54:25,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:54:30,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:54:35,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item 1 
+2021-05-13 16:54:35,051  INFO | http-nio-8894-exec-9 | i.vinicioflamini.omt.inventory.service.InventoryService | Order 621 was not processed 
+2021-05-13 16:54:40,015  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:54:45,016  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:54:50,014  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:54:55,017  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:55:00,021  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:55:05,010  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:55:10,018  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:55:15,004  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 16:55:20,008  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item 1 
+2021-05-13 17:13:52,328  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Starting PackageTest on DESKTOP-VOMVIUL with PID 15408 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\inventory-service) 
+2021-05-13 17:13:52,330  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | The following profiles are active: dev 
+2021-05-13 17:14:02,781  INFO | main | it.vinicioflamini.omt.inventory.test.PackageTest       | Started PackageTest in 10.994 seconds (JVM running for 13.672) 
+2021-05-13 17:14:03,434  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Item -1 was fetched successfully for order -1 
+2021-05-13 17:14:03,877  INFO | main | i.vinicioflamini.omt.inventory.service.InventoryService | Order -1 was not processed 
+2021-05-13 17:14:05,102  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMFETCHED for item -1 
+2021-05-13 17:14:10,020  INFO | scheduling-1 | i.v.omt.inventory.kafka.source.InventoryEventSource    | Going to send an ITEMOUTOFSTOCK for item -1 

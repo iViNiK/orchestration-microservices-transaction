@@ -21,7 +21,7 @@ public class PackageTest extends BaseTestClass {
 		// given:
 			MockMvcRequestSpecification request = given()
 					.header("Content-Type", "application/json")
-					.body("{\"orderId\":-1,\"itemId\":-1}");
+					.body("{\"orderId\":-1,\"itemId\":-1,\"customerId\":-1}");
 
 		// when:
 			ResponseOptions response = given().spec(request)
@@ -31,8 +31,11 @@ public class PackageTest extends BaseTestClass {
 			assertThat(response.statusCode()).isEqualTo(200);
 
 		// and:
-			String responseBody = response.getBody().asString();
-			assertThat(responseBody).isEqualTo("Request placed for item -1 compensation");
+			DocumentContext parsedJson = JsonPath.parse(response.getBody().asString());
+			assertThatJson(parsedJson).field("['message']").matches("[\\S\\s]+");
+			assertThatJson(parsedJson).field("['orderId']").isEqualTo(-1);
+			assertThatJson(parsedJson).field("['itemId']").isEqualTo(-1);
+			assertThatJson(parsedJson).field("['customerId']").isEqualTo(-1);
 	}
 
 	@Test
@@ -40,7 +43,7 @@ public class PackageTest extends BaseTestClass {
 		// given:
 			MockMvcRequestSpecification request = given()
 					.header("Content-Type", "application/json")
-					.body("{\"orderId\":-1,\"itemId\":-1}");
+					.body("{\"orderId\":-1,\"itemId\":-1,\"customerId\":-1}");
 
 		// when:
 			ResponseOptions response = given().spec(request)
@@ -50,8 +53,11 @@ public class PackageTest extends BaseTestClass {
 			assertThat(response.statusCode()).isEqualTo(200);
 
 		// and:
-			String responseBody = response.getBody().asString();
-			assertThat(responseBody).isEqualTo("Request placed for item -1 fetching");
+			DocumentContext parsedJson = JsonPath.parse(response.getBody().asString());
+			assertThatJson(parsedJson).field("['message']").matches("[\\S\\s]+");
+			assertThatJson(parsedJson).field("['orderId']").isEqualTo(-1);
+			assertThatJson(parsedJson).field("['itemId']").isEqualTo(-1);
+			assertThatJson(parsedJson).field("['customerId']").isEqualTo(-1);
 	}
 
 }

@@ -1,5 +1,5 @@
 {
-  "id" : "df214f41-4af7-46de-a80b-4ebfce01087b",
+  "id" : "c5773820-646c-4003-b460-6057d1951143",
   "request" : {
     "url" : "/",
     "method" : "POST",
@@ -12,13 +12,15 @@
       "matchesJsonPath" : "$[?(@.['orderId'] == -1)]"
     }, {
       "matchesJsonPath" : "$[?(@.['itemId'] == -1)]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['customerId'] == -1)]"
     } ]
   },
   "response" : {
     "status" : 200,
-    "body" : "Request placed for item -1 fetching",
+    "body" : "{\"message\":\"[\\\\S\\\\s]+\",\"orderId\":-1,\"itemId\":-1,\"customerId\":-1}",
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "df214f41-4af7-46de-a80b-4ebfce01087b",
+  "uuid" : "c5773820-646c-4003-b460-6057d1951143",
   "priority" : 1
 }

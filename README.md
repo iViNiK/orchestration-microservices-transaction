@@ -141,7 +141,7 @@ In this project the scenario assumed is the following:
 	- the customer must be notified.
 5. The system issues the shipment of the item to the customer. Also, notifies the customer that order was processed.
 
-![Saga Workflow](file:///saga.png "Saga Workflow")
+![SagaWorkflow](file:///saga.png "Saga Workflow")
 
 ## Services participating in Saga
 Therefore, in a microservices architecture, the participants in the Saga are:
@@ -167,14 +167,31 @@ mvn clean install
 To run the entire solution, you will have to launch each service separately.
 
 ## Start transaction in saga by order post endpoint
-POST Endpoint: 
+According to some test data provided in the project, it is possible to activate the saga in three scenarios. The post endpoint to call is always the same: 
 ```
 http://localhost:8891/v1/orders/
 ```
-Paylaod:
+
+The following paylaod generates an order of an item in stock:
+```
+{
+	"itemId" : 1,
+	"customerId" :1
+}
+```
+
+The following paylaod generates an order of an item out of stock:
 ```
 {
 	"itemId" : 2,
+	"customerId" :1
+}
+```
+
+The following paylaod generates an order of a non existing item:
+```
+{
+	"itemId" : -1,
 	"customerId" :1
 }
 ```
@@ -199,7 +216,7 @@ So, there is a concrete possibility that one of the two operations will fail, pr
 <br><br>
 Adopting the _Transactional outbox_ pattern, in this project it was achieved the result of increasing the system reliability, while maintaining processing efficiency. The implementation is highly scalable, which allows its introduction into various microservices simply by the creation of a **Bean** of type **EventPublisher**, that will be built using the Microservice's local _DomainObjectRepository_ (to access the persistence layer) and a custom **EventSource** implementation (to access the message broker) instances. Besides, the **OutboxProxy** class provides the method to start the _Outbox Transaction_, by putting a record in the _Outbox_ table, in the current transaction (i.e. like in the previous list item 1). The following Class Diagram explains the design of this solution:
 
-![Flow](file:///transactional-outbox.jpg "Flow")
+![TransactionOutboxPattern](file:///transactional-outbox.jpg "Transaction Outbox Pattern")
 
 # Rest Clients and Resilience
 The orchestrator service must interact with microservices involved in each step of the Saga.
@@ -208,9 +225,16 @@ To mantain consistency of the whole transaction even in case of failure of a Res
 we used **Feign Clients** with appropriate set of **Hystrix** properties. Furthermore, where necessary, **Fallback** methods are provided
 to compensate actions and restore the original conditions.
 
-## Extendes Scenarios
-As you maybe have noticed, all the steps of the example Saga are "compensable". Nevertheless, with such a solution, it is easy to manage also 
-a scenario with "retryable" steps.
+To monitor the feign client operations, you can use the **Hystrix Dashboard**, that was configured within the **Orchestration Service**. To show the monitoring console, go to the URL: 
+<br><br>
+```http://<your_host>:8761/v1/orchestrator/hystrix``` 
+
+and, in the "stream" inputbox, insert the following: 
+<br><br>
+```http://localhost:8761/v1/orchestrator/actuator/hystrix.stream```.
+
+The following picture is an example:
+![HystrixDashboard](file:///hystrixdashboard.png "Hystrix Dashboard")
 
 ## License
 Copyright © 2021 by Vinicio Flamini <io@vinicioflamini.it>

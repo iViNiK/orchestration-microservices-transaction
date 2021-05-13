@@ -40,7 +40,7 @@ public class InventoryRestClientFallback implements InventoryRestClient {
 		orderEvent.setAction(Action.ORDERNOTPLACED);
 
 		try {
-			outboundProxy.requestMessage(req.getOrderId(), DomainObjects.ORDER, OrchestratorChannel.OUTPUT_INVENTORY, orderEvent);
+			outboundProxy.requestMessage(req.getOrderId(), DomainObjects.ORDER, OrchestratorChannel.OUTPUT_ORDER, orderEvent);
 		} catch (JsonProcessingException e) {
 			if (logger.isErrorEnabled()) {
 				logger.error(

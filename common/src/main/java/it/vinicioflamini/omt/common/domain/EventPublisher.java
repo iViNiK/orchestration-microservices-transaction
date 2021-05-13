@@ -60,12 +60,12 @@ public class EventPublisher<T> {
 					throw new EntityNotFoundException("OrderEvent is NULL");
 				}
 
-				if (domainObject == null) {
+				if (o.getDomainObjectId() != null) {
 					if (domainObjectRepository != null) {
 						domainObject = domainObjectRepository.getOne(o.getDomainObjectId());
-					} else {
-						throw new IOException("DomainObject is NULL");
 					}
+				} else {
+					throw new IOException("DomainObject is NULL");
 				}
 
 				ObjectMapper objectMapper = new ObjectMapper();
@@ -98,8 +98,9 @@ public class EventPublisher<T> {
 				outboxRepository.delete(o);
 			} catch (PersistenceException | IOException e) {
 				if (logger.isInfoEnabled()) {
-					logger.info(String.format("Could not publish event %s.%nError: %s.%nGoing to retry outbox transaction.",
-							o.getOrderEvent(), e.getLocalizedMessage()));
+					logger.info(
+							String.format("Could not publish event %s.%nError: %s.%nGoing to retry outbox transaction.",
+									o.getOrderEvent(), e.getLocalizedMessage()));
 				}
 
 				o.setProcessing(false);

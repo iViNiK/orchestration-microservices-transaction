@@ -1,5 +1,6 @@
 package it.vinicioflamini.omt.orchestrator.contract.test;
 
+import static com.toomuchcoding.jsonassert.JsonAssertion.assertThatJson;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.time.Duration;
@@ -23,6 +24,9 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
+import com.jayway.jsonpath.DocumentContext;
+import com.jayway.jsonpath.JsonPath;
+
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 
 @RunWith(SpringRunner.class)
@@ -34,10 +38,6 @@ import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 public class InventoryServiceContractVerifierTest {
 
 	private final String ENDPOINT_URL = "http://localhost:%d/";
-
-	private final String RESPONSE_DO_INVENTORY = "Request placed for item -1 fetching";
-	
-	private final String RESPONSE_COMPENSATE = "Request placed for item -1 compensation";
 
 	@Autowired 
 	private StubFinder stubFinder;
@@ -60,8 +60,9 @@ public class InventoryServiceContractVerifierTest {
 	@Test
 	public void verifyDoInventoryEndpointContract() {
 		OrderRequest request = new OrderRequest();
-		request.setOrderId(-1l);
+		request.setOrderId(-1L);
 		request.setItemId(-1L);
+		request.setCustomerId(-1L);
 		
 		// Given:
 		HttpHeaders headers = new HttpHeaders();
@@ -75,8 +76,12 @@ public class InventoryServiceContractVerifierTest {
 		// then:
 		assertThat(response).isNotNull();
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-		assertThat(response.getBody()).isEqualTo(RESPONSE_DO_INVENTORY);
 
+		DocumentContext parsedJson = JsonPath.parse(response.getBody());
+		assertThatJson(parsedJson).field("['message']").matches("[\\S\\s]+");
+		assertThatJson(parsedJson).field("['orderId']").isEqualTo(-1);
+		assertThatJson(parsedJson).field("['itemId']").isEqualTo(-1);
+		assertThatJson(parsedJson).field("['customerId']").isEqualTo(-1);
 	}
 
 	@Test
@@ -84,6 +89,7 @@ public class InventoryServiceContractVerifierTest {
 		OrderRequest request = new OrderRequest();
 		request.setOrderId(-1l);
 		request.setItemId(-1L);
+		request.setCustomerId(-1L);
 
 		// Given:
 		HttpHeaders headers = new HttpHeaders();
@@ -97,8 +103,12 @@ public class InventoryServiceContractVerifierTest {
 		// then:
 		assertThat(response).isNotNull();
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-		assertThat(response.getBody()).isEqualTo(RESPONSE_COMPENSATE);
 
+		DocumentContext parsedJson = JsonPath.parse(response.getBody());
+		assertThatJson(parsedJson).field("['message']").matches("[\\S\\s]+");
+		assertThatJson(parsedJson).field("['orderId']").isEqualTo(-1);
+		assertThatJson(parsedJson).field("['itemId']").isEqualTo(-1);
+		assertThatJson(parsedJson).field("['customerId']").isEqualTo(-1);
 	}
 
 }

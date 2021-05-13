@@ -25,7 +25,7 @@ public class ItemFacade {
 	private OutboxProxy outboundProxy;
 
 	@Transactional
-	public boolean isItemInStock(Long itemId) throws JsonProcessingException {
+	public boolean isItemInStock(Long itemId, Long orderId, Long customerId) throws JsonProcessingException {
 		try {
 			Item item = inventoryRepository.getOne(itemId);
 			boolean inStock = item.getQuantity() >= 1;
@@ -35,7 +35,9 @@ public class ItemFacade {
 			return true;
 		} catch (EntityNotFoundException e) {
 			OrderEvent orderEvent = new OrderEvent();
+			orderEvent.setOrderId(orderId);
 			orderEvent.setItemId(itemId);
+			orderEvent.setCustomerId(customerId);
 			orderEvent.setAction(Action.ITEMOUTOFSTOCK);
 			outboundProxy.requestMessage(itemId, DomainObjects.ITEM, orderEvent);
 			
@@ -44,7 +46,7 @@ public class ItemFacade {
 	}
 
 	@Transactional
-	public Item reserveItem(Long itemId, Long orderId) throws JsonProcessingException {
+	public Item reserveItem(Long itemId, Long orderId, Long customerId) throws JsonProcessingException {
 		Item item = inventoryRepository.getOne(itemId);
 		item.setQuantity(item.getQuantity() - 1);
 		inventoryRepository.save(item);
@@ -52,6 +54,7 @@ public class ItemFacade {
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setOrderId(orderId);
 		orderEvent.setItemId(itemId);
+		orderEvent.setCustomerId(customerId);
 		orderEvent.setAction(Action.ITEMFETCHED);
 
 		outboundProxy.requestMessage(itemId, DomainObjects.ITEM, orderEvent);
@@ -60,7 +63,7 @@ public class ItemFacade {
 	}
 	
 	@Transactional
-	public Item releaseItem(Long itemId, Long orderId) throws JsonProcessingException {
+	public Item releaseItem(Long itemId, Long orderId, Long customerId) throws JsonProcessingException {
 		Item item = inventoryRepository.getOne(itemId);
 		item.setQuantity(item.getQuantity() + 1);
 		inventoryRepository.save(item);
@@ -68,6 +71,7 @@ public class ItemFacade {
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setOrderId(orderId);
 		orderEvent.setItemId(itemId);
+		orderEvent.setCustomerId(customerId);
 		orderEvent.setAction(Action.ITEMOUTOFSTOCK);
 
 		outboundProxy.requestMessage(itemId, DomainObjects.ITEM, orderEvent);

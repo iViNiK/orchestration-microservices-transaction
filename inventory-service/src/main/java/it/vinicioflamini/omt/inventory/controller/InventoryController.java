@@ -17,6 +17,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 
 import it.vinicioflamini.omt.common.entity.Item;
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
+import it.vinicioflamini.omt.common.rest.payload.OrderResponse;
 import it.vinicioflamini.omt.inventory.service.InventoryService;
 
 @Controller
@@ -26,27 +27,37 @@ public class InventoryController {
 	private InventoryService inventoryService;
 
 	@PostMapping("/")
-	public ResponseEntity<String> fetchItem(@RequestBody OrderRequest request) {
+	public ResponseEntity<OrderResponse> fetchItem(@RequestBody OrderRequest request) {
 		try {
-			Item item = inventoryService.fetchItem(request.getOrderId(), request.getItemId());
-			String message;
+			OrderResponse response = new OrderResponse();
+			response.setOrderId(request.getOrderId());
+			response.setItemId(request.getItemId());
+			response.setCustomerId(request.getCustomerId());
+			
+			Item item = inventoryService.fetchItem(request.getOrderId(), request.getItemId(), request.getCustomerId());
+			
 			if (item != null) {
-				message = String.format("Request placed for item %d fetching", item.getId());
+				response.setMessage(String.format("Request placed for item %d fetching", item.getId()));
 			} else {
-				message = "Could not place request. Item not found";
+				response.setMessage("Could not place request. Item not found");
 			}
-			return new ResponseEntity<>(message, HttpStatus.OK);
+			return new ResponseEntity<>(response, HttpStatus.OK);
 		} catch (JsonProcessingException e) {
 			throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR, e.getLocalizedMessage());
 		}
 	}
 
 	@PostMapping("/compensate")
-	public ResponseEntity<String> compensateOrder(@RequestBody OrderRequest request) {
+	public ResponseEntity<OrderResponse> compensateOrder(@RequestBody OrderRequest request) {
+		OrderResponse response = new OrderResponse();
+		response.setOrderId(request.getOrderId());
+		response.setItemId(request.getItemId());
+		response.setCustomerId(request.getCustomerId());
+		
 		try {
-			Item item = inventoryService.compensateItem(request.getOrderId(), request.getItemId());
-			return new ResponseEntity<>(String.format("Request placed for item %d compensation", item.getId()),
-					HttpStatus.OK);
+			Item item = inventoryService.compensateItem(request.getOrderId(), request.getItemId(), request.getCustomerId());
+			response.setMessage(String.format("Request placed for item %d compensation", item.getId()));
+			return new ResponseEntity<>(response, HttpStatus.OK);
 		} catch (JsonProcessingException e) {
 			throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR, e.getLocalizedMessage());
 		}

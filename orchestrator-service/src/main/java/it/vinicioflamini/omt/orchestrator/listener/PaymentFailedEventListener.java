@@ -39,12 +39,14 @@ public class PaymentFailedEventListener {
 			}
 			if (event.getOrderId() != null) {
 				if (logger.isInfoEnabled()) {
-					logger.info(String.format("Going to call item service to compensate item for order id: %d",
+					logger.info(String.format("Going to call inventory service to compensate item for order id: %d",
 							event.getOrderId()));
 				}
 				
 				OrderRequest req = new OrderRequest();
 				req.setOrderId(event.getOrderId());
+				req.setItemId(event.getItemId());
+				req.setCustomerId(event.getCustomerId());
 
 				inventoryRestClient.compensateInventory(req);
 			}

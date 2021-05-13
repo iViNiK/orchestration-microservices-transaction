@@ -60,9 +60,11 @@ public class InventoryServiceIntegrationTest {
 	@Test
 	public void testItemNotInInventoryThenPublishItemOutOfStockEvent() throws JsonProcessingException {
 		when(inventoryRepository.getOne(10L)).thenThrow(new EntityNotFoundException());
-		Item item = inventoryService.fetchItem(10L, 10L);
+		Item item = inventoryService.fetchItem(10L, 10L, 10L);
 		OrderEvent orderEvent = new OrderEvent();
+		orderEvent.setOrderId(10L);
 		orderEvent.setItemId(10L);
+		orderEvent.setCustomerId(10L);
 		orderEvent.setAction(Action.ITEMOUTOFSTOCK);
 		assertNull("ITEM NOT NULL", item);
 		verify(outboxProxy, times(1)).requestMessage(10L, DomainObjects.ITEM, orderEvent);
@@ -73,9 +75,11 @@ public class InventoryServiceIntegrationTest {
 		Item item = new Item(10L, "Item Name");
 		item.setQuantity(0);
 		when(inventoryRepository.getOne(10L)).thenReturn(item);
-		item = inventoryService.fetchItem(10L, 10L);
+		item = inventoryService.fetchItem(10L, 10L, 10L);
 		OrderEvent orderEvent = new OrderEvent();
+		orderEvent.setOrderId(10L);
 		orderEvent.setItemId(10L);
+		orderEvent.setCustomerId(10L);
 		orderEvent.setAction(Action.ITEMOUTOFSTOCK);
 		assertNull("ITEM NOT NULL", item);
 		verify(outboxProxy, times(1)).requestMessage(10L, DomainObjects.ITEM, orderEvent);
@@ -86,11 +90,12 @@ public class InventoryServiceIntegrationTest {
 		Item item = new Item(10L, "Item Name");
 		item.setQuantity(10);
 		when(inventoryRepository.getOne(10L)).thenReturn(item);
-		item = inventoryService.fetchItem(10L, 10L);
+		item = inventoryService.fetchItem(10L, 10L, 10L);
 		assertEquals(item.getQuantity(), new Integer("9"));
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setItemId(10L);
 		orderEvent.setOrderId(10L);
+		orderEvent.setCustomerId(10L);
 		orderEvent.setAction(Action.ITEMFETCHED);
 		assertNotNull("ITEM NULL", item);
 		verify(outboxProxy, times(1)).requestMessage(10L, DomainObjects.ITEM, orderEvent);
@@ -101,11 +106,12 @@ public class InventoryServiceIntegrationTest {
 		Item item = new Item(10L, "Item Name");
 		item.setQuantity(10);
 		when(inventoryRepository.getOne(10L)).thenReturn(item);
-		item = inventoryService.compensateItem(10L, 10L);
+		item = inventoryService.compensateItem(10L, 10L, 10L);
 		assertEquals(item.getQuantity(), new Integer("11"));
 		OrderEvent orderEvent = new OrderEvent();
 		orderEvent.setItemId(10L);
 		orderEvent.setOrderId(10L);
+		orderEvent.setCustomerId(10L);
 		orderEvent.setAction(Action.ITEMOUTOFSTOCK);
 		assertNotNull("ITEM NULL", item);
 		verify(outboxProxy, times(1)).requestMessage(10L, DomainObjects.ITEM, orderEvent);
