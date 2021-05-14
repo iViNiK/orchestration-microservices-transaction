@@ -1,9 +1,13 @@
 {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   "id" : "529fab3e-cea4-461f-9724-3dbc8da14d95",
 =======
   "id" : "8b517158-aec8-4492-b379-d99ecba23241",
 >>>>>>> Stashed changes
+=======
+  "id" : "2d386239-df3f-46d6-86cf-bb7c4b63bf27",
+>>>>>>> main
   "request" : {
     "url" : "/",
     "method" : "POST",
@@ -25,10 +29,14 @@
     "body" : "[\\S\\s]+",
     "transformers" : [ "response-template" ]
   },
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   "uuid" : "529fab3e-cea4-461f-9724-3dbc8da14d95",
 =======
   "uuid" : "8b517158-aec8-4492-b379-d99ecba23241",
 >>>>>>> Stashed changes
+=======
+  "uuid" : "2d386239-df3f-46d6-86cf-bb7c4b63bf27",
+>>>>>>> main
   "priority" : 1
 }
