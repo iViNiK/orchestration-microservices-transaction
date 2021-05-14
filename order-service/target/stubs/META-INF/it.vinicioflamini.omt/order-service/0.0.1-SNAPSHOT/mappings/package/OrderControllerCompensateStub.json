@@ -1,5 +1,5 @@
 {
-  "id" : "481d9766-d477-4ee6-85f6-2bc16494073d",
+  "id" : "ca39ab23-5064-49f1-81c1-f6e19a1b7cad",
   "request" : {
     "url" : "/compensate",
     "method" : "POST",
@@ -19,6 +19,6 @@
     "body" : "{\"message\":\"[\\\\S\\\\s]+\",\"orderId\":-1}",
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "481d9766-d477-4ee6-85f6-2bc16494073d",
+  "uuid" : "ca39ab23-5064-49f1-81c1-f6e19a1b7cad",
   "priority" : 1
 }
