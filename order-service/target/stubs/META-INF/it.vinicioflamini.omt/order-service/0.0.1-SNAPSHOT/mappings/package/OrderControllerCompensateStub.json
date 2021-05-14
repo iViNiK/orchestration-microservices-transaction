@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "id" : "ca39ab23-5064-49f1-81c1-f6e19a1b7cad",
+=======
+  "id" : "348a70c6-419d-47d7-adf5-0bf233c0c38f",
+>>>>>>> Stashed changes
   "request" : {
     "url" : "/compensate",
     "method" : "POST",
@@ -19,6 +23,10 @@
     "body" : "{\"message\":\"[\\\\S\\\\s]+\",\"orderId\":-1}",
     "transformers" : [ "response-template" ]
   },
+<<<<<<< Updated upstream
   "uuid" : "ca39ab23-5064-49f1-81c1-f6e19a1b7cad",
+=======
+  "uuid" : "348a70c6-419d-47d7-adf5-0bf233c0c38f",
+>>>>>>> Stashed changes
   "priority" : 1
 }

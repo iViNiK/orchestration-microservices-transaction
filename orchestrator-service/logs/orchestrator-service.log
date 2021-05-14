@@ -2773,3 +2773,5 @@
 2021-05-13 17:22:03,966  INFO | main | i.v.o.o.i.t.ShipmentFailedEventListenerIntegrationTest | Started ShipmentFailedEventListenerIntegrationTest in 6.077 seconds (JVM running for 357.699) 
 2021-05-13 17:22:03,981  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Received a "ShipmentFailedEvent" for order 10 
 2021-05-13 17:22:03,981  INFO | main | i.v.o.orchestrator.listener.ShipmentFailedEventListener | Going to call shipment service to process shipment for order 10 
+2021-05-14 07:44:04,101  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | The following profiles are active: dev 
+2021-05-14 07:44:26,702  INFO | main | i.v.omt.orchestrator.OrchestrationServiceApplication   | Started OrchestrationServiceApplication in 31.263 seconds (JVM running for 36.815) 

@@ -20218,3 +20218,6 @@
 2021-05-13 17:13:38,851  INFO | main | it.vinicioflamini.omt.order.test.PackageTest           | Started PackageTest in 11.141 seconds (JVM running for 13.828) 
 2021-05-13 17:13:39,565  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order 1 was CREATED 
 2021-05-13 17:13:39,943  INFO | main | it.vinicioflamini.omt.order.service.OrderService       | Order -1 was REJECTED 
+2021-05-14 07:43:58,660  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | Starting OrderServiceApplication on DESKTOP-VOMVIUL with PID 7480 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\order-service) 
+2021-05-14 07:43:58,661  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | The following profiles are active: dev 
+2021-05-14 07:44:20,183  INFO | main | it.vinicioflamini.omt.order.OrderServiceApplication    | Started OrderServiceApplication in 22.968 seconds (JVM running for 28.049) 

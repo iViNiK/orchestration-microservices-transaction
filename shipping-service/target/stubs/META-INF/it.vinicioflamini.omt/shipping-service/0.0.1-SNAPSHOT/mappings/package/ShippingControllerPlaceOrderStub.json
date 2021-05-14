@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "id" : "529fab3e-cea4-461f-9724-3dbc8da14d95",
+=======
+  "id" : "8b517158-aec8-4492-b379-d99ecba23241",
+>>>>>>> Stashed changes
   "request" : {
     "url" : "/",
     "method" : "POST",
@@ -21,6 +25,10 @@
     "body" : "[\\S\\s]+",
     "transformers" : [ "response-template" ]
   },
+<<<<<<< Updated upstream
   "uuid" : "529fab3e-cea4-461f-9724-3dbc8da14d95",
+=======
+  "uuid" : "8b517158-aec8-4492-b379-d99ecba23241",
+>>>>>>> Stashed changes
   "priority" : 1
 }

@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "id" : "7cfec621-470f-41c7-b531-a58839a17e3a",
+=======
+  "id" : "229898a8-31fb-4498-9cc4-772f3de4c962",
+>>>>>>> Stashed changes
   "request" : {
     "url" : "/compensate",
     "method" : "POST",
@@ -21,6 +25,10 @@
     "body" : "{\"message\":\"[\\\\S\\\\s]+\",\"orderId\":-1,\"itemId\":-1,\"customerId\":-1}",
     "transformers" : [ "response-template" ]
   },
+<<<<<<< Updated upstream
   "uuid" : "7cfec621-470f-41c7-b531-a58839a17e3a",
+=======
+  "uuid" : "229898a8-31fb-4498-9cc4-772f3de4c962",
+>>>>>>> Stashed changes
   "priority" : 1
 }

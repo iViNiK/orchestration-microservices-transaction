@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "id" : "2e55aaf1-d4f0-4519-8ba8-a03a4a093c70",
+=======
+  "id" : "094f11cc-b3cf-4329-856a-d98c9d1e04a8",
+>>>>>>> Stashed changes
   "request" : {
     "url" : "/",
     "method" : "POST",
@@ -19,6 +23,10 @@
     "body" : "{\"message\":\"[\\\\S\\\\s]+\",\"orderId\":\"-?(\\\\d*\\\\.\\\\d+|\\\\d+)\",\"itemId\":-1,\"customerId\":-1}",
     "transformers" : [ "response-template" ]
   },
+<<<<<<< Updated upstream
   "uuid" : "2e55aaf1-d4f0-4519-8ba8-a03a4a093c70",
+=======
+  "uuid" : "094f11cc-b3cf-4329-856a-d98c9d1e04a8",
+>>>>>>> Stashed changes
   "priority" : 1
 }

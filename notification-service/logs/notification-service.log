@@ -1998,3 +1998,6 @@
 2021-05-13 17:15:27,137  INFO | main | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id null was processed 
 2021-05-13 17:15:27,347  INFO | main | i.v.omt.notification.listener.OrderEventListener       | Received event CUSTOMERNOTIFIEDORDERNOTPROCESSED for order null 
 2021-05-13 17:15:27,347  INFO | main | i.v.omt.notification.listener.OrderEventListener       | Going to notify user that order place with id null could not be processed 
+2021-05-14 07:43:52,711  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Starting NotificationServiceApplication on DESKTOP-VOMVIUL with PID 12768 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\notification-service) 
+2021-05-14 07:43:52,711  INFO | main | i.v.omt.notification.NotificationServiceApplication    | The following profiles are active: dev 
+2021-05-14 07:44:13,664  INFO | main | i.v.omt.notification.NotificationServiceApplication    | Started NotificationServiceApplication in 22.857 seconds (JVM running for 26.65) 

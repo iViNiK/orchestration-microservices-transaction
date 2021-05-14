@@ -963,3 +963,6 @@
 2021-05-13 17:14:25,801  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.434 seconds (JVM running for 13.098) 
 2021-05-13 17:14:26,306  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
 2021-05-13 17:14:26,306  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-14 07:44:01,212  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 11216 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-14 07:44:01,212  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-14 07:44:20,358  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 20.043 seconds (JVM running for 26.074) 
