@@ -28,7 +28,7 @@ Apache Kafka is a distributed system consisting of servers (clusters of one or m
 It can be deployed on bare-metal hardware, virtual machines and containers (on-premise and cloud).
 Kafka, among the various features, also provides APIs for the implementation of the Publish-Subscribe Messaging model:
 
-<img src="file:///./kafka.png " alt="Kafka Architecture" width="800"/>
+<img src="https://github.com/iViNiK/orchestration-microservices-transaction/blob/main/kafka.png" alt="Kafka Architecture" width="800"/>
 
 Following are the main concepts of the _Consumer API_ and _Producer API_:
 - **Event / Record**: It is the message that is written and read by the applications. It consists of a key, a value and a timestamp.
