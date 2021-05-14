@@ -88,7 +88,7 @@ Depending on the application, this could be an information/data duplication prob
 Since we want to create a scenario in which a set of **Consumers** only receive a certain **Message** only once, we need to use the **Consumer Groups**.
 If the **Consumers** are part of a **Consumer Group**, the partitions of the **Topic** (and therefore also the **Messages (Event / Record)**) will be distributed among the members of the group.
 
-<img src="file:///kafka1.png " alt="Kafka Producer and Consumer Groups" width="800"/>
+<img src="https://github.com/iViNiK/orchestration-microservices-transaction/blob/main/kafka1.png " alt="Kafka Producer and Consumer Groups" width="800"/>
 
 In particular, given:
 - C = number of **Consumers** of the same **Consumer Group**
@@ -142,7 +142,7 @@ In this project the scenario assumed is the following:
 	- the customer must be notified.
 5. The system issues the shipment of the item to the customer. Also, notifies the customer that order was processed.
 
-<img src="file:///saga.png " alt="Saga Workflow" width="800"/>
+<img src="https://github.com/iViNiK/orchestration-microservices-transaction/blob/main/saga.png " alt="Saga Workflow" width="800"/>
 
 ## Services participating in Saga
 Therefore, in a microservices architecture, the participants in the Saga are:
@@ -203,7 +203,7 @@ As you can see, there are two **Consumer Groups**: the first for the Orchestrato
 In a minimal configuration, in which we can have one single **Partition** for each **Topic**, a single instance of those services in the proper **Consumer Group** is enough.
 Should we scale the system for better performance, we could - for example - split the **Topics** in two **Partitions** and run a new instance of the orchestrator service.
 
-<img src="file:///orchestratorpattern.png " alt="Orchestration Flow" width="1000"/>
+<img src="https://github.com/iViNiK/orchestration-microservices-transaction/blob/main/orchestratorpattern.png " alt="Orchestration Flow" width="1000"/>
 
 # The _Transactional outbox_ pattern
 All the _Producers_ in the mentioned Saga participant services are invoked applying the _Transactional outbox_ pattern (for further information, please refer to https://microservices.io/patterns/data/transactional-outbox.html).
@@ -217,7 +217,7 @@ So, there is a concrete possibility that one of the two operations will fail, pr
 <br><br>
 Adopting the _Transactional outbox_ pattern, in this project it was achieved the result of increasing the system reliability, while maintaining processing efficiency. The implementation is highly scalable, which allows its introduction into various microservices simply by the creation of a **Bean** of type **EventPublisher**, that will be built using the Microservice's local _DomainObjectRepository_ (to access the persistence layer) and a custom **EventSource** implementation (to access the message broker) instances. Besides, the **OutboxProxy** class provides the method to start the _Outbox Transaction_, by putting a record in the _Outbox_ table, in the current transaction (i.e. like in the previous list item 1). The following Class Diagram explains the design of this solution:
 
-<img src="file:///transactional-outbox.jpg" alt="Transaction Outbox Pattern" width="800"/>
+<img src="https://github.com/iViNiK/orchestration-microservices-transaction/blob/main/transactional-outbox.jpg" alt="Transaction Outbox Pattern" width="800"/>
 
 
 # The _Consumer Driven Contracts_ pattern
@@ -232,7 +232,7 @@ Consumer-Driven Contracts is a pattern for evolving services. In Consumer-Driven
 <br><br>
 In this project you can find a full implementation of this tecnique, using _Spring Cloud Contract_ (https://spring.io/projects/spring-cloud-contract) to develope integration tests that assure integrity of endpoints involved in the _Saga Pattern_ implementation.
 
-<img src="file:///consumerdrivencontractstests.png" alt="Consumer Driven Contracts Tests" width="800"/>
+<img src="https://github.com/iViNiK/orchestration-microservices-transaction/blob/main/consumerdrivencontractstests.png" alt="Consumer Driven Contracts Tests" width="800"/>
 
 # Rest Clients and Resilience
 The orchestrator service must interact with microservices involved in each step of the Saga.
@@ -251,7 +251,7 @@ and, in the "stream" inputbox, insert the following:
 
 The following picture is an example:
 
-<img src="file:///hystrixdashboard.png" alt="Hystrix Dashboard" width="1000"/>
+<img src="https://github.com/iViNiK/orchestration-microservices-transaction/blob/main/hystrixdashboard.png" alt="Hystrix Dashboard" width="1000"/>
 
 ## Some points of attention ... 
 The _Orchestrator Service_ is invoking the collaborating service's endpoints synchronously, even if it is "solicited" by asynchronous events. This is the reason why fallback strategy must be provided to manage any service providers failures. It is clear that a probable malfunction could be the excessive delay in the response of an API, which could trigger the fallback path while, in reality, the desired operation will be completed sooner or later. The results may be a big disaster!
