@@ -1,0 +1,24 @@
+{
+  "id" : "adc9cd55-752d-4b07-a277-f6b6712fe629",
+  "request" : {
+    "url" : "/",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['itemId'] == -1)]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['customerId'] == -1)]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"message\":\"[\\\\S\\\\s]+\",\"orderId\":\"-?(\\\\d*\\\\.\\\\d+|\\\\d+)\",\"itemId\":-1,\"customerId\":-1}",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "adc9cd55-752d-4b07-a277-f6b6712fe629",
+  "priority" : 1
+}

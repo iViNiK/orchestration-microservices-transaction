@@ -12,6 +12,7 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
+import it.vinicioflamini.omt.common.domain.Action;
 import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 import it.vinicioflamini.omt.orchestrator.kafka.channel.OrchestratorChannel;
@@ -25,20 +26,26 @@ public class OrderNotPlacedEventListener {
 
 	private static final Logger logger = LoggerFactory.getLogger(OrderNotPlacedEventListener.class);
 
+	private OrderEvent receivedMessage;
+	
 	@StreamListener(target = OrchestratorChannel.INPUT_ORDER)
-	public void listenOrderNotPlaced(@Payload OrderEvent orderEvent) {
-
-		if (OrderEvent.Action.ORDERNOTPLACED.equals(orderEvent.getAction())) {
+	public void listenOrderNotPlaced(@Payload OrderEvent event) {
+		receivedMessage = event;
+		
+		if (Action.ORDERNOTPLACED.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
-				logger.info(String.format("Received an \"OrderNotPlacedEvent\" for order id: %d", orderEvent.getOrderId()));
-				logger.info(String.format("Going to call order service for order id: %d", orderEvent.getOrderId()));
+				logger.info(String.format("Received an \"OrderNotPlacedEvent\" for order %d", event.getOrderId()));
+				logger.info(String.format("Going to call order service for order %d", event.getOrderId()));
 			}
 			
 			OrderRequest req = new OrderRequest();
-			req.setOrderId(orderEvent.getOrderId());
+			req.setOrderId(event.getOrderId());
 
 			orderRestClient.compensateOrder(req);
 		}
 	}
 
+	public OrderEvent getReceivedMessage() {
+		return receivedMessage;
+	}
 }

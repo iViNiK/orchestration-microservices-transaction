@@ -10,45 +10,45 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import it.vinicioflamini.omt.shipping.kafka.source.GoodsShippedEventSource;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import it.vinicioflamini.omt.shipping.domain.ShippingFacade;
 
 @Service
 public class ShippingService {
 
 	private static final Logger logger = LoggerFactory.getLogger(ShippingService.class);
 
-	private Long shipmentId = null;
-
 	@Autowired
-	private GoodsShippedEventSource goodsShippedEventSource;
+	private ShippingFacade shippingFacade;
 
-	public void processShippment(Long orderId) {
-		if (processShipment(orderId)) {
+	public Long processShipment(Long orderId, Long itemId, Long customerId) throws JsonProcessingException {
+		Long shipmentId = callShipmentService(orderId, itemId, customerId);
+		if (shipmentId != null) {
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Shipping completed successfully for order %d", orderId));
 				logger.info(String.format("Going to send a \"ShipmentProcessedEvent\" for order %d", orderId));
 			}
-			goodsShippedEventSource.publishGoodsShippedEvent(shipmentId, orderId, true);
+			shippingFacade.completeShipment(shipmentId, orderId, itemId, customerId);
 		} else {
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Shipping failed for order id: %d", orderId));
 				logger.info(String.format("Going to send a \"ShipmentFailedEvent\" for order %d", orderId));
 			}
-			goodsShippedEventSource.publishGoodsShippedEvent(shipmentId, orderId, false);
+			shippingFacade.rejectShipment(shipmentId, orderId, itemId, customerId);
 		}
 
+		return shipmentId;
 	}
 
 	/**/
 
-	private boolean processShipment(Long orderId) {
+	private Long callShipmentService(Long orderId, Long itemId, Long customerId) {
 		/* TODO: place the shipment and set the ID */
 		if (Math.random() < 0.5) {
-			shipmentId = 1234L;
-			return true;
+			return 1234L;
 		}
-
-		return false;
+		return null;
 	}
 
 }

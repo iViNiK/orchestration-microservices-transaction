@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 
-@FeignClient(value = "order", url = "${order.service.endpoint}")
+@FeignClient(value = "order", url = "${order.service.endpoint}", fallback = OrderRestClientFallback.class)
 public interface OrderRestClient {
 	
 	@PostMapping(value = "/compensate")

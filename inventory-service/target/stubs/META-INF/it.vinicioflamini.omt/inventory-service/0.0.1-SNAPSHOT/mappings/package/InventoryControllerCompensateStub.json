@@ -1,0 +1,26 @@
+{
+  "id" : "2a286499-4706-45da-b608-9a974578dbd4",
+  "request" : {
+    "url" : "/compensate",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['orderId'] == -1)]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['itemId'] == -1)]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['customerId'] == -1)]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"message\":\"[\\\\S\\\\s]+\",\"orderId\":-1,\"itemId\":-1,\"customerId\":-1}",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "2a286499-4706-45da-b608-9a974578dbd4",
+  "priority" : 1
+}

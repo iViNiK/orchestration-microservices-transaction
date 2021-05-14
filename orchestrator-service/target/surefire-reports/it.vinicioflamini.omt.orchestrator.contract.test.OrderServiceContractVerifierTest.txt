@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: it.vinicioflamini.omt.orchestrator.contract.test.OrderServiceContractVerifierTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 146.712 s - in it.vinicioflamini.omt.orchestrator.contract.test.OrderServiceContractVerifierTest

@@ -12,7 +12,8 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
-import it.vinicioflamini.omt.common.message.ShippingEvent;
+import it.vinicioflamini.omt.common.domain.Action;
+import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 import it.vinicioflamini.omt.orchestrator.kafka.channel.OrchestratorChannel;
 import it.vinicioflamini.omt.orchestrator.rest.ShipmentRestClient;
@@ -25,22 +26,25 @@ public class ShipmentFailedEventListener {
 
 	private static final Logger logger = LoggerFactory.getLogger(ShipmentFailedEventListener.class);
 
+	private OrderEvent receivedMessage;
+	
 	@StreamListener(OrchestratorChannel.INPUT_SHIPMENT)
-	public void listenPaymentFailed(@Payload ShippingEvent shipmentFailedMessage) {
-
-		if (ShippingEvent.Action.SHIPMENTFAILED.equals(shipmentFailedMessage.getAction())) {
+	public void listenPaymentFailed(@Payload OrderEvent event) {
+		receivedMessage = event;
+		
+		if (Action.SHIPMENTFAILED.equals(event.getAction())) {
 			if (logger.isInfoEnabled()) {
 				logger.info(String.format("Received a \"ShipmentFailedEvent\" for order %d",
-						shipmentFailedMessage.getOrderId()));
+						event.getOrderId()));
 			}
-			if (shipmentFailedMessage.getOrderId() != null) {
+			if (event.getOrderId() != null) {
 				if (logger.isInfoEnabled()) {
 					logger.info(String.format("Going to call shipment service to process shipment for order %d",
-							shipmentFailedMessage.getOrderId()));
+							event.getOrderId()));
 				}
 				
 				OrderRequest req = new OrderRequest();
-				req.setOrderId(shipmentFailedMessage.getOrderId());
+				req.setOrderId(event.getOrderId());
 
 				shipmentRestClient.processShipment(req);
 			} else {
@@ -49,5 +53,9 @@ public class ShipmentFailedEventListener {
 				}
 			}
 		}
+	}
+	
+	public OrderEvent getReceivedMessage() {
+		return receivedMessage;
 	}
 }

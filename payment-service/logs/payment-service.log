@@ -329,3 +329,637 @@
 2021-04-23 14:52:50,744  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 234 
 2021-04-23 14:54:20,090  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 234 
 2021-04-23 14:54:20,090  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 234 
+2021-04-29 09:35:52,879  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 6028 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-04-29 09:35:52,883  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-04-29 09:35:59,937  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 7.689 seconds (JVM running for 8.656) 
+2021-05-11 09:50:17,231  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 14276 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-11 09:50:17,231  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-11 09:50:26,092  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 9.505 seconds (JVM running for 10.794) 
+2021-05-11 09:55:22,028  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 5796 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-11 09:55:22,029  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | The following profiles are active: dev 
+2021-05-11 09:55:31,998  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | Started TestingWebApplicationTest in 10.379 seconds (JVM running for 11.428) 
+2021-05-11 10:06:11,582  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | Starting TestingWebApplicationTest on DESKTOP-VOMVIUL with PID 12476 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-11 10:06:11,582  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | The following profiles are active: dev 
+2021-05-11 10:06:21,467  INFO | main | i.v.omt.payment.test.TestingWebApplicationTest         | Started TestingWebApplicationTest in 10.32 seconds (JVM running for 11.376) 
+2021-05-12 09:52:03,682  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 12808 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 09:52:03,682  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 09:52:11,628  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.293 seconds (JVM running for 10.508) 
+2021-05-12 09:52:12,122  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 09:52:12,122  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 09:53:18,998  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 16820 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 09:53:18,999  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 09:53:26,779  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.121 seconds (JVM running for 10.323) 
+2021-05-12 09:53:27,260  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 09:53:27,260  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:04:19,706  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 13500 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:04:19,706  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:04:27,490  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.123 seconds (JVM running for 10.348) 
+2021-05-12 10:04:27,956  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 10:04:27,956  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:06:48,397  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 16136 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:06:48,398  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:06:56,242  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.182 seconds (JVM running for 10.451) 
+2021-05-12 10:06:56,710  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:06:56,710  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 10:38:28,291  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 12032 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:38:28,292  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:38:36,137  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.191 seconds (JVM running for 10.399) 
+2021-05-12 10:38:36,606  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:38:36,606  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 10:40:28,957  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 10708 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:40:28,957  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:40:36,816  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.188 seconds (JVM running for 10.463) 
+2021-05-12 10:40:37,305  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:40:37,305  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 10:41:19,651  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 16392 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:41:19,651  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:41:27,461  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.15 seconds (JVM running for 10.351) 
+2021-05-12 10:41:27,920  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 10:41:27,920  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:42:08,544  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 728 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:42:08,545  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:42:16,340  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.139 seconds (JVM running for 10.43) 
+2021-05-12 10:42:16,810  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:42:16,810  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 10:43:30,209  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 10496 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:43:30,210  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:43:37,981  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.121 seconds (JVM running for 10.329) 
+2021-05-12 10:43:38,452  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 10:43:38,452  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:45:15,226  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 7180 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:45:15,227  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:45:22,981  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.099 seconds (JVM running for 10.302) 
+2021-05-12 10:45:23,453  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:45:23,453  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 10:47:09,873  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 17196 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:47:09,873  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:47:17,731  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.176 seconds (JVM running for 10.461) 
+2021-05-12 10:47:18,205  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 10:47:18,206  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:51:18,366  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 16632 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:51:18,366  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:51:26,162  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.156 seconds (JVM running for 10.359) 
+2021-05-12 10:51:26,624  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 10:51:26,624  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 10:57:24,592  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 14620 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 10:57:24,592  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 10:57:32,485  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.234 seconds (JVM running for 10.442) 
+2021-05-12 10:57:32,956  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 10:57:32,956  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 14:50:47,265  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 5996 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 14:50:47,266  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 14:50:55,422  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.516 seconds (JVM running for 10.855) 
+2021-05-12 14:50:55,924  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 14:50:55,924  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 14:52:51,872  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 5724 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 14:52:51,872  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 14:52:59,790  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.273 seconds (JVM running for 10.59) 
+2021-05-12 14:53:00,302  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 14:53:00,303  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 14:55:07,135  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 4988 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 14:55:07,135  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 14:55:15,097  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.308 seconds (JVM running for 10.603) 
+2021-05-12 14:55:15,585  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 14:55:15,585  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 15:08:04,925  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 1792 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 15:08:04,931  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 15:08:12,640  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.061 seconds (JVM running for 10.459) 
+2021-05-12 15:08:13,110  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 15:08:13,111  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 15:15:09,734  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 10508 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 15:15:09,734  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 15:15:18,017  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 8.627 seconds (JVM running for 10.817) 
+2021-05-12 15:15:18,480  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-12 15:15:18,481  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-12 15:20:53,027  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 6152 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 15:20:53,027  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 15:21:02,964  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.437 seconds (JVM running for 13.191) 
+2021-05-12 15:21:03,569  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 15:21:03,569  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 15:55:19,964  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 13952 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 15:55:19,965  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 15:55:30,107  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.645 seconds (JVM running for 13.297) 
+2021-05-12 15:55:30,677  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 15:55:30,677  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 16:06:13,565  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 116 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 16:06:13,566  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 16:06:23,868  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.798 seconds (JVM running for 13.471) 
+2021-05-12 16:06:24,440  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 16:06:24,440  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-12 16:22:36,171  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 2104 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-12 16:22:36,171  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-12 16:22:45,980  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.363 seconds (JVM running for 13.071) 
+2021-05-12 16:22:46,563  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-12 16:22:46,563  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 
+2021-05-13 11:18:23,548  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 7476 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 11:18:23,549  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-13 11:18:39,150  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 16.637 seconds (JVM running for 20.521) 
+2021-05-13 12:22:34,630  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 15652 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 12:22:34,630  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-13 12:22:50,749  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 17.252 seconds (JVM running for 20.521) 
+2021-05-13 12:37:35,351  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 1 
+2021-05-13 12:37:35,351  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 1 
+2021-05-13 12:54:07,105  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 12688 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 12:54:07,105  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-13 12:54:15,820  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 9.348 seconds (JVM running for 10.532) 
+2021-05-13 12:54:35,235  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 1 
+2021-05-13 12:54:35,235  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 1 
+2021-05-13 12:54:40,078  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 1 
+2021-05-13 12:59:10,037  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 1 
+2021-05-13 12:59:10,037  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 1 
+2021-05-13 12:59:15,016  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 1 
+2021-05-13 13:06:45,062  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 1 
+2021-05-13 13:06:45,062  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 1 
+2021-05-13 13:06:50,022  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 1 
+2021-05-13 13:07:15,038  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 1 
+2021-05-13 13:07:15,038  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 1 
+2021-05-13 13:07:20,016  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 1 
+2021-05-13 13:07:40,040  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 1 
+2021-05-13 13:07:40,040  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 1 
+2021-05-13 13:07:45,019  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 1 
+2021-05-13 13:17:12,528  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 14968 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 13:17:12,529  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-13 13:17:21,488  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 9.615 seconds (JVM running for 10.835) 
+2021-05-13 13:47:50,723  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 15672 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 13:47:50,723  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-13 13:48:00,725  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.627 seconds (JVM running for 13.474) 
+2021-05-13 13:48:01,268  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: -1 
+2021-05-13 13:48:01,268  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order -1 
+2021-05-13 15:07:07,653  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 2308 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 15:07:07,654  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-13 15:07:17,942  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 11.003 seconds (JVM running for 12.272) 
+2021-05-13 15:21:10,286  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 11 
+2021-05-13 15:21:10,286  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 11 
+2021-05-13 15:21:15,089  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 11 
+2021-05-13 15:21:50,027  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 13 
+2021-05-13 15:21:50,027  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 13 
+2021-05-13 15:21:55,017  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 13 
+2021-05-13 15:22:10,043  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 15 
+2021-05-13 15:22:10,043  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 15 
+2021-05-13 15:22:15,018  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 15 
+2021-05-13 15:22:30,022  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 17 
+2021-05-13 15:22:30,022  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 17 
+2021-05-13 15:22:35,011  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 17 
+2021-05-13 15:23:55,050  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 19 
+2021-05-13 15:23:55,050  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 19 
+2021-05-13 15:24:00,021  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 19 
+2021-05-13 15:24:25,031  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 21 
+2021-05-13 15:24:25,032  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 21 
+2021-05-13 15:24:30,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 21 
+2021-05-13 16:22:23,744  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 2596 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 16:22:23,744  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-13 16:22:30,727  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 7.465 seconds (JVM running for 8.474) 
+2021-05-13 16:24:12,321  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 11660 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 16:24:12,322  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-13 16:24:21,693  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 10.067 seconds (JVM running for 11.29) 
+2021-05-13 16:24:55,373  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 31 
+2021-05-13 16:24:55,373  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 31 
+2021-05-13 16:25:00,037  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 31 
+2021-05-13 16:25:30,047  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 33 
+2021-05-13 16:25:30,047  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 33 
+2021-05-13 16:25:35,008  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 33 
+2021-05-13 16:26:00,069  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 35 
+2021-05-13 16:26:00,069  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 35 
+2021-05-13 16:26:05,018  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 35 
+2021-05-13 16:26:20,046  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 37 
+2021-05-13 16:26:20,047  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 37 
+2021-05-13 16:26:25,025  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 37 
+2021-05-13 16:26:25,076  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 39 
+2021-05-13 16:26:25,076  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 39 
+2021-05-13 16:26:30,012  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 39 
+2021-05-13 16:26:30,079  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 41 
+2021-05-13 16:26:30,079  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 41 
+2021-05-13 16:26:35,020  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 41 
+2021-05-13 16:26:35,100  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 43 
+2021-05-13 16:26:35,100  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 43 
+2021-05-13 16:26:40,019  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 43 
+2021-05-13 16:26:40,066  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 45 
+2021-05-13 16:26:40,066  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 45 
+2021-05-13 16:26:45,017  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 45 
+2021-05-13 16:26:45,099  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 47 
+2021-05-13 16:26:45,099  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 47 
+2021-05-13 16:26:50,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 47 
+2021-05-13 16:26:50,090  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 49 
+2021-05-13 16:26:50,090  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 49 
+2021-05-13 16:26:55,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 49 
+2021-05-13 16:27:00,071  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 51 
+2021-05-13 16:27:00,071  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 51 
+2021-05-13 16:27:05,040  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 51 
+2021-05-13 16:27:05,098  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 53 
+2021-05-13 16:27:05,098  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 53 
+2021-05-13 16:27:10,039  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 53 
+2021-05-13 16:27:15,091  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 55 
+2021-05-13 16:27:15,091  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 55 
+2021-05-13 16:27:20,017  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 55 
+2021-05-13 16:27:25,060  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 57 
+2021-05-13 16:27:25,060  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 57 
+2021-05-13 16:27:30,052  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 57 
+2021-05-13 16:27:35,135  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 59 
+2021-05-13 16:27:35,135  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 59 
+2021-05-13 16:27:40,041  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 59 
+2021-05-13 16:27:40,090  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 61 
+2021-05-13 16:27:40,090  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 61 
+2021-05-13 16:27:45,025  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 61 
+2021-05-13 16:27:50,068  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 63 
+2021-05-13 16:27:50,068  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 63 
+2021-05-13 16:27:55,033  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 63 
+2021-05-13 16:27:55,063  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 65 
+2021-05-13 16:27:55,063  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 65 
+2021-05-13 16:28:00,010  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 65 
+2021-05-13 16:28:00,095  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 67 
+2021-05-13 16:28:00,095  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 67 
+2021-05-13 16:28:05,006  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 67 
+2021-05-13 16:28:05,051  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 69 
+2021-05-13 16:28:05,051  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 69 
+2021-05-13 16:28:10,021  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 69 
+2021-05-13 16:28:10,063  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 71 
+2021-05-13 16:28:10,063  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 71 
+2021-05-13 16:28:15,014  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 71 
+2021-05-13 16:32:45,118  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 191 
+2021-05-13 16:32:45,119  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 191 
+2021-05-13 16:32:50,014  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 191 
+2021-05-13 16:32:50,057  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 193 
+2021-05-13 16:32:50,057  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 193 
+2021-05-13 16:32:55,024  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 193 
+2021-05-13 16:33:00,037  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 195 
+2021-05-13 16:33:00,037  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 195 
+2021-05-13 16:33:05,034  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 195 
+2021-05-13 16:33:10,041  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 197 
+2021-05-13 16:33:10,041  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 197 
+2021-05-13 16:33:15,012  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 197 
+2021-05-13 16:33:15,058  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 199 
+2021-05-13 16:33:15,058  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 199 
+2021-05-13 16:33:20,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 199 
+2021-05-13 16:33:20,063  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 201 
+2021-05-13 16:33:20,063  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 201 
+2021-05-13 16:33:25,007  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 201 
+2021-05-13 16:33:25,054  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 203 
+2021-05-13 16:33:25,054  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 203 
+2021-05-13 16:33:30,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 203 
+2021-05-13 16:33:30,060  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 205 
+2021-05-13 16:33:30,060  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 205 
+2021-05-13 16:33:35,011  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 205 
+2021-05-13 16:33:35,053  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 207 
+2021-05-13 16:33:35,053  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 207 
+2021-05-13 16:33:40,027  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 207 
+2021-05-13 16:33:45,054  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 209 
+2021-05-13 16:33:45,054  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 209 
+2021-05-13 16:33:50,029  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 209 
+2021-05-13 16:33:50,069  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 211 
+2021-05-13 16:33:50,069  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 211 
+2021-05-13 16:33:55,018  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 211 
+2021-05-13 16:33:55,065  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 213 
+2021-05-13 16:33:55,065  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 213 
+2021-05-13 16:34:00,007  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 213 
+2021-05-13 16:34:00,087  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 215 
+2021-05-13 16:34:00,087  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 215 
+2021-05-13 16:34:05,007  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 215 
+2021-05-13 16:34:05,053  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 217 
+2021-05-13 16:34:05,053  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 217 
+2021-05-13 16:34:10,012  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 217 
+2021-05-13 16:34:10,057  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 219 
+2021-05-13 16:34:10,057  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 219 
+2021-05-13 16:34:15,016  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 219 
+2021-05-13 16:34:15,063  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 221 
+2021-05-13 16:34:15,063  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 221 
+2021-05-13 16:34:20,022  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 221 
+2021-05-13 16:34:25,051  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 223 
+2021-05-13 16:34:25,051  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 223 
+2021-05-13 16:34:30,032  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 223 
+2021-05-13 16:34:30,056  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 225 
+2021-05-13 16:34:30,056  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 225 
+2021-05-13 16:34:35,021  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 225 
+2021-05-13 16:34:35,064  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 227 
+2021-05-13 16:34:35,064  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 227 
+2021-05-13 16:34:40,019  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 227 
+2021-05-13 16:34:40,061  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 229 
+2021-05-13 16:34:40,061  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 229 
+2021-05-13 16:34:45,015  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 229 
+2021-05-13 16:34:55,049  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 231 
+2021-05-13 16:34:55,049  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 231 
+2021-05-13 16:35:00,012  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 231 
+2021-05-13 16:35:00,058  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 233 
+2021-05-13 16:35:00,058  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 233 
+2021-05-13 16:35:05,027  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 233 
+2021-05-13 16:35:05,061  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 235 
+2021-05-13 16:35:05,061  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 235 
+2021-05-13 16:35:10,004  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 235 
+2021-05-13 16:35:10,081  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 237 
+2021-05-13 16:35:10,081  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 237 
+2021-05-13 16:35:15,017  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 237 
+2021-05-13 16:35:15,078  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 239 
+2021-05-13 16:35:15,078  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 239 
+2021-05-13 16:35:20,011  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 239 
+2021-05-13 16:35:20,074  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 241 
+2021-05-13 16:35:20,075  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 241 
+2021-05-13 16:35:25,070  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 241 
+2021-05-13 16:35:30,041  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 243 
+2021-05-13 16:35:30,041  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 243 
+2021-05-13 16:35:35,017  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 243 
+2021-05-13 16:35:35,086  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 245 
+2021-05-13 16:35:35,086  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 245 
+2021-05-13 16:35:40,020  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 245 
+2021-05-13 16:35:40,074  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 247 
+2021-05-13 16:35:40,074  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 247 
+2021-05-13 16:35:45,024  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 247 
+2021-05-13 16:35:45,065  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 249 
+2021-05-13 16:35:45,065  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 249 
+2021-05-13 16:35:50,015  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 249 
+2021-05-13 16:35:50,058  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 251 
+2021-05-13 16:35:50,058  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 251 
+2021-05-13 16:35:55,022  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 251 
+2021-05-13 16:36:00,058  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 253 
+2021-05-13 16:36:00,058  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 253 
+2021-05-13 16:36:05,032  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 253 
+2021-05-13 16:36:05,063  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 255 
+2021-05-13 16:36:05,064  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 255 
+2021-05-13 16:36:10,022  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 255 
+2021-05-13 16:36:10,090  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 257 
+2021-05-13 16:36:10,090  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 257 
+2021-05-13 16:36:15,011  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 257 
+2021-05-13 16:36:20,056  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 259 
+2021-05-13 16:36:20,056  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 259 
+2021-05-13 16:36:25,036  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 259 
+2021-05-13 16:36:25,071  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 261 
+2021-05-13 16:36:25,071  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 261 
+2021-05-13 16:36:30,010  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 261 
+2021-05-13 16:36:30,052  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 263 
+2021-05-13 16:36:30,052  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 263 
+2021-05-13 16:36:35,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 263 
+2021-05-13 16:36:35,060  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 265 
+2021-05-13 16:36:35,060  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 265 
+2021-05-13 16:36:40,019  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 265 
+2021-05-13 16:36:45,053  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 267 
+2021-05-13 16:36:45,053  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 267 
+2021-05-13 16:36:50,012  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 267 
+2021-05-13 16:36:50,055  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 269 
+2021-05-13 16:36:50,055  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 269 
+2021-05-13 16:36:55,015  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 269 
+2021-05-13 16:36:55,062  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 271 
+2021-05-13 16:36:55,062  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 271 
+2021-05-13 16:37:00,011  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 271 
+2021-05-13 16:37:00,059  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 273 
+2021-05-13 16:37:00,060  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 273 
+2021-05-13 16:37:05,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 273 
+2021-05-13 16:37:15,051  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 275 
+2021-05-13 16:37:15,052  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 275 
+2021-05-13 16:37:20,031  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 275 
+2021-05-13 16:37:20,075  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 277 
+2021-05-13 16:37:20,076  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 277 
+2021-05-13 16:37:25,034  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 277 
+2021-05-13 16:37:25,060  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 279 
+2021-05-13 16:37:25,060  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 279 
+2021-05-13 16:37:30,009  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 279 
+2021-05-13 16:37:30,057  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 281 
+2021-05-13 16:37:30,057  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 281 
+2021-05-13 16:37:35,015  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 281 
+2021-05-13 16:37:35,062  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 283 
+2021-05-13 16:37:35,062  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 283 
+2021-05-13 16:37:40,017  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 283 
+2021-05-13 16:37:40,072  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 285 
+2021-05-13 16:37:40,072  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 285 
+2021-05-13 16:37:45,012  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 285 
+2021-05-13 16:38:37,151  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 13600 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 16:38:37,152  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-13 16:38:49,639  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 13.423 seconds (JVM running for 15.284) 
+2021-05-13 16:39:05,463  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 307 
+2021-05-13 16:39:05,463  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 307 
+2021-05-13 16:39:10,055  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 309 
+2021-05-13 16:39:10,055  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 309 
+2021-05-13 16:39:10,107  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 307 
+2021-05-13 16:39:15,028  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 309 
+2021-05-13 16:39:20,037  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 311 
+2021-05-13 16:39:20,037  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 311 
+2021-05-13 16:39:25,031  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 311 
+2021-05-13 16:39:30,053  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 313 
+2021-05-13 16:39:30,053  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 313 
+2021-05-13 16:39:35,031  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 313 
+2021-05-13 16:39:35,070  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 315 
+2021-05-13 16:39:35,070  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 315 
+2021-05-13 16:39:44,421  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Starting PaymentServiceApplication on DESKTOP-VOMVIUL with PID 15668 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 16:39:44,421  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | The following profiles are active: dev 
+2021-05-13 16:39:58,146  INFO | main | it.vinicioflamini.omt.payment.PaymentServiceApplication | Started PaymentServiceApplication in 14.572 seconds (JVM running for 16.202) 
+2021-05-13 16:40:55,486  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 347 
+2021-05-13 16:40:55,486  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 347 
+2021-05-13 16:41:00,074  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 347 
+2021-05-13 16:41:00,113  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 349 
+2021-05-13 16:41:00,113  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 349 
+2021-05-13 16:41:05,032  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 349 
+2021-05-13 16:42:25,052  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 423 
+2021-05-13 16:42:25,052  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 423 
+2021-05-13 16:42:30,010  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 423 
+2021-05-13 16:42:30,057  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 425 
+2021-05-13 16:42:30,057  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 425 
+2021-05-13 16:42:35,010  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 425 
+2021-05-13 16:42:35,075  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 427 
+2021-05-13 16:42:35,075  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 427 
+2021-05-13 16:42:40,022  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 427 
+2021-05-13 16:42:40,104  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 429 
+2021-05-13 16:42:40,104  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 429 
+2021-05-13 16:42:45,033  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 429 
+2021-05-13 16:42:50,052  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 431 
+2021-05-13 16:42:50,052  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 431 
+2021-05-13 16:42:55,014  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 431 
+2021-05-13 16:42:55,063  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 433 
+2021-05-13 16:42:55,063  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 433 
+2021-05-13 16:43:00,023  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 433 
+2021-05-13 16:43:00,050  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 435 
+2021-05-13 16:43:00,050  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 435 
+2021-05-13 16:43:05,015  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 435 
+2021-05-13 16:43:05,063  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 437 
+2021-05-13 16:43:05,063  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 437 
+2021-05-13 16:43:10,029  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 437 
+2021-05-13 16:43:15,081  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 439 
+2021-05-13 16:43:15,081  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 439 
+2021-05-13 16:43:20,052  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 439 
+2021-05-13 16:43:25,704  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 441 
+2021-05-13 16:43:25,704  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 441 
+2021-05-13 16:43:30,009  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 441 
+2021-05-13 16:43:30,109  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 443 
+2021-05-13 16:43:30,109  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 443 
+2021-05-13 16:43:35,032  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 443 
+2021-05-13 16:43:35,176  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 445 
+2021-05-13 16:43:35,177  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 445 
+2021-05-13 16:43:40,025  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 445 
+2021-05-13 16:44:01,120  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 447 
+2021-05-13 16:44:01,121  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 447 
+2021-05-13 16:44:01,193  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 449 
+2021-05-13 16:44:01,193  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 449 
+2021-05-13 16:44:01,209  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 451 
+2021-05-13 16:44:01,209  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 451 
+2021-05-13 16:44:01,240  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 453 
+2021-05-13 16:44:01,240  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 453 
+2021-05-13 16:44:05,031  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 447 
+2021-05-13 16:44:10,030  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 449 
+2021-05-13 16:44:15,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 451 
+2021-05-13 16:44:20,035  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 453 
+2021-05-13 16:48:45,048  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 515 
+2021-05-13 16:48:45,049  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 515 
+2021-05-13 16:48:50,035  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 515 
+2021-05-13 16:48:50,049  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 517 
+2021-05-13 16:48:50,049  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 517 
+2021-05-13 16:48:55,017  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 517 
+2021-05-13 16:48:55,048  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 519 
+2021-05-13 16:48:55,048  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 519 
+2021-05-13 16:49:00,008  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 519 
+2021-05-13 16:49:00,041  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 521 
+2021-05-13 16:49:00,041  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 521 
+2021-05-13 16:49:05,012  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 521 
+2021-05-13 16:49:05,046  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 523 
+2021-05-13 16:49:05,046  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 523 
+2021-05-13 16:49:10,018  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 523 
+2021-05-13 16:49:10,064  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 525 
+2021-05-13 16:49:10,064  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 525 
+2021-05-13 16:49:15,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 525 
+2021-05-13 16:49:15,070  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 527 
+2021-05-13 16:49:15,070  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 527 
+2021-05-13 16:49:20,012  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 527 
+2021-05-13 16:49:25,043  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 529 
+2021-05-13 16:49:25,043  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 529 
+2021-05-13 16:49:30,035  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 529 
+2021-05-13 16:49:30,052  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 531 
+2021-05-13 16:49:30,052  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 531 
+2021-05-13 16:49:35,009  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 531 
+2021-05-13 16:49:40,042  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 533 
+2021-05-13 16:49:40,043  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 533 
+2021-05-13 16:49:45,032  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 533 
+2021-05-13 16:49:45,067  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 535 
+2021-05-13 16:49:45,068  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 535 
+2021-05-13 16:49:50,010  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 535 
+2021-05-13 16:49:55,044  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 537 
+2021-05-13 16:49:55,045  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 537 
+2021-05-13 16:50:00,027  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 537 
+2021-05-13 16:50:00,058  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 539 
+2021-05-13 16:50:00,059  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 539 
+2021-05-13 16:50:05,009  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 539 
+2021-05-13 16:50:10,039  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 541 
+2021-05-13 16:50:10,039  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 541 
+2021-05-13 16:50:15,026  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 541 
+2021-05-13 16:50:15,053  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 543 
+2021-05-13 16:50:15,053  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 543 
+2021-05-13 16:50:20,011  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 543 
+2021-05-13 16:50:20,054  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 545 
+2021-05-13 16:50:20,054  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 545 
+2021-05-13 16:50:25,018  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 545 
+2021-05-13 16:50:25,060  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 547 
+2021-05-13 16:50:25,060  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 547 
+2021-05-13 16:50:30,011  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 547 
+2021-05-13 16:50:30,055  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 549 
+2021-05-13 16:50:30,055  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 549 
+2021-05-13 16:50:35,019  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 549 
+2021-05-13 16:50:35,049  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 551 
+2021-05-13 16:50:35,049  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 551 
+2021-05-13 16:50:40,022  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 551 
+2021-05-13 16:50:40,124  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 553 
+2021-05-13 16:50:40,124  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 553 
+2021-05-13 16:50:45,060  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 553 
+2021-05-13 16:50:50,040  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 555 
+2021-05-13 16:50:50,040  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 555 
+2021-05-13 16:50:55,021  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 555 
+2021-05-13 16:50:55,052  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 557 
+2021-05-13 16:50:55,052  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 557 
+2021-05-13 16:51:00,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 557 
+2021-05-13 16:51:00,078  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 559 
+2021-05-13 16:51:00,078  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 559 
+2021-05-13 16:51:05,016  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 559 
+2021-05-13 16:51:15,046  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 561 
+2021-05-13 16:51:15,046  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 561 
+2021-05-13 16:51:20,052  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 563 
+2021-05-13 16:51:20,052  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 563 
+2021-05-13 16:51:20,054  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 561 
+2021-05-13 16:51:25,017  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 563 
+2021-05-13 16:51:35,036  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 565 
+2021-05-13 16:51:35,036  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 565 
+2021-05-13 16:51:40,032  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 565 
+2021-05-13 16:51:40,039  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 567 
+2021-05-13 16:51:40,039  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 567 
+2021-05-13 16:51:45,020  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 567 
+2021-05-13 16:51:45,069  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 569 
+2021-05-13 16:51:45,069  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 569 
+2021-05-13 16:51:50,014  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 569 
+2021-05-13 16:51:55,048  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 571 
+2021-05-13 16:51:55,048  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 571 
+2021-05-13 16:52:00,022  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 571 
+2021-05-13 16:52:05,055  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 573 
+2021-05-13 16:52:05,055  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 573 
+2021-05-13 16:52:10,041  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 573 
+2021-05-13 16:52:15,051  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 575 
+2021-05-13 16:52:15,051  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 575 
+2021-05-13 16:52:20,024  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 575 
+2021-05-13 16:52:20,042  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 577 
+2021-05-13 16:52:20,042  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 577 
+2021-05-13 16:52:25,009  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 577 
+2021-05-13 16:52:25,056  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 579 
+2021-05-13 16:52:25,056  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 579 
+2021-05-13 16:52:30,024  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 579 
+2021-05-13 16:52:35,046  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 581 
+2021-05-13 16:52:35,046  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 581 
+2021-05-13 16:52:40,036  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 581 
+2021-05-13 16:52:40,169  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 583 
+2021-05-13 16:52:40,169  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 583 
+2021-05-13 16:52:45,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 583 
+2021-05-13 16:52:45,059  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 585 
+2021-05-13 16:52:45,059  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 585 
+2021-05-13 16:52:50,015  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 585 
+2021-05-13 16:52:50,099  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 587 
+2021-05-13 16:52:50,099  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 587 
+2021-05-13 16:52:55,021  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 587 
+2021-05-13 16:52:55,050  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 589 
+2021-05-13 16:52:55,050  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 589 
+2021-05-13 16:53:00,018  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 589 
+2021-05-13 16:53:00,045  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 591 
+2021-05-13 16:53:00,045  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 591 
+2021-05-13 16:53:05,027  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 591 
+2021-05-13 16:53:05,050  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 593 
+2021-05-13 16:53:05,050  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 593 
+2021-05-13 16:53:10,015  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 593 
+2021-05-13 16:53:10,059  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 595 
+2021-05-13 16:53:10,059  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 595 
+2021-05-13 16:53:15,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 595 
+2021-05-13 16:53:15,058  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 597 
+2021-05-13 16:53:15,058  INFO | http-nio-8893-exec-10 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 597 
+2021-05-13 16:53:20,014  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 597 
+2021-05-13 16:53:20,044  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 599 
+2021-05-13 16:53:20,044  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 599 
+2021-05-13 16:53:25,015  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 599 
+2021-05-13 16:53:25,046  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 601 
+2021-05-13 16:53:25,046  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 601 
+2021-05-13 16:53:30,018  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 601 
+2021-05-13 16:53:30,046  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 603 
+2021-05-13 16:53:30,046  INFO | http-nio-8893-exec-2 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 603 
+2021-05-13 16:53:35,008  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 603 
+2021-05-13 16:53:35,054  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 605 
+2021-05-13 16:53:35,054  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 605 
+2021-05-13 16:53:40,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 605 
+2021-05-13 16:53:40,063  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 607 
+2021-05-13 16:53:40,063  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 607 
+2021-05-13 16:53:45,016  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 607 
+2021-05-13 16:53:45,045  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 609 
+2021-05-13 16:53:45,045  INFO | http-nio-8893-exec-7 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 609 
+2021-05-13 16:53:50,016  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 609 
+2021-05-13 16:53:50,056  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 611 
+2021-05-13 16:53:50,056  INFO | http-nio-8893-exec-6 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 611 
+2021-05-13 16:53:55,022  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 611 
+2021-05-13 16:53:55,051  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 613 
+2021-05-13 16:53:55,051  INFO | http-nio-8893-exec-8 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 613 
+2021-05-13 16:54:00,007  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 613 
+2021-05-13 16:54:00,052  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 615 
+2021-05-13 16:54:00,053  INFO | http-nio-8893-exec-9 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 615 
+2021-05-13 16:54:05,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 615 
+2021-05-13 16:54:10,047  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 617 
+2021-05-13 16:54:10,047  INFO | http-nio-8893-exec-1 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 617 
+2021-05-13 16:54:15,024  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 617 
+2021-05-13 16:54:15,051  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 619 
+2021-05-13 16:54:15,051  INFO | http-nio-8893-exec-4 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 619 
+2021-05-13 16:54:20,013  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 619 
+2021-05-13 16:54:30,036  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment failed for order id: 621 
+2021-05-13 16:54:30,036  INFO | http-nio-8893-exec-3 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentNotReceivedEvent" for order 621 
+2021-05-13 16:54:35,030  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTFAILED for order 621 
+2021-05-13 16:54:35,063  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order 623 
+2021-05-13 16:54:35,063  INFO | http-nio-8893-exec-5 | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order 623 
+2021-05-13 16:54:40,018  INFO | scheduling-1 | i.v.omt.payment.kafka.source.PaymentEventSource        | Going to send an PAYMENTRECEIVED for order 623 
+2021-05-13 17:14:16,004  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Starting PackageTest on DESKTOP-VOMVIUL with PID 4088 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\payment-service) 
+2021-05-13 17:14:16,004  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | The following profiles are active: dev 
+2021-05-13 17:14:25,801  INFO | main | it.vinicioflamini.omt.payment.test.PackageTest         | Started PackageTest in 10.434 seconds (JVM running for 13.098) 
+2021-05-13 17:14:26,306  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Payment completed successfully for order -1 
+2021-05-13 17:14:26,306  INFO | main | it.vinicioflamini.omt.payment.service.PaymentService   | Going to send a "PaymentReceivedEvent" for order -1 

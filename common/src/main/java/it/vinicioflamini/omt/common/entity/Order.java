@@ -5,15 +5,50 @@
 */
 package it.vinicioflamini.omt.common.entity;
 
-/*this is db entity and should be mapped to db table*/
-public class Order {
+import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import it.vinicioflamini.omt.common.domain.OrderStatus;
+
+@Entity
+@Table(name = "orders")
+public class Order implements Serializable {
+	private static final long serialVersionUID = 2865564420716791390L;
+	
+	@Id
+	@GeneratedValue
 	private Long id;
+
+	@Column(name = "item_id", nullable = false)
 	private Long itemId;
+
+	@Column(name = "item_name", nullable = false, length = 300)
 	private String itemName;
+
+	@Column(name = "customer_id", nullable = false)
 	private Long customerId;
+
+	@Column(name = "customer_name", nullable = false, length = 300)
 	private String customerName;
 
+	@Column(name = "payment_id", nullable = true)
+	private Long paymentId;
+
+	@Column(name = "shipment_id", nullable = true)
+	private Long shipmentId;
+
+	@Column(name = "status", nullable = true)
+	private OrderStatus status;
+	
+	public Order() {
+		super();
+	}
+	
 	public Long getId() {
 		return id;
 	}
@@ -38,7 +73,6 @@ public class Order {
 		this.itemName = itemName;
 	}
 
-
 	public Long getCustomerId() {
 		return customerId;
 	}
@@ -53,6 +87,30 @@ public class Order {
 
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
+	}
+
+	public Long getPaymentId() {
+		return paymentId;
+	}
+
+	public void setPaymentId(Long paymentId) {
+		this.paymentId = paymentId;
+	}
+
+	public Long getShipmentId() {
+		return shipmentId;
+	}
+
+	public void setShipmentId(Long shipmentId) {
+		this.shipmentId = shipmentId;
+	}
+
+	public OrderStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(OrderStatus status) {
+		this.status = status;
 	}
 
 }

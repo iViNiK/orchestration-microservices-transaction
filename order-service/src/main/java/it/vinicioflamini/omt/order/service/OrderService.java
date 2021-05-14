@@ -5,15 +5,19 @@
 */
 package it.vinicioflamini.omt.order.service;
 
+import javax.transaction.Transactional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 import it.vinicioflamini.omt.common.entity.Order;
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
 import it.vinicioflamini.omt.common.rest.payload.OrderResponse;
-import it.vinicioflamini.omt.order.kafka.source.OrderEventSource;
+import it.vinicioflamini.omt.order.domain.OrderFacade;
 
 @Service
 public class OrderService {
@@ -21,28 +25,15 @@ public class OrderService {
 	private static final Logger logger = LoggerFactory.getLogger(OrderService.class);
 
 	@Autowired
-	private OrderEventSource orderEventSource;
+	private OrderFacade orderFacade;
 
-	public OrderResponse createOrder(OrderRequest request) {
-		Order order = new Order();
+	@Transactional
+	public OrderResponse createOrder(OrderRequest request) throws JsonProcessingException {
+		Order order = orderFacade.placeOrder(request);
 
-		order.setItemId(request.getItemId());
-
-		/*
-		 * TODO: order service should call inventory service to get item name by item id
-		 */
-		order.setItemName("item-xyz");
-
-		order.setCustomerId(request.getCustomerId());
-
-		/*
-		 * TODO: order service should call customer service to get customer name by id
-		 */
-		order.setCustomerName("customer-abc");
-
-		/* TODO: order service should save order and assign a valid order id */
-		order.setId(234L);
-		// orderRepository.save(order)
+		if (logger.isInfoEnabled()) {
+			logger.info(String.format("Order %d was CREATED", order.getId()));
+		}
 
 		OrderResponse response = new OrderResponse();
 		response.setMessage(String.format("Order %d placed successfully", order.getId()));
@@ -50,22 +41,14 @@ public class OrderService {
 		response.setItemId(order.getItemId());
 		response.setCustomerId(order.getCustomerId());
 
-		/* Publish OrderProcessedEvent */
-		if (logger.isInfoEnabled()) {
-			logger.info(String.format("Order %d placed successfully", order.getId()));
-			logger.info(String.format("Going to send an \"OrderPlacedEvent\" for order %d", order.getId()));
-		}
-		orderEventSource.publishOrderEvent(order, true);
-
 		return response;
 	}
 
 	public void compensateOrder(Long orderId) {
-		/* TODO: delete record for given order id */
-		// orderRepository.delete(orderId)
+		orderFacade.rejectOrder(orderId);
 
 		if (logger.isInfoEnabled()) {
-			logger.info(String.format("Order %d was DELETED", orderId));
+			logger.info(String.format("Order %d was REJECTED", orderId));
 		}
 	}
 

@@ -7,14 +7,20 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import it.vinicioflamini.omt.common.domain.Action;
+import it.vinicioflamini.omt.common.domain.DomainObjects;
+import it.vinicioflamini.omt.common.domain.OutboxProxy;
+import it.vinicioflamini.omt.common.message.OrderEvent;
 import it.vinicioflamini.omt.common.rest.payload.OrderRequest;
-import it.vinicioflamini.omt.orchestrator.kafka.source.ShipmentFailedEventSource;
+import it.vinicioflamini.omt.orchestrator.kafka.channel.OrchestratorChannel;
 
 @Component
 public class ShipmentRestClientFallback implements ShipmentRestClient {
 
 	@Autowired
-	ShipmentFailedEventSource shipmentFailedEventSource;
+	private OutboxProxy outboundProxy;
 	
 	private static final Logger logger = LoggerFactory.getLogger(ShipmentRestClientFallback.class);
 	
@@ -25,11 +31,25 @@ public class ShipmentRestClientFallback implements ShipmentRestClient {
 		 * posting a SHIPMENTFAILED event.
 		 */
 		if (logger.isInfoEnabled()) {
-			logger.info(String.format("Executing Fallback during shipment for order %d", req.getOrderId()));
+			logger.info(String.format("Executing shipment fallback for order %d", req.getOrderId()));
 		}
 		
-		shipmentFailedEventSource.publishShipmentFailedEvent(req.getOrderId());
-		
+		OrderEvent orderEvent = new OrderEvent();
+		orderEvent.setOrderId(req.getOrderId());
+		orderEvent.setAction(Action.SHIPMENTFAILED);
+
+		try {
+			outboundProxy.requestMessage(req.getOrderId(), DomainObjects.ORDER, OrchestratorChannel.OUTPUT_SHIPMENT, orderEvent);
+		} catch (JsonProcessingException e) {
+			if (logger.isErrorEnabled()) {
+				logger.error(
+						String.format("Could not execute shipment fallback for order %d.%nError is: %s",
+								req.getOrderId(), e.getLocalizedMessage()));
+			}
+
+			return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+		}
+
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 

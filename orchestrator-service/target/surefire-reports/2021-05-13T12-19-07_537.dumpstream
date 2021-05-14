@@ -1,0 +1,54 @@
+# Created at 2021-05-13T12:19:08.340
+Java HotSpot(TM) 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+
+# Created at 2021-05-13T12:19:08.342
+Java HotSpot(TM) 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+
+# Created at 2021-05-13T12:19:08.342
+Java HotSpot(TM) 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+
+# Created at 2021-05-13T12:19:14.479
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2021-05-13T12:19:14.480
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/C:/Users/vf/.m2/repository/org/codehaus/groovy/groovy/2.5.8/groovy-2.5.8.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+
+# Created at 2021-05-13T12:19:14.480
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+
+# Created at 2021-05-13T12:19:14.481
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2021-05-13T12:19:14.481
+WARNING: All illegal access operations will be denied in a future release
+
+# Created at 2021-05-13T12:19:14.597
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2021-05-13T12:19:14.597
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/C:/Users/vf/.m2/repository/org/codehaus/groovy/groovy/2.5.8/groovy-2.5.8.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+
+# Created at 2021-05-13T12:19:14.597
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+
+# Created at 2021-05-13T12:19:14.598
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2021-05-13T12:19:14.598
+WARNING: All illegal access operations will be denied in a future release
+
+# Created at 2021-05-13T12:19:14.654
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2021-05-13T12:19:14.654
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/C:/Users/vf/.m2/repository/org/codehaus/groovy/groovy/2.5.8/groovy-2.5.8.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+
+# Created at 2021-05-13T12:19:14.655
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+
+# Created at 2021-05-13T12:19:14.655
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2021-05-13T12:19:14.655
+WARNING: All illegal access operations will be denied in a future release
+

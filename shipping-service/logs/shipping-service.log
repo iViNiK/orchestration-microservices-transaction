@@ -269,3 +269,628 @@
 2021-04-23 14:51:28,346  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 234 
 2021-04-23 14:51:44,716  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 234 
 2021-04-23 14:51:44,716  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 234 
+2021-04-29 10:05:09,778  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 8592 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-04-29 10:05:09,787  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
+2021-04-29 10:05:17,289  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 8.173 seconds (JVM running for 9.184) 
+2021-05-12 15:53:14,402  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Starting PackageTest on DESKTOP-VOMVIUL with PID 4848 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-12 15:53:14,404  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | The following profiles are active: dev 
+2021-05-12 15:53:24,713  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Started PackageTest in 10.765 seconds (JVM running for 13.558) 
+2021-05-12 15:53:25,240  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: -1 
+2021-05-12 15:53:25,240  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order -1 
+2021-05-12 15:55:42,508  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Starting PackageTest on DESKTOP-VOMVIUL with PID 14580 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-12 15:55:42,508  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | The following profiles are active: dev 
+2021-05-12 15:55:53,013  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Started PackageTest in 11.022 seconds (JVM running for 13.609) 
+2021-05-12 15:55:53,546  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order -1 
+2021-05-12 15:55:53,546  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order -1 
+2021-05-12 16:06:36,365  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Starting PackageTest on DESKTOP-VOMVIUL with PID 6880 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-12 16:06:36,366  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | The following profiles are active: dev 
+2021-05-12 16:06:46,342  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Started PackageTest in 10.507 seconds (JVM running for 13.151) 
+2021-05-12 16:06:46,871  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order -1 
+2021-05-12 16:06:46,871  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order -1 
+2021-05-12 16:23:17,425  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Starting PackageTest on DESKTOP-VOMVIUL with PID 8308 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-12 16:23:17,426  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | The following profiles are active: dev 
+2021-05-12 16:23:27,438  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Started PackageTest in 10.49 seconds (JVM running for 13.356) 
+2021-05-12 16:23:27,939  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: -1 
+2021-05-12 16:23:27,939  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order -1 
+2021-05-13 11:18:24,920  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 4716 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-13 11:18:24,920  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
+2021-05-13 11:18:39,940  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 16.156 seconds (JVM running for 18.928) 
+2021-05-13 12:22:31,893  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 9156 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-13 12:22:31,893  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
+2021-05-13 12:22:48,058  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 17.21 seconds (JVM running for 20.406) 
+2021-05-13 12:55:23,328  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 1 
+2021-05-13 12:55:23,328  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 1 
+2021-05-13 12:58:47,788  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 8148 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-13 12:58:47,788  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
+2021-05-13 12:58:56,451  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 9.314 seconds (JVM running for 10.508) 
+2021-05-13 12:59:15,251  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 1 
+2021-05-13 12:59:15,251  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 1 
+2021-05-13 12:59:20,053  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 1 
+2021-05-13 13:06:50,032  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 1 
+2021-05-13 13:06:50,032  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 1 
+2021-05-13 13:06:55,017  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 1 
+2021-05-13 13:07:20,031  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 1 
+2021-05-13 13:07:20,031  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 1 
+2021-05-13 13:07:25,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 1 
+2021-05-13 13:07:25,049  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 1 
+2021-05-13 13:07:25,049  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 1 
+2021-05-13 13:07:30,009  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 1 
+2021-05-13 13:48:12,763  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Starting PackageTest on DESKTOP-VOMVIUL with PID 4664 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-13 13:48:12,764  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | The following profiles are active: dev 
+2021-05-13 13:48:22,759  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Started PackageTest in 10.524 seconds (JVM running for 13.206) 
+2021-05-13 13:48:23,282  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order -1 
+2021-05-13 13:48:23,282  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order -1 
+2021-05-13 15:07:13,505  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 13076 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-13 15:07:13,505  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
+2021-05-13 15:07:23,634  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 10.862 seconds (JVM running for 12.295) 
+2021-05-13 15:21:15,427  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 11 
+2021-05-13 15:21:15,427  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 11 
+2021-05-13 15:21:20,064  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 11 
+2021-05-13 15:21:55,030  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 13 
+2021-05-13 15:21:55,030  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 13 
+2021-05-13 15:22:00,016  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 13 
+2021-05-13 15:22:15,034  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 15 
+2021-05-13 15:22:15,035  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 15 
+2021-05-13 15:22:20,023  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 15 
+2021-05-13 16:25:35,070  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 33 
+2021-05-13 16:25:35,070  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 33 
+2021-05-13 16:25:40,008  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 33 
+2021-05-13 16:26:05,040  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 35 
+2021-05-13 16:26:05,041  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 35 
+2021-05-13 16:26:10,010  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 35 
+2021-05-13 16:26:25,081  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 37 
+2021-05-13 16:26:25,081  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 37 
+2021-05-13 16:26:30,032  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 37 
+2021-05-13 16:26:30,088  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 39 
+2021-05-13 16:26:30,088  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 39 
+2021-05-13 16:26:30,100  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 37 
+2021-05-13 16:26:30,100  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 37 
+2021-05-13 16:26:35,033  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 39 
+2021-05-13 16:26:35,105  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 41 
+2021-05-13 16:26:35,106  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 41 
+2021-05-13 16:26:40,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 37 
+2021-05-13 16:26:40,059  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 37 
+2021-05-13 16:26:40,059  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 37 
+2021-05-13 16:26:40,064  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 43 
+2021-05-13 16:26:40,064  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 43 
+2021-05-13 16:26:45,018  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 41 
+2021-05-13 16:26:45,101  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 41 
+2021-05-13 16:26:45,102  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 41 
+2021-05-13 16:26:45,101  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 45 
+2021-05-13 16:26:45,102  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 45 
+2021-05-13 16:26:50,011  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 37 
+2021-05-13 16:26:50,087  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 37 
+2021-05-13 16:26:50,087  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 37 
+2021-05-13 16:26:55,018  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 43 
+2021-05-13 16:27:00,024  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 41 
+2021-05-13 16:27:05,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 45 
+2021-05-13 16:27:10,025  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 37 
+2021-05-13 16:27:10,187  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 37 
+2021-05-13 16:27:10,187  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 37 
+2021-05-13 16:27:15,018  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 37 
+2021-05-13 16:27:30,082  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 57 
+2021-05-13 16:27:30,082  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 57 
+2021-05-13 16:27:35,031  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 57 
+2021-05-13 16:27:35,108  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 57 
+2021-05-13 16:27:35,108  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 57 
+2021-05-13 16:27:40,018  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 57 
+2021-05-13 16:27:40,084  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 57 
+2021-05-13 16:27:40,084  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 57 
+2021-05-13 16:27:45,015  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 57 
+2021-05-13 16:27:45,108  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 61 
+2021-05-13 16:27:45,108  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 61 
+2021-05-13 16:27:50,021  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 61 
+2021-05-13 16:28:00,055  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 65 
+2021-05-13 16:28:00,055  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 65 
+2021-05-13 16:28:05,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 65 
+2021-05-13 16:28:05,054  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 65 
+2021-05-13 16:28:05,054  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 65 
+2021-05-13 16:28:10,037  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 65 
+2021-05-13 16:28:10,054  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 69 
+2021-05-13 16:28:10,054  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 69 
+2021-05-13 16:28:10,062  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 65 
+2021-05-13 16:28:10,063  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 65 
+2021-05-13 16:28:15,014  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 69 
+2021-05-13 16:28:15,065  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 69 
+2021-05-13 16:28:15,065  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 69 
+2021-05-13 16:28:20,017  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 65 
+2021-05-13 16:28:25,016  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 69 
+2021-05-13 16:28:25,053  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 69 
+2021-05-13 16:28:25,053  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 69 
+2021-05-13 16:28:30,009  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 69 
+2021-05-13 16:28:30,058  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 69 
+2021-05-13 16:28:30,058  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 69 
+2021-05-13 16:28:35,015  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 69 
+2021-05-13 16:33:05,055  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 195 
+2021-05-13 16:33:05,056  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 195 
+2021-05-13 16:33:10,017  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 195 
+2021-05-13 16:33:10,054  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 195 
+2021-05-13 16:33:10,055  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 195 
+2021-05-13 16:33:15,012  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 195 
+2021-05-13 16:33:15,058  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 197 
+2021-05-13 16:33:15,058  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 197 
+2021-05-13 16:33:20,011  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 197 
+2021-05-13 16:33:20,052  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 199 
+2021-05-13 16:33:20,052  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 199 
+2021-05-13 16:33:20,057  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 197 
+2021-05-13 16:33:20,057  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 197 
+2021-05-13 16:33:25,013  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 199 
+2021-05-13 16:33:30,012  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 197 
+2021-05-13 16:33:30,050  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 197 
+2021-05-13 16:33:30,050  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 203 
+2021-05-13 16:33:30,050  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 197 
+2021-05-13 16:33:30,050  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 203 
+2021-05-13 16:33:35,008  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 197 
+2021-05-13 16:33:35,053  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 197 
+2021-05-13 16:33:35,053  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 197 
+2021-05-13 16:33:35,054  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 205 
+2021-05-13 16:33:35,054  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 205 
+2021-05-13 16:33:40,004  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 203 
+2021-05-13 16:33:40,050  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 207 
+2021-05-13 16:33:40,050  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 207 
+2021-05-13 16:33:40,058  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 203 
+2021-05-13 16:33:40,058  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 203 
+2021-05-13 16:35:25,635  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 17024 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-13 16:35:25,635  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
+2021-05-13 16:35:38,482  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 13.845 seconds (JVM running for 15.66) 
+2021-05-13 16:36:10,434  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 239 
+2021-05-13 16:36:10,434  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 239 
+2021-05-13 16:36:15,077  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 257 
+2021-05-13 16:36:15,077  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 257 
+2021-05-13 16:36:15,108  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 239 
+2021-05-13 16:36:15,131  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 217 
+2021-05-13 16:36:15,131  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 217 
+2021-05-13 16:36:20,025  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 257 
+2021-05-13 16:36:20,064  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 213 
+2021-05-13 16:36:20,064  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 213 
+2021-05-13 16:36:20,094  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 257 
+2021-05-13 16:36:20,095  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 257 
+2021-05-13 16:36:25,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 217 
+2021-05-13 16:36:25,059  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 223 
+2021-05-13 16:36:25,059  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 223 
+2021-05-13 16:36:25,069  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 259 
+2021-05-13 16:36:25,069  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 259 
+2021-05-13 16:36:30,007  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 213 
+2021-05-13 16:36:30,053  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 261 
+2021-05-13 16:36:30,053  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 261 
+2021-05-13 16:36:30,055  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 243 
+2021-05-13 16:36:30,055  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 243 
+2021-05-13 16:36:35,025  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 257 
+2021-05-13 16:36:35,059  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 231 
+2021-05-13 16:36:35,059  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 231 
+2021-05-13 16:36:35,107  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 257 
+2021-05-13 16:36:35,108  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 257 
+2021-05-13 16:36:40,004  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 223 
+2021-05-13 16:36:40,044  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 265 
+2021-05-13 16:36:40,044  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 265 
+2021-05-13 16:36:40,068  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 223 
+2021-05-13 16:36:40,068  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 223 
+2021-05-13 16:36:40,096  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 225 
+2021-05-13 16:36:40,096  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 225 
+2021-05-13 16:36:45,030  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 259 
+2021-05-13 16:36:45,061  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 245 
+2021-05-13 16:36:45,061  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 245 
+2021-05-13 16:36:45,090  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 259 
+2021-05-13 16:36:45,090  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 259 
+2021-05-13 16:36:50,013  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 243 
+2021-05-13 16:36:50,051  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 209 
+2021-05-13 16:36:50,051  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 209 
+2021-05-13 16:36:50,081  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 243 
+2021-05-13 16:36:50,082  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 243 
+2021-05-13 16:36:55,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 261 
+2021-05-13 16:36:55,053  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 247 
+2021-05-13 16:36:55,053  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 247 
+2021-05-13 16:36:55,060  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 269 
+2021-05-13 16:36:55,060  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 269 
+2021-05-13 16:37:00,016  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 231 
+2021-05-13 16:37:00,060  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 233 
+2021-05-13 16:37:00,060  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 233 
+2021-05-13 16:37:00,088  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 231 
+2021-05-13 16:37:00,088  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 231 
+2021-05-13 16:37:05,017  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 257 
+2021-05-13 16:37:05,059  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 215 
+2021-05-13 16:37:05,059  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 215 
+2021-05-13 16:37:05,092  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 257 
+2021-05-13 16:37:05,092  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 257 
+2021-05-13 16:37:10,025  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 265 
+2021-05-13 16:37:10,081  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 251 
+2021-05-13 16:37:10,081  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 251 
+2021-05-13 16:37:10,111  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 265 
+2021-05-13 16:37:10,111  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 265 
+2021-05-13 16:37:15,012  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 223 
+2021-05-13 16:37:15,058  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 237 
+2021-05-13 16:37:15,058  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 237 
+2021-05-13 16:37:20,011  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 225 
+2021-05-13 16:37:20,073  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 227 
+2021-05-13 16:37:20,073  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 227 
+2021-05-13 16:37:25,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 245 
+2021-05-13 16:37:25,048  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 277 
+2021-05-13 16:37:25,048  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 277 
+2021-05-13 16:37:25,059  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 245 
+2021-05-13 16:37:25,059  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 245 
+2021-05-13 16:37:30,017  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 259 
+2021-05-13 16:37:35,016  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 209 
+2021-05-13 16:37:35,052  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 209 
+2021-05-13 16:37:35,052  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 209 
+2021-05-13 16:37:40,014  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 243 
+2021-05-13 16:37:40,073  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 283 
+2021-05-13 16:37:40,073  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 283 
+2021-05-13 16:37:45,006  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 247 
+2021-05-13 16:37:50,013  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 269 
+2021-05-13 16:37:50,047  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 269 
+2021-05-13 16:37:50,047  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 269 
+2021-05-13 16:37:55,023  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 233 
+2021-05-13 16:37:55,069  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 233 
+2021-05-13 16:37:55,069  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 233 
+2021-05-13 16:38:00,029  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 231 
+2021-05-13 16:38:00,061  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 231 
+2021-05-13 16:38:00,061  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 231 
+2021-05-13 16:38:05,021  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 215 
+2021-05-13 16:38:10,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 257 
+2021-05-13 16:38:10,057  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 257 
+2021-05-13 16:38:10,057  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 257 
+2021-05-13 16:38:15,011  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 251 
+2021-05-13 16:38:15,068  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 251 
+2021-05-13 16:38:15,068  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 251 
+2021-05-13 16:38:20,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 265 
+2021-05-13 16:38:25,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 237 
+2021-05-13 16:38:25,062  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 237 
+2021-05-13 16:38:25,062  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 237 
+2021-05-13 16:38:30,010  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 227 
+2021-05-13 16:38:30,054  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 227 
+2021-05-13 16:38:30,054  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 227 
+2021-05-13 16:38:35,031  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 277 
+2021-05-13 16:38:40,047  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 245 
+2021-05-13 16:38:40,058  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 245 
+2021-05-13 16:38:40,058  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 245 
+2021-05-13 16:38:45,042  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 209 
+2021-05-13 16:38:50,074  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 283 
+2021-05-13 16:38:55,032  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 269 
+2021-05-13 16:38:55,083  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 269 
+2021-05-13 16:38:55,083  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 269 
+2021-05-13 16:39:00,032  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 233 
+2021-05-13 16:39:00,063  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 233 
+2021-05-13 16:39:00,063  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 233 
+2021-05-13 16:39:05,015  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 231 
+2021-05-13 16:39:05,057  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 231 
+2021-05-13 16:39:05,057  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 231 
+2021-05-13 16:39:10,028  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 257 
+2021-05-13 16:39:10,257  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 307 
+2021-05-13 16:39:10,257  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 307 
+2021-05-13 16:39:15,013  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 251 
+2021-05-13 16:39:15,070  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 309 
+2021-05-13 16:39:15,071  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 309 
+2021-05-13 16:39:15,085  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 251 
+2021-05-13 16:39:15,085  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 251 
+2021-05-13 16:39:20,006  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 237 
+2021-05-13 16:39:25,012  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 227 
+2021-05-13 16:39:25,053  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 311 
+2021-05-13 16:39:25,053  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 311 
+2021-05-13 16:39:30,018  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 245 
+2021-05-13 16:39:35,016  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 269 
+2021-05-13 16:39:40,012  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 233 
+2021-05-13 16:39:45,024  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 231 
+2021-05-13 16:39:50,038  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 307 
+2021-05-13 16:39:50,071  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 307 
+2021-05-13 16:39:50,071  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 307 
+2021-05-13 16:39:55,031  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 309 
+2021-05-13 16:40:00,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 251 
+2021-05-13 16:40:00,060  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 251 
+2021-05-13 16:40:00,060  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 251 
+2021-05-13 16:40:05,031  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 311 
+2021-05-13 16:40:10,024  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 307 
+2021-05-13 16:40:10,069  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 307 
+2021-05-13 16:40:10,069  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 307 
+2021-05-13 16:40:15,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 251 
+2021-05-13 16:40:20,044  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 307 
+2021-05-13 16:40:33,576  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 11240 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-13 16:40:33,577  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
+2021-05-13 16:40:46,363  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 13.678 seconds (JVM running for 15.442) 
+2021-05-13 16:42:30,497  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 423 
+2021-05-13 16:42:30,497  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 423 
+2021-05-13 16:42:35,122  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 425 
+2021-05-13 16:42:35,122  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 425 
+2021-05-13 16:42:35,123  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 423 
+2021-05-13 16:42:40,049  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 425 
+2021-05-13 16:42:45,075  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 429 
+2021-05-13 16:42:45,075  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 429 
+2021-05-13 16:42:50,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 429 
+2021-05-13 16:43:00,046  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 433 
+2021-05-13 16:43:00,046  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 433 
+2021-05-13 16:43:05,023  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 433 
+2021-05-13 16:43:10,058  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 437 
+2021-05-13 16:43:10,058  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 437 
+2021-05-13 16:43:15,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 437 
+2021-05-13 16:43:15,134  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 437 
+2021-05-13 16:43:15,134  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 437 
+2021-05-13 16:43:20,062  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 437 
+2021-05-13 16:43:20,082  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 437 
+2021-05-13 16:43:20,083  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 437 
+2021-05-13 16:43:20,094  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 439 
+2021-05-13 16:43:20,094  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 439 
+2021-05-13 16:43:25,020  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 437 
+2021-05-13 16:43:25,662  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 437 
+2021-05-13 16:43:25,662  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 437 
+2021-05-13 16:43:30,034  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 439 
+2021-05-13 16:43:30,116  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 441 
+2021-05-13 16:43:30,116  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 441 
+2021-05-13 16:43:35,052  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 437 
+2021-05-13 16:43:35,167  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 437 
+2021-05-13 16:43:35,167  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 437 
+2021-05-13 16:43:40,018  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 441 
+2021-05-13 16:43:45,011  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 437 
+2021-05-13 16:44:04,045  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 441 
+2021-05-13 16:44:04,045  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 441 
+2021-05-13 16:44:04,051  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 445 
+2021-05-13 16:44:04,051  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 445 
+2021-05-13 16:44:05,031  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 441 
+2021-05-13 16:44:05,083  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 447 
+2021-05-13 16:44:05,083  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 447 
+2021-05-13 16:44:05,100  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 441 
+2021-05-13 16:44:05,100  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 441 
+2021-05-13 16:44:10,063  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 445 
+2021-05-13 16:44:10,081  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 449 
+2021-05-13 16:44:10,081  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 445 
+2021-05-13 16:44:10,081  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 449 
+2021-05-13 16:44:10,082  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 445 
+2021-05-13 16:44:15,031  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 447 
+2021-05-13 16:44:20,050  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 441 
+2021-05-13 16:44:20,069  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 441 
+2021-05-13 16:44:20,069  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 441 
+2021-05-13 16:44:25,041  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 449 
+2021-05-13 16:44:25,075  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 449 
+2021-05-13 16:44:25,075  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 449 
+2021-05-13 16:44:30,012  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 445 
+2021-05-13 16:44:35,043  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 441 
+2021-05-13 16:44:40,016  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 449 
+2021-05-13 16:48:35,306  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 2592 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-13 16:48:35,306  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
+2021-05-13 16:48:45,791  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 11.138 seconds (JVM running for 12.325) 
+2021-05-13 16:49:00,525  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 515 
+2021-05-13 16:49:00,525  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 515 
+2021-05-13 16:49:05,089  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 515 
+2021-05-13 16:49:05,220  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 515 
+2021-05-13 16:49:05,220  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 515 
+2021-05-13 16:49:10,038  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 515 
+2021-05-13 16:49:10,832  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 517 
+2021-05-13 16:49:10,832  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 517 
+2021-05-13 16:49:15,035  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 517 
+2021-05-13 16:49:15,292  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 515 
+2021-05-13 16:49:15,292  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 515 
+2021-05-13 16:49:20,025  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 515 
+2021-05-13 16:50:20,067  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 531 
+2021-05-13 16:50:20,067  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 531 
+2021-05-13 16:50:25,033  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 531 
+2021-05-13 16:50:56,738  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Starting ShippingServiceApplication on DESKTOP-VOMVIUL with PID 4364 (E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service\target\classes started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-13 16:50:56,738  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | The following profiles are active: dev 
+2021-05-13 16:51:08,438  INFO | main | i.v.omt.shipping.ShippingServiceApplication            | Started ShippingServiceApplication in 12.617 seconds (JVM running for 14.208) 
+2021-05-13 16:51:15,418  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 519 
+2021-05-13 16:51:15,418  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 519 
+2021-05-13 16:51:20,050  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 545 
+2021-05-13 16:51:20,050  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 545 
+2021-05-13 16:51:20,085  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 519 
+2021-05-13 16:51:25,023  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 545 
+2021-05-13 16:51:25,049  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 563 
+2021-05-13 16:51:25,049  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 563 
+2021-05-13 16:51:25,065  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 535 
+2021-05-13 16:51:25,065  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 535 
+2021-05-13 16:51:25,093  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 545 
+2021-05-13 16:51:25,093  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 545 
+2021-05-13 16:51:30,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 563 
+2021-05-13 16:51:30,058  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 523 
+2021-05-13 16:51:30,058  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 523 
+2021-05-13 16:51:30,113  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 563 
+2021-05-13 16:51:30,113  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 563 
+2021-05-13 16:51:35,013  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 535 
+2021-05-13 16:51:35,046  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 525 
+2021-05-13 16:51:35,046  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 525 
+2021-05-13 16:51:35,079  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 535 
+2021-05-13 16:51:35,079  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 535 
+2021-05-13 16:51:40,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 545 
+2021-05-13 16:51:40,048  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 517 
+2021-05-13 16:51:40,048  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 517 
+2021-05-13 16:51:40,055  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 565 
+2021-05-13 16:51:40,055  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 565 
+2021-05-13 16:51:40,099  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 545 
+2021-05-13 16:51:40,099  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 545 
+2021-05-13 16:51:45,023  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 523 
+2021-05-13 16:51:45,073  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 537 
+2021-05-13 16:51:45,073  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 567 
+2021-05-13 16:51:45,073  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 537 
+2021-05-13 16:51:45,073  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 567 
+2021-05-13 16:51:50,021  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 563 
+2021-05-13 16:51:50,073  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 569 
+2021-05-13 16:51:50,073  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 569 
+2021-05-13 16:51:50,100  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 563 
+2021-05-13 16:51:50,100  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 563 
+2021-05-13 16:51:50,134  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 539 
+2021-05-13 16:51:50,134  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 539 
+2021-05-13 16:51:55,015  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 525 
+2021-05-13 16:51:55,052  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 515 
+2021-05-13 16:51:55,053  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 515 
+2021-05-13 16:52:00,016  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 535 
+2021-05-13 16:52:00,058  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 571 
+2021-05-13 16:52:00,058  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 571 
+2021-05-13 16:52:00,070  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 531 
+2021-05-13 16:52:00,070  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 531 
+2021-05-13 16:52:05,014  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 517 
+2021-05-13 16:52:05,069  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 517 
+2021-05-13 16:52:05,069  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 517 
+2021-05-13 16:52:05,101  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 543 
+2021-05-13 16:52:05,101  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 543 
+2021-05-13 16:52:10,023  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 565 
+2021-05-13 16:52:10,054  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 515 
+2021-05-13 16:52:10,054  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 515 
+2021-05-13 16:52:10,064  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 573 
+2021-05-13 16:52:10,064  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 573 
+2021-05-13 16:52:10,095  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 565 
+2021-05-13 16:52:10,095  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 565 
+2021-05-13 16:52:15,017  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 545 
+2021-05-13 16:52:20,010  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 537 
+2021-05-13 16:52:20,037  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 575 
+2021-05-13 16:52:20,037  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 575 
+2021-05-13 16:52:20,043  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 537 
+2021-05-13 16:52:20,043  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 537 
+2021-05-13 16:52:25,018  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 567 
+2021-05-13 16:52:25,059  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 577 
+2021-05-13 16:52:25,059  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 577 
+2021-05-13 16:52:30,020  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 569 
+2021-05-13 16:52:30,047  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 579 
+2021-05-13 16:52:30,048  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 579 
+2021-05-13 16:52:35,013  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 563 
+2021-05-13 16:52:40,020  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 539 
+2021-05-13 16:52:40,167  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 539 
+2021-05-13 16:52:40,167  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 539 
+2021-05-13 16:52:40,175  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 581 
+2021-05-13 16:52:40,175  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 581 
+2021-05-13 16:52:45,015  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 515 
+2021-05-13 16:52:45,056  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 515 
+2021-05-13 16:52:45,056  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 515 
+2021-05-13 16:52:45,066  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 583 
+2021-05-13 16:52:45,066  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 583 
+2021-05-13 16:52:50,014  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 571 
+2021-05-13 16:52:55,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 531 
+2021-05-13 16:52:55,045  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 531 
+2021-05-13 16:52:55,045  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 531 
+2021-05-13 16:52:55,045  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 587 
+2021-05-13 16:52:55,045  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 587 
+2021-05-13 16:53:00,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 517 
+2021-05-13 16:53:00,070  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 517 
+2021-05-13 16:53:00,070  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 517 
+2021-05-13 16:53:05,021  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 543 
+2021-05-13 16:53:10,013  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 515 
+2021-05-13 16:53:10,052  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 593 
+2021-05-13 16:53:10,052  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 593 
+2021-05-13 16:53:15,017  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 573 
+2021-05-13 16:53:15,059  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 573 
+2021-05-13 16:53:15,059  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 573 
+2021-05-13 16:53:20,014  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 565 
+2021-05-13 16:53:20,046  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 597 
+2021-05-13 16:53:20,046  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 597 
+2021-05-13 16:53:25,015  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 575 
+2021-05-13 16:53:30,020  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 537 
+2021-05-13 16:53:30,040  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 537 
+2021-05-13 16:53:30,040  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 537 
+2021-05-13 16:53:35,007  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 577 
+2021-05-13 16:53:40,017  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 579 
+2021-05-13 16:53:40,053  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 579 
+2021-05-13 16:53:40,053  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 579 
+2021-05-13 16:53:40,053  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 605 
+2021-05-13 16:53:40,053  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 605 
+2021-05-13 16:53:45,017  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 539 
+2021-05-13 16:53:45,044  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 539 
+2021-05-13 16:53:45,045  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 539 
+2021-05-13 16:53:50,009  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 581 
+2021-05-13 16:53:50,056  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 581 
+2021-05-13 16:53:50,056  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 581 
+2021-05-13 16:53:55,024  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 515 
+2021-05-13 16:53:55,066  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 515 
+2021-05-13 16:53:55,066  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 515 
+2021-05-13 16:54:00,006  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 583 
+2021-05-13 16:54:00,037  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 613 
+2021-05-13 16:54:00,037  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 613 
+2021-05-13 16:54:00,052  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 583 
+2021-05-13 16:54:00,052  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 583 
+2021-05-13 16:54:05,015  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 531 
+2021-05-13 16:54:05,059  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 531 
+2021-05-13 16:54:05,059  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 531 
+2021-05-13 16:54:10,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 587 
+2021-05-13 16:54:15,021  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 517 
+2021-05-13 16:54:15,042  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 617 
+2021-05-13 16:54:15,042  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 517 
+2021-05-13 16:54:15,042  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 617 
+2021-05-13 16:54:15,042  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 517 
+2021-05-13 16:54:20,013  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 593 
+2021-05-13 16:54:20,059  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 593 
+2021-05-13 16:54:20,059  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 619 
+2021-05-13 16:54:20,059  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 593 
+2021-05-13 16:54:20,059  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 619 
+2021-05-13 16:54:25,015  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 573 
+2021-05-13 16:54:30,024  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 597 
+2021-05-13 16:54:30,035  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 597 
+2021-05-13 16:54:30,036  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 597 
+2021-05-13 16:54:35,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 537 
+2021-05-13 16:54:35,066  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 537 
+2021-05-13 16:54:35,066  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 537 
+2021-05-13 16:54:40,016  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 579 
+2021-05-13 16:54:40,051  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 623 
+2021-05-13 16:54:40,051  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 623 
+2021-05-13 16:54:45,018  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 605 
+2021-05-13 16:54:45,047  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 605 
+2021-05-13 16:54:45,047  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 605 
+2021-05-13 16:54:50,011  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 539 
+2021-05-13 16:54:50,065  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 539 
+2021-05-13 16:54:50,065  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 539 
+2021-05-13 16:54:55,021  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 581 
+2021-05-13 16:54:55,067  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 581 
+2021-05-13 16:54:55,067  INFO | http-nio-8895-exec-8 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 581 
+2021-05-13 16:55:00,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 515 
+2021-05-13 16:55:05,013  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 613 
+2021-05-13 16:55:10,029  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 583 
+2021-05-13 16:55:10,049  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 583 
+2021-05-13 16:55:10,049  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 583 
+2021-05-13 16:55:15,010  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 531 
+2021-05-13 16:55:20,010  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 517 
+2021-05-13 16:55:20,037  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 517 
+2021-05-13 16:55:20,037  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 517 
+2021-05-13 16:55:25,019  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 617 
+2021-05-13 16:55:30,015  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 619 
+2021-05-13 16:55:35,012  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 593 
+2021-05-13 16:55:35,041  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 593 
+2021-05-13 16:55:35,041  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 593 
+2021-05-13 16:55:40,007  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 597 
+2021-05-13 16:55:45,013  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 537 
+2021-05-13 16:55:45,040  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 537 
+2021-05-13 16:55:45,040  INFO | http-nio-8895-exec-6 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 537 
+2021-05-13 16:55:50,008  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 623 
+2021-05-13 16:55:50,039  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 623 
+2021-05-13 16:55:50,039  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 623 
+2021-05-13 16:55:55,011  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 605 
+2021-05-13 16:56:00,015  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 539 
+2021-05-13 16:56:00,030  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 539 
+2021-05-13 16:56:00,030  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 539 
+2021-05-13 16:56:05,020  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 581 
+2021-05-13 16:56:05,035  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 581 
+2021-05-13 16:56:05,035  INFO | http-nio-8895-exec-2 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 581 
+2021-05-13 16:56:10,012  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 583 
+2021-05-13 16:56:10,041  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 583 
+2021-05-13 16:56:10,041  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 583 
+2021-05-13 16:56:15,011  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 517 
+2021-05-13 16:56:15,040  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 517 
+2021-05-13 16:56:15,040  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 517 
+2021-05-13 16:56:20,020  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 593 
+2021-05-13 16:56:20,034  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 593 
+2021-05-13 16:56:20,034  INFO | http-nio-8895-exec-3 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 593 
+2021-05-13 16:56:25,009  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 537 
+2021-05-13 16:56:25,036  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 537 
+2021-05-13 16:56:25,036  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 537 
+2021-05-13 16:56:30,011  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 623 
+2021-05-13 16:56:30,039  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 623 
+2021-05-13 16:56:30,040  INFO | http-nio-8895-exec-5 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 623 
+2021-05-13 16:56:35,009  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 539 
+2021-05-13 16:56:40,020  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 581 
+2021-05-13 16:56:45,005  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 583 
+2021-05-13 16:56:50,003  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 517 
+2021-05-13 16:56:50,016  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 517 
+2021-05-13 16:56:50,016  INFO | http-nio-8895-exec-7 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 517 
+2021-05-13 16:56:55,022  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 593 
+2021-05-13 16:56:55,041  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 593 
+2021-05-13 16:56:55,041  INFO | http-nio-8895-exec-9 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 593 
+2021-05-13 16:57:00,021  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 537 
+2021-05-13 16:57:05,020  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 623 
+2021-05-13 16:57:05,043  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: 623 
+2021-05-13 16:57:05,043  INFO | http-nio-8895-exec-10 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order 623 
+2021-05-13 16:57:10,008  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 517 
+2021-05-13 16:57:10,038  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 517 
+2021-05-13 16:57:10,039  INFO | http-nio-8895-exec-1 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 517 
+2021-05-13 16:57:15,009  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 593 
+2021-05-13 16:57:20,026  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTFAILED for order 623 
+2021-05-13 16:57:20,140  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping completed successfully for order 623 
+2021-05-13 16:57:20,140  INFO | http-nio-8895-exec-4 | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentProcessedEvent" for order 623 
+2021-05-13 16:57:25,031  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 517 
+2021-05-13 16:57:30,026  INFO | scheduling-1 | i.v.omt.shipping.kafka.source.ShipmentEventSource      | Going to send an SHIPMENTPROCESSED for order 623 
+2021-05-13 17:14:41,998  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Starting PackageTest on DESKTOP-VOMVIUL with PID 14272 (started by vf in E:\Workspaces\PersonalWorkspace\orchestration-microservices-transaction\shipping-service) 
+2021-05-13 17:14:41,999  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | The following profiles are active: dev 
+2021-05-13 17:14:52,019  INFO | main | it.vinicioflamini.omt.shipping.test.PackageTest        | Started PackageTest in 10.53 seconds (JVM running for 13.175) 
+2021-05-13 17:14:52,607  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Shipping failed for order id: -1 
+2021-05-13 17:14:52,608  INFO | main | it.vinicioflamini.omt.shipping.service.ShippingService | Going to send a "ShipmentFailedEvent" for order -1 
