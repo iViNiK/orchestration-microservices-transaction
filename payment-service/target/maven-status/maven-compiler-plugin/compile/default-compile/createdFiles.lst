@@ -1,8 +1,0 @@
-it\vinicioflamini\omt\payment\kafka\channel\PaymentChannel.class
-it\vinicioflamini\omt\payment\domain\PaymentFacade.class
-it\vinicioflamini\omt\payment\controller\PaymentController.class
-it\vinicioflamini\omt\payment\kafka\source\PaymentEventSource.class
-it\vinicioflamini\omt\payment\kafka\channel\StreamsConfig.class
-it\vinicioflamini\omt\payment\service\PaymentService.class
-it\vinicioflamini\omt\payment\repository\PaymentRepository.class
-it\vinicioflamini\omt\payment\PaymentServiceApplication.class

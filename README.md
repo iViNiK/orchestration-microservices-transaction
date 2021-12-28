@@ -32,11 +32,11 @@ Kafka, among the various features, also provides APIs for the implementation of 
 
 Following are the main concepts of the _Consumer API_ and _Producer API_:
 - **Event / Record**: It is the message that is written and read by the applications. It consists of a key, a value and a timestamp.
-- **Topic**: He is the one who takes care of organizing, archiving and grouping a series of Events / Records.
+- **Topic**: It is the one who takes care of organizing, archiving and grouping a series of Events / Records.
 - **Partition**: The subsections into which a topic is divided. Useful for scaling applications.
 - **Offset**: Unique identifier of an Event / Record within a Partition - Topic.
-- **Producer**: Who sends the messages (Event / Record)
-- **Consumer**: Who receives the messages (Event / Record)
+- **Producer**: Whom sends the messages (Event / Record)
+- **Consumer**: Whom receives the messages (Event / Record)
 
 ## Configuring a Kafka cluster and basic commands
 Once the Kafka release has been downloaded, simply unpack the archive and run the following commands:
@@ -226,9 +226,9 @@ As you can easily assume, an architectural solution such as _Saga Pattern_ large
 <br><br>
 A software solution based on microservices is, by definition, prone to rapid evolutions and for this reason its code can undergo several changes even in short periods of time. Furthermore, it is now very likely that the development of an application takes place in work groups often isolated from each other, which makes interpersonal communication critical regarding the implementation of software changes on certain services, which could impact other services, and compromise system functionality.
 <br><br>
-For example, **what about a developer changing the payload structure of a controller used in the _Saga Pattern_ to accomplish a step in the flow?**. If such a change is not considered e.g. from the _orchestration_ point of view, it could make the system fail and generate unpredictable side effects. A lack of comunication, in this case, can lead to severe damage in a production environment. So, how we can protect the system from such eventualities? One interesting solution is provided from **Consumer Driven Contracts** pattern. 
+For example, **what about a developer changing the payload structure of a controller used in the _Saga Pattern_ to accomplish a step in the flow**? If such a change is not considered e.g. from the _orchestration_ point of view, it could make the system fail and generate unpredictable side effects. A lack of comunication, in this case, can lead to severe damage in a production environment. So, how we can protect the system from such eventualities? One interesting solution is provided from **Consumer Driven Contracts** pattern. 
 <br><br>
-Consumer-Driven Contracts is a pattern for evolving services. In Consumer-Driven Contracts, each consumer captures their expectations of the provider in a separate contract. All of these contracts are shared with the provider so they gain insight into the obligations they must fulfill for each individual client. For further information, please refer to the following article https://martinfowler.com/articles/consumerDrivenContracts.html).
+Consumer-Driven Contracts is a pattern for evolving services. In Consumer-Driven Contracts, each consumer captures their expectations of the provider in a separate contract. All of these contracts are shared with the provider so they gain insight into the obligations they must fulfill for each individual client. For further information, please refer to the following article https://martinfowler.com/articles/consumerDrivenContracts.html.
 <br><br>
 In this project you can find a full implementation of this tecnique, using _Spring Cloud Contract_ (https://spring.io/projects/spring-cloud-contract) to develope integration tests that assure integrity of endpoints involved in the _Saga Pattern_ implementation.
 
@@ -256,9 +256,59 @@ The following picture is an example:
 ## Some points of attention ... 
 The _Orchestrator Service_ is invoking the collaborating service's endpoints synchronously, even if it is "solicited" by asynchronous events. This is the reason why fallback strategy must be provided to manage any service providers failures. It is clear that a probable malfunction could be the excessive delay in the response of an API, which could trigger the fallback path while, in reality, the desired operation will be completed sooner or later. The results may be a big disaster!
 <br><br>
-In reality, there may be many other moments in which a certain operation, exposed by an API involved in the _Saga Pattern_, could be called several times, on the same object, causing serious problems.
+So, the rapid response and the absence of potential delays must always be ensured by the service providers.
+
+# Message Delivery Reliability
+In reality, there may be many other moments in which a certain operation, exposed by an API involved in the _Saga Pattern_, could be called several times on the same object, due to message delivery behaviour. If there is no control of the potential side effects, delivering/receiving the same messages can bring to serious problems. 
 <br><br>
-For these reasons, one of the tecniques that a developer must always keep in mind, when designing such an endpoint behaviour, is that it must be idempotent. Also, the rapid response and the absence of potential delays must always be ensured by the service providers.
+When it comes to describing the semantics of a delivery mechanism, there are three basic categories:
+
+1. <b>at-most-once</b> delivery means that for each message handed to the mechanism, that message is delivered once or not at all; in more casual terms it means that messages may be lost.
+2. <b>at-least-once</b> delivery means that for each message handed to the mechanism potentially multiple attempts are made at delivering it, such that at least one succeeds; again, in more casual terms this means that messages may be duplicated but not lost.
+3. <b>exactly-once</b> delivery means that for each message handed to the mechanism exactly one delivery is made to the recipient; the message can neither be lost nor duplicated.
+
+The first one is the cheapest (highest performance, least implementation overhead) because it can be done in a "fire and forget" fashion without keeping state at the sending end or in the transport mechanism. The second one requires retries to counter transport losses, which means keeping state at the sending end and having an acknowledgement mechanism at the receiving end. The third is most expensive (and has consequently worst performance) because in addition to the second it requires state to be kept at the receiving end in order to filter out duplicate deliveries.
+
+## Focus on Kafka perspective
+For this project, it is very important to understand these concepts within Kafka context.
+
+<b>At-most-once Configuration</b>
+
+At-most-once message delivery means that the message will be delivered at most one time. Once delivered, there is no chance of delivering again. If the consumer is unable to handle the message due to some exception, the message is lost. This is because Kafka is automatically committing the last offset used. To achieve this behaviour:
+
+- Set enable.auto.commit to true (so there is no need to call consumer.commitSync() from the consumer)
+- Set auto.commit.interval.ms to low value
+
+Note that it is also possible to have at-lest-once scenario with the same configuration. Let’s say consumer successfully processed the message into its store and in the meantime kafka was failing or restarted before it could commit the offset. In this scenario, consumer would again get the same message.
+Hence, even if using at-most-once or at-least-once configuration, consumer should be always prepared to handle the duplicates.
+
+<b>At-least-once Configuration</b>
+
+At-least-once message delivery means that the message will be delivered at least one time. There is high chance that message will be delivered again as duplicate. To achieve this behaviour:
+
+- Set enable.auto.commit to false 
+- Consumer should take control of the message offset commits to Kafka by making the consumer.commitSync() call.
+
+Let’s say consumer has processed the messages and committed the messages to its local store, but consumer crashes and did not get a chance to commit offset to Kafka before. When consumer restarts, Kafka would deliver messages from the last offset, resulting in duplicates.
+
+<b>Exactly-once Configuration</b>
+
+Exactly-once message delivery means that there will be only one and once message delivery. It difficult to achieve in practice.
+In this case offset needs to be manually managed. To achieve this behaviour:
+
+- Set enable.auto.commit to false
+- Do not make call to consumer.commitSync()
+- Implement a ConsumerRebalanceListener and within the listener perform consumer.seek(topicPartition,offset); to start reading from a specific offset of that topic/partition.
+- While processing the messages, get hold of the offset of each message. Store the processed message’s offset in an atomic way along with the processed message using atomic-transaction. When data is stored in relational database atomicity is easier to implement. For non-relational data-store such as HDFS store or No-SQL store one way to achieve atomicity is as follows: Store the offset along with the message.
+
+# A point of enhancement: the Idempotent Consumer Pattern
+In an enterprise application, it’s usually a good practice to use a message broker that guarantees at-least-once delivery. As said, at-least-once delivery guarantees that a message broker will deliver a message to a consumer even if errors occur, but one side effect is that the consumer can be invoked repeatedly for the same message. Consequently, a consumer must be idempotent: the outcome of processing the same message repeatedly must be the same as processing the message once. If a consumer is not idempotent, multiple invocations can cause bugs (for example, a consumer of an AccountDebited message that subtracts the debit amount from the current balance would calculate the incorrect balance).
+
+But, how does a message consumer should handle duplicate messages correctly?
+
+The solution is to implement an idempotent consumer, which is a message consumer that can handle duplicate messages correctly. Some consumers are naturally idempotent, others must track the messages that they have processed in order to detect and discard duplicates. One way to make a consumer idempotent is recording in the database the IDs of the messages that it has processed successfully. When processing a message, a consumer can detect and discard duplicates by querying the database. There are a couple of different places to store the message IDs. One option is for the consumer to use a separate PROCESSED_MESSAGES table. The other option is for the consumer to store the IDs in the business entities that it creates or updates.
+
+Anyway, in general, the best solution is always the one that best fits your needs. For example, if a mail send service receives more times the same message, the risk is that the recipients will receive the same mail again. If that is not a huge problem, the cost to write a logic that protect from this possibility may not be worth. 
 
 # License
 Copyright © 2021 by Vinicio Flamini <io@vinicioflamini.it>

@@ -1,8 +1,0 @@
-it\vinicioflamini\omt\inventory\kafka\source\InventoryEventSource.class
-it\vinicioflamini\omt\inventory\controller\InventoryController.class
-it\vinicioflamini\omt\inventory\kafka\channel\StreamsConfig.class
-it\vinicioflamini\omt\inventory\service\InventoryService.class
-it\vinicioflamini\omt\inventory\InventoryServiceApplication.class
-it\vinicioflamini\omt\inventory\domain\ItemFacade.class
-it\vinicioflamini\omt\inventory\kafka\channel\InventoryChannel.class
-it\vinicioflamini\omt\inventory\repository\InventoryRepository.class
